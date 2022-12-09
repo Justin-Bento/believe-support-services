@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -17,27 +18,27 @@ export default function Footer() {
           </svg>
         </a>
         <nav className="text-sm leading-5 text-gray-700 flex gap-8">
-          <a href="#" className="hover:text-black">
+          <Link href="/#" className="hover:text-black">
             Status
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             Twitter
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             Contact
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             Docs
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             API
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             Privacy
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="/#" className="hover:text-black">
             Terms
-          </a>
+          </Link>
         </nav>
         <p className="text-xs leading-5 text-gray-700 max-w-2xl ">
           Campfire collects information about you when you use our Website to

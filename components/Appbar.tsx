@@ -1,4 +1,5 @@
-import React from "react";
+import Link from "next/link";
+import { HiMenu } from 'react-icons/hi';
 
 export default function Appbar() {
   return (
@@ -17,67 +18,33 @@ export default function Appbar() {
           </svg>
         </a>
         <nav className="hidden items-center space-x-2 text-sm font-medium text-gray-800 md:flex">
-          <a
+          <Link
             href="#"
             className="rounded bg-white px-3 py-2 transition hover:bg-gray-100"
           >
             Programs
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="rounded bg-white px-3 py-2 transition hover:bg-gray-100"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="rounded bg-white px-3 py-2 transition hover:bg-gray-100"
           >
             Changelog
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="rounded bg-white px-3 py-2 transition hover:bg-gray-100"
           >
             Blog
-          </a>
+          </Link>
         </nav>
         <button className="flex appearance-none p-1 text-gray-500 md:hidden">
-          <svg className="h-6 w-6" fill="currentcolor" viewBox="0 0 256 256">
-            <line
-              x1="40"
-              y1="128"
-              x2="216"
-              y2="128"
-              fill="none"
-              stroke="currentcolor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-            ></line>
-            <line
-              x1="40"
-              y1="64"
-              x2="216"
-              y2="64"
-              fill="none"
-              stroke="currentcolor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-            ></line>
-            <line
-              x1="40"
-              y1="192"
-              x2="216"
-              y2="192"
-              fill="none"
-              stroke="currentcolor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-            ></line>
-          </svg>
+        <HiMenu size="1.6rem" />
         </button>
       </div>
     </header>
