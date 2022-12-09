@@ -41,6 +41,16 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        'fade-in': {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],
