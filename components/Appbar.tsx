@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Appbar() {
   return (
-    <header>
+    <header className="shadow">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         <a href="#">
           <svg className="h-6" viewBox="0 0 111 21">
