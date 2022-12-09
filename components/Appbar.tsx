@@ -21,7 +21,7 @@ export default function Appbar() {
             href="#"
             className="rounded bg-white px-3 py-2 transition hover:bg-gray-100"
           >
-            Features
+            Programs
           </a>
           <a
             href="#"

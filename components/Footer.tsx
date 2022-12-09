@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-7xl">
-      <div className="flex w-full max-w-2xl flex-col items-center justify-center space-y-5 px-4 py-12 md:items-start">
+    <footer className="bg-gray-100">
+      <div className="mx-auto flex max-w-7xl flex-col p-4 px-8 py-12 gap-1 lg:gap-4">
         <a href="#" className="block">
           <svg className="h-6" viewBox="0 0 111 21">
             <path
@@ -16,7 +16,7 @@ export default function Footer() {
             ></path>
           </svg>
         </a>
-        <nav className="flex gap-8 flex-wrap items-center space-y-4 text-xs font-medium text-gray-500 sm:flex-row sm:space-x-4 sm:space-y-0">
+        <nav className="text-sm leading-5 text-gray-700 flex gap-8">
           <a href="#" className="hover:text-black">
             Status
           </a>
@@ -39,7 +39,7 @@ export default function Footer() {
             Terms
           </a>
         </nav>
-        <p className="text-center text-xs leading-5 text-gray-500 md:text-left">
+        <p className="text-xs leading-5 text-gray-700 max-w-2xl ">
           Campfire collects information about you when you use our Website to
           access our services, and other online products and services
           (collectively, the “Services”) and through other interactions and
