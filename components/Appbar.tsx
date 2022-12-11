@@ -25,7 +25,7 @@ export default function Appbar() {
             Programs
           </Link>
           <Link
-            href="#"
+            href="/about"
             className="px-3 py-2 transition bg-white rounded hover:bg-gray-100"
           >
             About
