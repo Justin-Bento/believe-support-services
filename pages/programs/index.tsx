@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
+import { sanityClient } from "../../sanity";
 
 export default function ProgramHome() {
   const programName = [
@@ -53,4 +54,14 @@ export default function ProgramHome() {
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const query = `*[_type == "post"]{ _id, title, author -> { name, image }, description, mainImage, slug }`;
+  const posts = await sanityClient.fetch(query)
+  return {
+    props: {
+      posts
+    }, // will be passed to the page component as props
+  }
 }
