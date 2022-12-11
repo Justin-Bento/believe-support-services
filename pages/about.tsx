@@ -1,5 +1,10 @@
 import Head from "next/head";
-import { HiTrendingUp } from "react-icons/hi";
+import {
+  HiOutlineScale,
+  HiOutlineUserGroup,
+  HiOutlineStar,
+  HiOutlineSpeakerphone,
+} from "react-icons/hi";
 
 export default function About() {
   return (
@@ -8,10 +13,10 @@ export default function About() {
         <title>About - Believe Support Services</title>
       </Head>
       <main className="space-y-[4rem] mb-[4rem]">
-        <section className="py-24 bg-gray-600">
+        <section className="py-24 bg-primary-700">
           <div className="p-4 md:container md:mx-auto">
-            <h1 className="mt-2 font-serif text-gray-200">Our Mission</h1>
-            <p className="text-2xl italic font-medium leading-10 text-gray-100 capitalize max-w-prose">
+            <h1 className="mt-2 font-serif text-primary-50">Our Mission</h1>
+            <p className="text-2xl italic font-medium leading-10 capitalize text-primary-50 max-w-prose">
               We Believe all individuals should embrace who they are, define
               their future and can change the world.
             </p>
@@ -24,26 +29,29 @@ export default function About() {
             </h2>
             <aside className="space-y-4 leading-7 max-w-prose">
               <p>
-                Believe Support Services provide a wide variety of programs to
-                support individuals with complex needs. We offer programs such
-                as life skills, recreation and social groups. Our programs are
-                designed to encourage individuals to achieve life goals and
-                build independence. Whether you are looking to join us for our
-                day, after school or weekend programs, we have a program
-                suitable for your needs.
+                Believe Support Services provides various programs and services
+                to support individuals with complex needs. All Individuals with
+                complex needs should embrace who they are and learn to deal with
+                the challenges they face in modern society.
               </p>
               <p>
-                We are a fee-for-service company established that became
-                established in October 2006. We provide specialized services for
-                children, youth and adult individuals experiencing behavioral,
-                complex needs and social difficulties to help them get through
-                various challanges in life.
+                Our programs are designed to nurture individuals and build
+                independence so they can be confident in themselves. Whether
+                you'd want to join us for our day, after-school or weekend
+                programs, we have a program suitable for your needs.
               </p>
               <p>
-                As each individual as the right trot voluntariy access and
-                benifit from these services. We will commit our time and enegry
-                to make sure thier access is properlyu implimented and
-                maintained throughout their stay.
+                Believe is a fee-for-service company established in October
+                2006. We provide specialized services for children, youth and
+                adult individuals experiencing behavioural, complex needs and
+                social difficulties to help them get through various challenges
+                in life.
+              </p>
+              <p>
+                As each individual has voluntarily accessed and benefits from
+                these services. Our staff commits their time and energy to
+                ensure the goals and needs are met through carefully
+                implementing and maintaining their needs throughout their stay.
               </p>
             </aside>
           </div>
@@ -70,50 +78,60 @@ export default function About() {
           <article className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2 lg:gap-8">
             <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
               <span className="w-10 h-10 bg-gray-800">
-                <HiTrendingUp size="1.8rem" className="text-gray-700" />
+                <HiOutlineUserGroup
+                  size="1.8rem"
+                  className="text-secondary-600"
+                />
               </span>
               <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
                 Social Inclusion
               </h4>
               <p className="mt-1.5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-                accusantium.
+                We provide individual with oppertunities to explore and
+                participate within their community. By providing them with
+                events, social gatherings and fitness.
               </p>
             </div>
             <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
               <span className="w-10 h-10 bg-gray-800">
-                <HiTrendingUp size="1.8rem" className="text-gray-700" />
+                <HiOutlineSpeakerphone
+                  size="1.8rem"
+                  className="text-secondary-600"
+                />
               </span>
               <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
                 Individual Choice
               </h4>
               <p className="mt-1.5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-                accusantium.
+                Each client will learn to reflect and make choices through a
+                variety of activities to support options that align with thier
+                strengths, intrests, and identities.
               </p>
             </div>
             <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
               <span className="w-10 h-10 bg-gray-800">
-                <HiTrendingUp size="1.8rem" className="text-gray-700" />
+                <HiOutlineStar size="1.8rem" className="text-secondary-600" />
               </span>
               <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
                 Independencae
               </h4>
               <p className="mt-1.5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-                accusantium.
+                Each individual will be given a tailored plan to help them gain
+                new skills, learn more about themselves, and gain new insight
+                about how they deal with everyday tasks.
               </p>
             </div>
             <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
               <span className="w-10 h-10 bg-gray-800">
-                <HiTrendingUp size="1.8rem" className="text-gray-700" />
+                <HiOutlineScale size="1.8rem" className="text-secondary-600" />
               </span>
               <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
                 Individual Rights
               </h4>
               <p className="mt-1.5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-                accusantium.
+                Each individual will leaen their rights within their community
+                and social surroundings activites as well as yearly onclass
+                developmenr personalied to their needs
               </p>
             </div>
           </article>
