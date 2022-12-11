@@ -4,7 +4,7 @@ import React from "react";
 export default function index() {
   return (
     <>
-      <main className="p-4 container mx-auto space-y-20 my-20">
+      <main className="container p-4 mx-auto my-20 space-y-20 max-w-7xl">
         <section className="s">
           <h1 className="text-3xl font-bold underline">Headline 1</h1>
           <p className=""></p>
