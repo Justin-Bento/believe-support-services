@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.vscode
 
 # testing
 /coverage
@@ -27,6 +28,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env*
+!.env.local.example
+
 
 # vercel
 .vercel
@@ -34,3 +38,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sanity
+believe-studio/node_modules
+believe-studio/build/Release
+believe-studio/logs
+believe-studio/dist
+believe-studio/lib
+believe-studio/.next
