@@ -37,7 +37,7 @@ export default function About() {
               <p>
                 Our programs are designed to nurture individuals and build
                 independence so they can be confident in themselves. Whether
-                you'd want to join us for our day, after-school or weekend
+                you&#39;d want to join us for our day, after-school or weekend
                 programs, we have a program suitable for your needs.
               </p>
               <p>
