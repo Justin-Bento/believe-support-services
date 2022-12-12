@@ -10,27 +10,13 @@ export default function Footer() {
           <Image src="/brand/logo.png" alt="believe support services company logo" width={200} height={200} />
         </Link>
         <nav className="flex gap-8 text-sm leading-5 text-gray-700">
-          <Link href="/#" className="hover:text-black">
-            Status
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            Twitter
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            Contact
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            Docs
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            API
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            Privacy
-          </Link>
-          <Link href="/#" className="hover:text-black">
-            Terms
-          </Link>
+          <Link href="/#" className="hover:text-black">Status</Link>
+          <Link href="/#" className="hover:text-black">Twitter</Link>
+          <Link href="/#" className="hover:text-black">Contact</Link>
+          <Link href="/#" className="hover:text-black">Docs</Link>
+          <Link href="/#" className="hover:text-black">API</Link>
+          <Link href="/#" className="hover:text-black">Privacy</Link>
+          <Link href="/#" className="hover:text-black">Terms</Link>
         </nav>
         <p className="max-w-2xl text-xs leading-5 text-gray-700 ">
           Campfire collects information about you when you use our Website to
