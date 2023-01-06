@@ -1,12 +1,12 @@
 import { sanityClient } from "../../sanity";
 import PortableText from 'react-portable-text'
-import Head from "next/head";
+import Error404 from "../404";
 
 // Generates `/posts/1` and `/posts/2`
 export async function getStaticPaths() {
   const query = `*[_type == "programs"]{_id, slug { current }}`;
   const programs = await sanityClient.fetch(query);
-  const paths = programs.map((program) => ({
+  const paths = programs.map((program: any) => ({
     params: {
       slug: program.slug.current,
     },
@@ -18,11 +18,11 @@ export async function getStaticPaths() {
 }
 
 // `getStaticPaths` requires using `getStaticProps`
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const query = `*[_type == "programs" && slug.current == $slug][0]{ _id, _createdAt, title, author -> {   name,   image }, slug { current }, description, mainImage, body }`;
   const program = await sanityClient.fetch(query, { slug: params?.slug });
   if (!program) {
-    return notFound;
+    return <Error404 />;
   }
   return {
     props: {
@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function ProgramSlug({ program }) {
+export default function ProgramSlug({ program }: any) {
   console.log(program);
   return (
     <>
@@ -42,7 +42,7 @@ export default function ProgramSlug({ program }) {
         <p className="text-gray-700">{program.description}</p>
         <hr className="mt-2 mb-4" />
         <article className="leading-7 text-gray-500">
-        <PortableText content={program.body} serializers />
+        <PortableText content={program.body} serializers={() => true}className="space-y-8 max-w-prose" />
         </article>
       </main>
     </>

@@ -16,12 +16,11 @@ export default function ProgramHome({ programs }: Props) {
       </Head>
       <main className="container p-4 mx-auto my-20 max-w-7xl">
         <section className="">
-          <h1 className="text-2xl font-semibold">Program Home</h1>
-          <p className="">
+          <h1 className="text-4xl font-bold text-gray-700">Program Home</h1>
+          <p className="max-w-3xl mt-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             dicta quaerat eos sunt at? Tenetur, cum eligendi voluptates enim
-            odit inventore adipisci at eos, commodi accusantium delectus, rerum
-            ut officiis!
+            odit inventore adipisci at eos, commodi accusantium delectus, rerum!
           </p>
         </section>
         <section className="flex flex-col gap-8 mt-8">
