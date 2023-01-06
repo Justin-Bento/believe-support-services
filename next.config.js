@@ -6,6 +6,13 @@ const nextConfig = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  images: {
+    domains: [  
+      'cdn.sanity.io', 
+      'images.unsplash.com',
+      "tailwindui.com"
+    ],
+  },
 }
 
 module.exports = nextConfig
