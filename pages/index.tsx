@@ -1,5 +1,11 @@
 import Head from "next/head";
 import Hero from "../components/home/Hero";
+import Incentives from "../components/home/Incentives";
+import PrimaryFeatures from "../components/home/PrimaryFeatures";
+import SecondaryFeatures from "../components/home/SecondaryFeatures";
+import CallToActionPrimary from "../components/home/CallToActionPrimary";
+import CallToActionSecondary from "../components/home/CallToActionSecondary";
+import CorePrograms from "../components/home/CorePrograms";
 
 export default function Index() {
   return (
@@ -7,17 +13,21 @@ export default function Index() {
       <Head>
         <title>Believe Support Services</title>
         <meta name="title" content="Believe Support Services" />
-        <meta name="description" content="We believe that everyone has the right to be heard and respected. We work to empower individuals to reach their goals and to find their purpose. " />
+        <meta
+          name="description"
+          content="We believe that everyone has the right to be heard and respected. We work to empower individuals to reach their goals and to find their purpose. "
+        />
       </Head>
       <main className="mb-16 space-y-16">
         <Hero />
-        <section className="wrapper">2</section>
-        <section className="wrapper">3</section>
-        <section className="wrapper">4</section>
-        <section className="wrapper">5</section>
-        <section className="wrapper">6</section>
+        <CorePrograms />
+        <CallToActionPrimary />
+        <Incentives />
+        <CallToActionSecondary />
+        <PrimaryFeatures />
+        <SecondaryFeatures />
       </main>
     </>
-  )
+  );
 }
 
