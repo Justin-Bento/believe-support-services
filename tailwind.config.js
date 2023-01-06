@@ -40,7 +40,7 @@ module.exports = {
         },
       }),
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Public Sans', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'fade-in': {
