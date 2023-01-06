@@ -8,7 +8,7 @@ export default function PrimaryFeatures() {
           <div className="max-w-xl px-6 mx-auto lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
             <div>
               <div>
-                <span className="flex items-center justify-center w-12 h-12 bg-primary-600 rounded-xl">
+                <span className="flex items-center justify-center w-12 h-12 bg-yelllow-600 rounded-xl">
                   <HiInbox className="w-8 h-8 text-white" aria-hidden="true" />
                 </span>
               </div>
@@ -26,7 +26,7 @@ export default function PrimaryFeatures() {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-flex rounded-lg bg-primary-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-primary-600 hover:bg-primary-700 hover:ring-primary-700"
+                    className="inline-flex rounded-lg bg-yelllow-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-yelllow-600 hover:bg-yelllow-700 hover:ring-yelllow-700"
                   >
                     Get started
                   </a>
@@ -75,7 +75,7 @@ export default function PrimaryFeatures() {
           <div className="max-w-xl px-6 mx-auto lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
             <div>
               <div>
-                <span className="flex items-center justify-center w-12 h-12 bg-primary-600 rounded-xl">
+                <span className="flex items-center justify-center w-12 h-12 bg-yelllow-600 rounded-xl">
                   <HiSparkles
                     className="w-8 h-8 text-white"
                     aria-hidden="true"
@@ -95,7 +95,7 @@ export default function PrimaryFeatures() {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-flex rounded-lg bg-primary-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-primary-600 hover:bg-primary-700 hover:ring-primary-700"
+                    className="inline-flex rounded-lg bg-yelllow-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-yelllow-600 hover:bg-yelllow-700 hover:ring-yelllow-700"
                   >
                     Get started
                   </a>

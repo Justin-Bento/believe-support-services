@@ -37,7 +37,7 @@ export default function Appbar() {
         </div>
         <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-4">
           {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="inline-flex items-center rounded bg-white md:px-2.5 md:py-1.5 text-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <Link key={item.name} href={item.href} className="inline-flex items-center rounded bg-white md:px-2.5 md:py-1.5 text-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">
               {item.name}
             </Link>
           ))}
@@ -70,7 +70,7 @@ export default function Appbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block px-2 py-3 text-sm text-gray-700 bg-white rounded hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="block px-2 py-3 text-sm text-gray-700 bg-white rounded hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
                   >
                     {item.name}
                   </Link>

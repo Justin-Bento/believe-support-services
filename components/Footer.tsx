@@ -75,13 +75,13 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 px-4 py-2 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-indigo-500"
+                className="w-full min-w-0 px-4 py-2 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:border-yellow-500 focus:placeholder-gray-400 focus:outline-none focus:ring-yellow-500"
                 placeholder="Enter your email"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-yellow-600 border border-transparent rounded-md hover:bg-yellow-700 focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
                 >
                   Subscribe
                 </button>
