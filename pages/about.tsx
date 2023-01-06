@@ -1,163 +1,43 @@
-import Head from "next/head";
-import {
-  HiOutlineScale,
-  HiOutlineUserGroup,
-  HiOutlineStar,
-  HiOutlineSpeakerphone,
-} from "react-icons/hi";
-
-export default function About() {
+export default function about() {
   return (
-    <>
-      <Head>
-        <title>About - Believe Support Services</title>
-      </Head>
-      <main className="space-y-[4rem] mb-[4rem]">
-        <section className="py-24 bg-primary-700">
-          <div className="p-4 md:container md:mx-auto">
-            <h1 className="mt-2 font-serif text-primary-50">Our Mission</h1>
-            <p className="text-2xl italic font-medium leading-10 capitalize text-primary-50 max-w-prose">
-              We Believe all individuals should embrace who they are, define
-              their future and can change the world.
-            </p>
+    <main className="mb-16 space-y-16">
+      <section className="w-full py-12 bg-yellow-700">
+        <div className="p-4 wrapper">
+          <h1 className="font-serif text-white">Our Mission</h1>
+          <h1 className="max-w-3xl text-xl italic text-gray-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, pariatur molestiae consectetur eius quas vel quos porro esse ullam iste?</h1>
+        </div>
+      </section>
+      <section className="grid grid-cols-1 gap-8 p-4 md:grid-cols-2 wrapper">
+        <div className="flex flex-col items-start justify-center gap-4 md:ml-8">
+          <h2 className="text-3xl font-bold leading-tight capitalize">A safe and supportive community that embraces individuals regardless of their background.</h2>
+          <p className="">We strive to create an atmosphere of respect and acceptance, where everyone can feel comfortable being themselves and expressing their authentic identities.</p>
+        </div>
+        <div className="w-full h-[450px] bg-gray-200 rounded-t-xl">1</div>
+        <div className="w-full h-[450px] bg-gray-200 rounded-t-xl">1</div>
+        <div className="flex flex-col items-start justify-center gap-4 md:mr-8">
+          <h3 className="text-3xl font-bold leading-tight capitalize ">Every Invididual Should Embrace Who They Are Nomatter Their Shortcommings!</h3>
+          <p className="">We strive to create an atmosphere of respect and acceptance, where everyone can feel comfortable being themselves and expressing their authentic identities.</p>
+        </div>
+      </section>
+      <section className="p-4 wrapper">
+        <div className="grid grid-cols-1 gap-8 my-16 md:grid-cols-2">
+          <div className="">
+            <h4 className="text-3xl font-bold leading-tight capitalize">What Do We Do?</h4>
           </div>
-        </section>
-        <section className="p-4 md:container md:mx-auto">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row">
-            <h2 className="text-2xl font-semibold leading-none text-gray-900 capitalize">
-              Who is Believe Support Services?
-            </h2>
-            <aside className="space-y-4 leading-7 max-w-prose">
-              <p>
-                Believe Support Services provides various programs and services
-                to support individuals with complex needs. All Individuals with
-                complex needs should embrace who they are and learn to deal with
-                the challenges they face in modern society.
-              </p>
-              <p>
-                Our programs are designed to nurture individuals and build
-                independence so they can be confident in themselves. Whether
-                you&#39;d want to join us for our day, after-school or weekend
-                programs, we have a program suitable for your needs.
-              </p>
-              <p>
-                Believe is a fee-for-service company established in October
-                2006. We provide specialized services for children, youth and
-                adult individuals experiencing behavioural, complex needs and
-                social difficulties to help them get through various challenges
-                in life.
-              </p>
-              <p>
-                As each individual has voluntarily accessed and benefits from
-                these services. Our staff commits their time and energy to
-                ensure the goals and needs are met through carefully
-                implementing and maintaining their needs throughout their stay.
-              </p>
-            </aside>
+          <div className="space-y-8 max-w-prose">
+            <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia architecto facere officia quidem possimus nam? Illo cupiditate repudiandae unde tempore nemo sint, at consequatur error, numquam iste fugit excepturi nisi.</p>
+            <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia architecto facere officia quidem possimus nam? Illo cupiditate repudiandae unde tempore nemo sint, at consequatur error, numquam iste fugit excepturi nisi.</p>
+            <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia architecto facere officia quidem possimus nam? Illo cupiditate repudiandae unde tempore nemo sint, at consequatur error, numquam iste fugit excepturi nisi.</p>
           </div>
-        </section>
-        <section className="p-4 md:container md:mx-auto">
-          <h3 className="text-2xl font-semibold leading-none text-gray-900 capitalize">
-            Our Metreics
-          </h3>
-          <p className="max-w-2xl mt-2.5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            sapiente quas labore, aspernatur modi ratione voluptatibus omnis
-            magni mollitia quo?
-          </p>
-        </section>
-        <section className="p-4 md:container md:mx-auto">
-          <h4 className="text-2xl font-semibold leading-none text-gray-900 capitalize">
-            Company Values
-          </h4>
-          <p className="max-w-2xl mt-2.5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsum
-            in voluptas dignissimos error cumque minus nobis, perferendis harum
-            odio!
-          </p>
-          <article className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2 lg:gap-8">
-            <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
-              <span className="w-10 h-10 bg-gray-800">
-                <HiOutlineUserGroup
-                  size="1.8rem"
-                  className="text-secondary-600"
-                />
-              </span>
-              <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
-                Social Inclusion
-              </h4>
-              <p className="mt-1.5">
-                We provide individual with oppertunities to explore and
-                participate within their community. By providing them with
-                events, social gatherings and fitness.
-              </p>
-            </div>
-            <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
-              <span className="w-10 h-10 bg-gray-800">
-                <HiOutlineSpeakerphone
-                  size="1.8rem"
-                  className="text-secondary-600"
-                />
-              </span>
-              <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
-                Individual Choice
-              </h4>
-              <p className="mt-1.5">
-                Each client will learn to reflect and make choices through a
-                variety of activities to support options that align with thier
-                strengths, intrests, and identities.
-              </p>
-            </div>
-            <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
-              <span className="w-10 h-10 bg-gray-800">
-                <HiOutlineStar size="1.8rem" className="text-secondary-600" />
-              </span>
-              <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
-                Independencae
-              </h4>
-              <p className="mt-1.5">
-                Each individual will be given a tailored plan to help them gain
-                new skills, learn more about themselves, and gain new insight
-                about how they deal with everyday tasks.
-              </p>
-            </div>
-            <div className="px-4 border border-gray-900 rounded lg:py-8 lg:px-12">
-              <span className="w-10 h-10 bg-gray-800">
-                <HiOutlineScale size="1.8rem" className="text-secondary-600" />
-              </span>
-              <h4 className="mt-4 text-lg font-medium leading-none text-gray-900 capitalize">
-                Individual Rights
-              </h4>
-              <p className="mt-1.5">
-                Each individual will leaen their rights within their community
-                and social surroundings activites as well as yearly onclass
-                developmenr personalied to their needs
-              </p>
-            </div>
-          </article>
-        </section>
-        <section className="p-4 md:container md:mx-auto">
-          <h5 className="text-2xl font-semibold leading-none text-gray-900 capitalize">
-            In the press
-          </h5>
-          <p className="max-w-2xl mt-2.5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            similique nostrum repellat dicta sapiente consequatur illo ipsa
-            officia alias aspernatur.
-          </p>
-        </section>
-        <section className="p-4 md:container md:mx-auto">
-          <h6 className="text-2xl font-semibold leading-none text-gray-900 capitalize">
-            Office Location
-          </h6>
-          <p className="max-w-2xl mt-2.5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-            fugiat amet animi illo illum consequatur quas delectus possimus
-            repellat iusto?
-          </p>
-          <div className="w-full mt-8 bg-gray-200 rounded h-96"></div>
-        </section>
-      </main>
-    </>
-  );
+        </div>
+      </section>
+      <section className="p-4 wrapper">
+        <h5 className="text-3xl font-bold leading-tight capitalize">Our Offices</h5>
+        <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2">
+          <div className="bg-gray-200 w-full rounded-t-xl h-[250px]">1</div>
+          <div className="bg-gray-200 w-full rounded-t-xl h-[250px]">2</div>
+        </div>
+      </section>
+    </main>
+  )
 }
