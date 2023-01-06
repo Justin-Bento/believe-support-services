@@ -1,51 +1,118 @@
-import Head from "next/head";
-import React from "react";
+import Image from "next/image"
 
-export default function blog() {
+const posts = [
+  {
+    title: 'Boost your conversion rate',
+    href: '#',
+    category: { name: 'Article', href: '#' },
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
+    date: 'Mar 16, 2020',
+    datetime: '2020-03-16',
+    imageUrl:
+      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+    readingTime: '6 min',
+    author: {
+      name: 'Roel Aufderehar',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    title: 'How to use search engine optimization to drive sales',
+    href: '#',
+    category: { name: 'Video', href: '#' },
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
+    date: 'Mar 10, 2020',
+    datetime: '2020-03-10',
+    imageUrl:
+      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+    readingTime: '4 min',
+    author: {
+      name: 'Brenna Goyette',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    title: 'Improve your customer experience',
+    href: '#',
+    category: { name: 'Case Study', href: '#' },
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
+    date: 'Feb 12, 2020',
+    datetime: '2020-02-12',
+    imageUrl:
+      'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+    readingTime: '11 min',
+    author: {
+      name: 'Daniela Metz',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+]
+
+export default function Blog() {
   return (
-    <>
-      <Head>
-        <title>Blog | Believe Support Services</title>
-      </Head>
-      <main className="container p-4 mx-auto my-20 space-y-20 max-w-7xl">
-        <section className="space-y-20">
-          <Card Path="1" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-          <Card Path="2" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-          <Card Path="3" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-          <Card Path="4" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-          <Card Path="5" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-          <Card Path="6" Headline="Card Title Goes Here" Supporting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga nulla labore sed! Ex voluptas provident quae facere rem officia ut sint impedit magnam. Vitae quidem nam est adipisci corporis?" />
-        </section>
-      </main>
-    </>
-  );
-}
-interface BlogCardProps {
-  Headline: string;
-  Supporting: string;
-  Path: string;
-}
-const Card = (props: BlogCardProps) => {
-  return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-      <div className="w-full h-64 bg-gray-200 lg:h-full lg:w-72"></div>
-      <div className="col-span-1 md:col-span-3">
-        <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">
-          April 16, 2020
-        </p>
-        <h2 className="mb-2 text-xl font-bold leading-7 text-gray-800">
-          <a href="#" className="text-gray-900 hover:text-purple-700">
-            {props.Headline || "Pattern Matching In Elixir"}
-          </a>
-        </h2>
-        <p className="max-w-4xl text-base leading-7 text-gray-600">
-          {props.Supporting ||
-            "Pattern matching is a great way to write idiomatic functional code. It’s a powerful tenant of functional programming that makes it a joy to write conditional statements. If you don’t want your code to be peppered with deeply nested statements or multiple variations of similar business logic, use pattern matching!"}
-        </p>
-        <a href={`/blog/${props.Path}`} className="inline-flex px-6 py-2 mt-3 text-sm bg-gray-200">
-          Read More
-        </a>
+    <div className="relative p-4 my-16 wrapper">
+      <div className="absolute inset-0">
+        <div className="bg-white h-1/3 sm:h-2/3" />
+      </div>
+      <div className="relative mx-auto max-w-7xl">
+        <div className="text-center">
+          <h2 className="type-headline-medium">From the blog</h2>
+          <p className="max-w-2xl mx-auto mt-3 type-body-large">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+          </p>
+        </div>
+        <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:max-w-none lg:grid-cols-3">
+          {posts.map((post) => (
+            <div key={post.title} className="flex flex-col overflow-hidden border rounded-lg">
+              <div className="flex-shrink-0">
+                <Image width={129} height={129} className="object-cover w-full h-48" src={post.imageUrl} alt="" />
+              </div>
+              <div className="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-indigo-600">
+                    <a href={post.category.href} className="hover:underline">
+                      {post.category.name}
+                    </a>
+                  </p>
+                  <a href={post.href} className="block mt-2">
+                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                    <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                  </a>
+                </div>
+                <div className="flex items-center mt-6">
+                  <div className="flex-shrink-0">
+                    <a href={post.author.href}>
+                      <span className="sr-only">{post.author.name}</span>
+                      <Image width={40} height={40} className="w-10 h-10 rounded-full" src={post.imageUrl} alt="" />
+                    </a>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-900">
+                      <a href={post.author.href} className="hover:underline">
+                        {post.author.name}
+                      </a>
+                    </p>
+                    <div className="flex space-x-1 text-sm text-gray-500">
+                      <time dateTime={post.datetime}>{post.date}</time>
+                      <span aria-hidden="true">&middot;</span>
+                      <span>{post.readingTime} read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
