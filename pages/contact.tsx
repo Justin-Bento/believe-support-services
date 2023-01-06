@@ -8,28 +8,18 @@ export default function contact() {
       <Head>
         <title>Contact - {company}</title>
       </Head>
-      <main className="container p-4 mx-auto my-24 max-w-7xl">
-        <section className="">
-          <h1 className="mb-2 text-4xl font-semibold capitalize">Contact us</h1>
+      <main className="p-4 my-12 wrapper">
+        <section className="mb-4 ">
+          <h1 className="mb-2 text-4xl font-bold text-gray-700 capitalize">Contact us</h1>
           <p className="max-w-xl">
             If you have requests, suggestions or any other feedback, please
             leave a message below and we&#39;ll get back to you as soon as possible.
           </p>
         </section>
-        {/* <!-- Contact Us --> */}
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
-            Contact us
-          </h1>
-        </div>
-
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
           {/* <!-- Card --> */}
           <div className="flex flex-col p-4 border rounded-xl sm:p-6 lg:p-8">
-            <h2 className="mb-8 text-xl font-semibold text-gray-800">
-              Fill in the form
-            </h2>
-
+            <h2 className="mb-8 text-xl font-semibold text-gray-800">Fill in the form</h2>
             <form action="mailto:vesco268@gmail.com">
               <div className="grid gap-4">
                 {/* <!-- Grid --> */}
