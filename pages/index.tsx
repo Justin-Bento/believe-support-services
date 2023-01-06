@@ -5,6 +5,7 @@ import PrimaryFeatures from "../components/home/PrimaryFeatures";
 import SecondaryFeatures from "../components/home/SecondaryFeatures";
 import CallToActionPrimary from "../components/home/CallToActionPrimary";
 import CallToActionSecondary from "../components/home/CallToActionSecondary";
+import CallToActionTertiary from "../components/home/CallToActionTertiary";
 import CorePrograms from "../components/home/CorePrograms";
 
 export default function Index() {
@@ -25,6 +26,7 @@ export default function Index() {
         <Incentives />
         <CallToActionSecondary />
         <PrimaryFeatures />
+        <CallToActionTertiary />
         <SecondaryFeatures />
       </main>
     </>
