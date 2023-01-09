@@ -69,8 +69,8 @@ export default function SecondaryFeatures() {
   return (
     <section className="p-4 wrapper">
     <div>
-      <h6 className="">Events With Believe</h6>
-      <p className="max-w-3xl text-base leading-7 text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore amet praesentium molestias nemo culpa distinctio aperiam accusantium iure inventore fugiat? Aspernatur eum beatae dolorem perferendis ab!</p>
+      <h6 className="type-headline-medium">Events With Believe</h6>
+      <p className="max-w-3xl mt-2 type-body-large">Our activities are designed to foster positive relationships, promote self-confidence, and develop skills in communication, problem-solving, and teamwork. By providing a comfortable and supportive environment.</p>
     </div>
     <div className="mt-8 md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
       <div className="md:pr-14">
@@ -125,9 +125,9 @@ export default function SecondaryFeatures() {
         </div>
       </div>
       <section className="mt-12 md:mt-0 md:pl-14">
-        <h2 className="font-semibold text-gray-900">
+        <h6 className="font-semibold text-gray-900">
           Schedule for <time dateTime="2022-01-21">January 21, 2022</time>
-        </h2>
+        </h6>
         <ol className="mt-4 space-y-1 text-sm leading-6 text-gray-500">
           {meetings.map((meeting) => (
             <li

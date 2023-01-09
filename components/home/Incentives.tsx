@@ -37,10 +37,10 @@ export default function Incentives() {
         <div className="max-w-2xl px-4 mx-auto lg:max-w-none">
           <div className="grid items-center grid-cols-1 gap-y-10 gap-x-16 lg:grid-cols-2">
             <div>
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900">
+              <h3 className="type-headline-large">
                 We built our business on great customer service
-              </h2>
-              <p className="mt-4 text-gray-500">
+              </h3>
+              <p className="mt-4 type-body-large">
                 At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
                 caring about that. Our new strategy is to write a bunch of things that look really good in the
                 headlines, then clarify in the small print but hope people don&#39;t actually read it.

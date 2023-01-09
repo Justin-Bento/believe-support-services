@@ -13,10 +13,10 @@ export default function PrimaryFeatures() {
                 </span>
               </div>
               <div className="mt-6">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                <h4 className="type-headline-large">
                   Embrace Each Indivisuals Uniquness
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
+                </h4>
+                <p className="mt-4 type-body-large">
                   We strive to create an inclusive community that celebrates
                   diversity and promotes an atmosphere of understanding and
                   acceptance. We recognize that everyone has a unique
@@ -26,7 +26,7 @@ export default function PrimaryFeatures() {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-flex rounded-lg bg-yelllow-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-yelllow-600 hover:bg-yelllow-700 hover:ring-yelllow-700"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     Get started
                   </a>
@@ -83,10 +83,10 @@ export default function PrimaryFeatures() {
                 </span>
               </div>
               <div className="mt-6">
-                <h3 className="text-3xl font-bold tracking-tight text-gray-900">
+                <h4 className="type-headline-large">
                   Move for individuals with complex needs
-                </h3>
-                <p className="mt-4 text-lg text-gray-500">
+                </h4>
+                <p className="mt-4 type-body-large">
                   Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
                   bibendum malesuada faucibus lacinia porttitor. Pulvinar
                   laoreet sagittis viverra duis. In venenatis sem arcu pretium
@@ -95,7 +95,7 @@ export default function PrimaryFeatures() {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-flex rounded-lg bg-yelllow-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-yelllow-600 hover:bg-yelllow-700 hover:ring-yelllow-700"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     Get started
                   </a>
