@@ -3,7 +3,11 @@ export interface Program {
   title: string;
   description: string;
   slug: {
-    current: string
-  }
-//   body: [object];
+    current: string;
+  };
+  mainImage: {
+    asset: {
+      url: string;
+    };
+  };
 }
