@@ -29,7 +29,7 @@ export default function index({ programs }: any) {
             skills, make new friends, and have a great time.
           </p>
           <cite className=" type-body-small">
-            Camps will be held in a variety of different <Link href="/events">times of the year</Link>.
+            Checkout our events page to see what programs are running at different  <Link href="/events"  className="type-link">times of the year</Link>.
           </cite>
           <hr className="w-full mt-8 border border-stone-300" />
         </section>
@@ -40,8 +40,8 @@ export default function index({ programs }: any) {
               <>
                 <Link key={data._id} href={`/programs/${data.slug.current}`}>
                   <div className="relative">
-                    <div className="relative w-full px-8 py-24 overflow-hidden bg-gray-800/80 rounded-xl h-72">
-                      <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
+                    <div className="relative w-full px-8 py-24 overflow-hidden transition-all bg-stone-800/80 hover:bg-stone-800/60 rounded-xl h-72 hover:-translate-y-1">
+                      <div className="absolute inset-0 transition-all opacity-50 mix-blend-multiply saturate-0 hover:saturate-100 filter">
                         <Image fill src={`/media/support-kampus-production.jpg`} alt={data.title} className="absolute object-cover w-full rounded-xl h-72" quality={60} />
                       </div>
                       <div className="absolute bottom-0 left-0 p-8">
