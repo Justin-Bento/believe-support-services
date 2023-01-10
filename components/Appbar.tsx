@@ -20,9 +20,9 @@ export default function Appbar() {
     <div className='wrapper'>
       <nav className="flex items-center justify-between h-9" aria-label="Global">
         <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5 relative w-40 h-10 object-cover">
             <span className="sr-only">Your Company</span>
-            <Image width={120} height={120} src="/brand/logo.png" alt="logo" />
+            <Image fill src="/brand/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -47,10 +47,10 @@ export default function Appbar() {
         <Dialog.Panel onFocus={() => true} className="fixed inset-0 z-10 px-6 py-6 overflow-y-auto bg-white lg:hidden">
           <div className="flex items-center justify-between h-9">
             <div className="flex">
-              <Link href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <Image width={120} height={120} src="/brand/logo.png" alt="logo" />
-              </Link>
+            <Link href="/" className="relative object-cover w-40 h-10">
+            <span className="sr-only">Your Company</span>
+            <Image fill src="/brand/logo.png" alt="logo" />
+          </Link>
             </div>
             <div className="flex">
               <button
