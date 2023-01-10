@@ -19,14 +19,16 @@ export default function Index() {
           content="We believe that everyone has the right to be heard and respected. We work to empower individuals to reach their goals and to find their purpose. "
         />
       </Head>
-      <main className="mb-16 space-y-16">
-        <Hero />
-        <CorePrograms />
-        <CallToActionPrimary />
-        <Incentives />
-        <CallToActionSecondary />
-        <PrimaryFeatures />
-        <CallToActionTertiary />
+      <main className="">
+        <div className="space-y-16">
+          <Hero />
+          <CorePrograms />
+          <CallToActionPrimary />
+          <Incentives />
+          <CallToActionSecondary />
+          <PrimaryFeatures />
+          <CallToActionTertiary />
+        </div>
         <SecondaryFeatures />
       </main>
     </>
