@@ -1,47 +1,57 @@
+import clsx from "clsx";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { sanityClient } from "../../sanity";
-import { Program } from "../../typings";
+import imageUrlBuilder from '@sanity/image-url'
+// Get a pre-configured url-builder from your sanity client
+const builder = imageUrlBuilder(sanityClient)
 
-interface Props {
-  programs: [Program];
+function urlFor(source: any) {
+  return builder.image(source)
 }
 
-export default function ProgramHome({ programs }: Props) {
+
+export default function index({ programs }: any) {
   return (
     <>
       <Head>
         <title>Programs - Believe Support Services</title>
       </Head>
-      <main className="container p-4 mx-auto my-20 max-w-7xl">
+      <main className="p-4 my-16 space-y-8 wrapper">
         <section className="">
-          <h1 className="text-4xl font-bold text-gray-700">Program Home</h1>
-          <p className="max-w-3xl mt-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            dicta quaerat eos sunt at? Tenetur, cum eligendi voluptates enim
-            odit inventore adipisci at eos, commodi accusantium delectus, rerum!
+          <h1 className="type-headline-large">
+            The Key Components to Believe!
+          </h1>
+          <p className="max-w-3xl my-2 type-body-large">
+            We offer special camps for those with special needs or disabilities.
+            Our camps will be a great way for individuals to have fun, learn new
+            skills, make new friends, and have a great time.
           </p>
+          <cite className=" type-body-small">
+            Camps will be held in a variety of different <Link href="/events">times of the year</Link>.
+          </cite>
+          <hr className="w-full mt-8 border border-stone-300" />
         </section>
-        <section className="flex flex-col gap-8 mt-8">
-          {programs.map((context) => {
+        {/* End of Program Headline */}
+        <section className="flex flex-col gap-8">
+          {programs.map((data: any) => {
             return (
-              <Link
-                key={context._id}
-                href={`/programs/${context.slug.current}`}
-                className=""
-              >
-                <article className="relative w-full h-64 transition-all bg-gray-900 rounded-lg hover:opacity-90">
-                  <div className="absolute bottom-0 left-0 p-6 text-white">
-                    <h2 className="text-lg font-semibold leading-7 tracking-wide text-gray-100">
-                      {context.title || "Program Name Goes Here"}
-                    </h2>
-                    <p className="max-w-4xl mt-1.5 text-base leading-6 tracking-[0.022rem] text-gray-200">
-                      {context.description || "Program Name Goes Here"}
-                    </p>
+              <>
+                <Link key={data._id} href={`/programs/${data.slug.current}`}>
+                  <div className="relative">
+                    <div className="relative w-full px-8 py-24 overflow-hidden bg-gray-800/80 rounded-xl h-72">
+                      <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
+                        <Image fill src={`/media/support-kampus-production.jpg`} alt={data.title} className="absolute object-cover w-full rounded-xl h-72" quality={60} />
+                      </div>
+                      <div className="absolute bottom-0 left-0 p-8">
+                        <h3 className="text-white type-title-large">{data.title}</h3>
+                        <p className="text-white max-w-prose type-body-large">{data.description}</p>
+                      </div>
+                    </div>
                   </div>
-                </article>
-              </Link>
+                </Link>
+              </>
             );
           })}
         </section>
@@ -49,9 +59,8 @@ export default function ProgramHome({ programs }: Props) {
     </>
   );
 }
-
 export async function getServerSideProps() {
-  const query = `*[_type == "programs"]{_id, title, description, slug}`;
+  const query = `*[_type == "programs"]{_id, title, description, slug, mainImage { asset->{ url }}}`;
   const programs = await sanityClient.fetch(query);
   return {
     props: {
