@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function about() {
   return (
@@ -18,8 +19,12 @@ export default function about() {
             <h2 className="text-3xl font-bold leading-tight capitalize">A safe and supportive community that embraces individuals regardless of their background.</h2>
             <p className="">We strive to create an atmosphere of respect and acceptance, where everyone can feel comfortable being themselves and expressing their authentic identities.</p>
           </div>
-          <div className="w-full h-[450px] bg-gray-200 rounded-t-xl">1</div>
-          <div className="w-full h-[450px] bg-gray-200 rounded-t-xl">1</div>
+          <div className="w-full h-[450px] relative">
+            <Image src="/media/community.jpg" fill alt="Image Of Believe Community" className="object-cover rounded-t-xl" />
+          </div>
+          <div className="w-full h-[450px] relative">
+            <Image src="/media/class-environment.jpg" fill alt="Image Of Believe Community" className="object-cover rounded-t-xl" />
+          </div>
           <div className="flex flex-col items-start justify-center gap-4 md:mr-8">
             <h3 className="text-3xl font-bold leading-tight capitalize ">Every Invididual Should Embrace Who They Are Nomatter Their Shortcommings!</h3>
             <p className="">We strive to create an atmosphere of respect and acceptance, where everyone can feel comfortable being themselves and expressing their authentic identities.</p>
