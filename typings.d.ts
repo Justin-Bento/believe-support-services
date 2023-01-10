@@ -1,13 +1,19 @@
-export interface Program {
+export interface Program{
   _id: string;
+  _createdAt: string;
   title: string;
+  author:{
+      name:string;
+      image: string;
+  },
   description: string;
-  slug: {
-    current: string;
+  mainImage:{
+      asset:{
+          url:string;
+      };
   };
-  mainImage: {
-    asset: {
-      url: string;
-    };
+  slug:{
+      current: string;
   };
+  body: [object];
 }
