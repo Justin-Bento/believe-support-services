@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-100" aria-labelledby="footer-heading">
+    <footer className="bg-stone-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -9,11 +9,11 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-base font-medium text-gray-900">Solutions</h3>
+                <h3 className="type-title-medium text-stone-100">Solutions</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a href={item.href} className="type-body-large text-stone-400">
                         {item.name}
                       </a>
                     </li>
@@ -21,11 +21,11 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium text-gray-900">Support</h3>
+                <h3 className="type-title-medium text-stone-100">Support</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a href={item.href} className="type-body-large text-stone-400">
                         {item.name}
                       </a>
                     </li>
@@ -35,11 +35,11 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-base font-medium text-gray-900">Company</h3>
+                <h3 className="type-title-medium text-stone-100">Company</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a href={item.href} className="type-body-large text-stone-400">
                         {item.name}
                       </a>
                     </li>
@@ -47,11 +47,11 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium text-gray-900">Legal</h3>
+                <h3 className="type-title-medium text-stone-100">Legal</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a href={item.href} className="type-body-large text-stone-400">
                         {item.name}
                       </a>
                     </li>
@@ -61,8 +61,8 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-base font-medium text-gray-900">Subscribe to our newsletter</h3>
-            <p className="mt-4 text-base text-gray-500">
+            <h3 className="type-title-medium text-stone-100">Subscribe to our newsletter</h3>
+            <p className="mt-4 text-base text-stone-500">
               The latest news, articles, and resources, sent to your inbox weekly.
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">
@@ -75,7 +75,7 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 px-4 py-2 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:border-yellow-500 focus:placeholder-gray-400 focus:outline-none focus:ring-yellow-500"
+                className="w-full min-w-0 px-4 py-2 text-base bg-white border rounded-md shadow-sm appearance-none text-stone-900 placeholder-stone-500 border-stone-300 focus:border-yellow-500 focus:placeholder-stone-400 focus:outline-none focus:ring-yellow-500"
                 placeholder="Enter your email"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
@@ -89,16 +89,16 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="pt-8 mt-8 border-t border-gray-200 md:flex md:items-center md:justify-between">
+        <div className="pt-8 mt-8 border-t border-stone-200 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a key={item.name} href={item.href} className="text-stone-400 hover:text-stone-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="w-6 h-6" aria-hidden="true" />
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
+          <p className="mt-8 text-base text-stone-400 md:order-1 md:mt-0">
             &copy; {new Date().getFullYear()} Believe Support Services. All rights reserved.
           </p>
         </div>
