@@ -29,49 +29,52 @@
     @apply mx-auto max-w-7xl sm:px-6 lg:px-8;
   }
   .type-display-large {
-    @apply text-[3.563rem] text-gray-700;
+    @apply text-[3.563rem] text-stone-700;
   }
   .type-display-medium {
-    @apply text-[2.813rem] text-gray-700;
+    @apply text-[2.813rem] text-stone-700;
   }
   .type-display-small {
-    @apply text-[2.25rem] text-gray-700;
+    @apply text-[2.25rem] text-stone-700;
   }
   .type-headline-large {
-    @apply text-[2rem] text-gray-700 font-bold capitalize leading-tight;
+    @apply text-[2rem] text-stone-700 font-bold capitalize leading-tight;
   }
   .type-headline-medium {
-    @apply text-[1.75rem] text-gray-700 font-bold capitalize leading-tight;
+    @apply text-[1.75rem] text-stone-700 font-bold capitalize leading-tight;
   }
   .type-headline-small {
-    @apply text-[1.5rem] text-gray-700 font-bold capitalize leading-tight;
+    @apply text-[1.5rem] text-stone-700 font-bold capitalize leading-tight;
   }
   .type-title-large {
-    @apply text-lg font-semibold text-gray-700;
+    @apply text-lg font-semibold text-stone-700;
   }
   .type-title-medium {
-    @apply text-base font-semibold text-gray-700;
+    @apply text-base font-semibold text-stone-700;
   }
   .type-title-small {
-    @apply text-sm font-semibold text-gray-700;
+    @apply text-sm font-semibold text-stone-700;
   }
   .type-label-large {
-    @apply text-sm font-medium text-gray-700;
+    @apply text-sm font-medium text-stone-700;
   }
   .type-label-medium {
-    @apply text-xs font-medium text-gray-700;
+    @apply text-xs font-medium text-stone-700;
   }
   .type-label-small {
-    @apply text-[0.688rem] text-gray-700 font-medium;
+    @apply text-[0.688rem] text-stone-700 font-medium;
   }
   .type-body-large {
-    @apply text-base text-gray-700;
+    @apply text-base text-stone-700;
   }
   .type-body-medium {
-    @apply text-sm text-gray-700;
+    @apply text-sm text-stone-700;
   }
   .type-body-small {
-    @apply text-xs text-gray-700;
+    @apply text-xs text-stone-700;
+  }
+  .type-link {
+    @apply text-yellow-700 transition-all hover:underline;
   }
 }
 @tailwind utilities;
