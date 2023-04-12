@@ -14,8 +14,8 @@ export default function index() {
       <Appbar />
       <main className="container p-4 mx-auto space-y-32">
         <Hero />
-
         <Newsletter />
+        <Features />
       </main>
     </>
   );
@@ -141,55 +141,93 @@ function Hero() {
 
 function Newsletter() {
   return (
-    <div className="py-16 bg-primary-50">
-        <div className="relative px-6 py-24 overflow-hidden bg-primary-300 isolate sm:rounded-3xl sm:px-24 xl:py-32">
-          <h2 className="max-w-2xl mx-auto text-3xl font-bold tracking-tight text-center text-primary-950 sm:text-4xl">
-            Get notified when we’re launching.
-          </h2>
-          <p className="max-w-xl mx-auto mt-2 text-lg leading-8 text-center text-primary-950">
-            Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
-          </p>
-          <form className="flex max-w-md mx-auto mt-10 gap-x-4">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="min-w-0 flex-auto rounded-md border-0 bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
-            />
-            <button
-              type="submit"
-              className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Notify me
-            </button>
-          </form>
-          <svg
-            viewBox="0 0 1024 1024"
-            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
-            aria-hidden="true"
+    <div className="py-16s">
+      <div className="relative px-6 py-24 overflow-hidden bg-primary-300 isolate sm:rounded-3xl sm:px-24 xl:py-32">
+        <h2 className="max-w-2xl mx-auto text-3xl font-bold tracking-tight text-center text-primary-950 sm:text-4xl">
+          Get notified when we’re launching.
+        </h2>
+        <p className="max-w-xl mx-auto mt-2 text-lg leading-8 text-center text-primary-950">
+          Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
+        </p>
+        <form className="flex max-w-md mx-auto mt-10 gap-x-4">
+          <label htmlFor="email-address" className="sr-only">
+            Email address
+          </label>
+          <input
+            id="email-address"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            className="min-w-0 flex-auto rounded-md border-0 bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
+            placeholder="Enter your email"
+          />
+          <button
+            type="submit"
+            className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
-            <defs>
-              <radialGradient
-                id="759c1415-0410-454c-8f7c-9a820de03641"
-                cx={0}
-                cy={0}
-                r={1}
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(512 512) rotate(90) scale(512)"
-              >
-                <stop stopColor="#EEBC03" />
-                <stop offset={1} stopColor="#EEBC03" stopOpacity={0} />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
+            Notify me
+          </button>
+        </form>
+        <svg
+          viewBox="0 0 1024 1024"
+          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
+          aria-hidden="true"
+        >
+          <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+          <defs>
+            <radialGradient
+              id="759c1415-0410-454c-8f7c-9a820de03641"
+              cx={0}
+              cy={0}
+              r={1}
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(512 512) rotate(90) scale(512)"
+            >
+              <stop stopColor="#EEBC03" />
+              <stop offset={1} stopColor="#EEBC03" stopOpacity={0} />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
     </div>
+  )
+}
+
+function Features() {
+  return (
+    <>
+      <section className="">
+        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+          <div>
+            <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Become The Superstar You Want To Be, While With Our Interactive Prograsms!</h3>
+            <p className="mb-5 body-large">
+            We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
+            </p>
+            <button
+              type="button"
+              className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
+            >
+              Button text
+            </button>          </div>
+          <div className="w-full h-full py-48 bg-gray-200 rounded-2xl"></div>
+        </div>
+        <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+          <div className="order-none md:order-2">
+            <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Learning How To Embrace Your Uniqueness With By Getting To Know Yourself!</h3>
+            <p className="mb-5 body-large">
+            We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work.
+            </p>
+            <button
+              type="button"
+              className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
+            >
+              Button text
+            </button>          </div>
+          <div className="w-full h-full py-48 bg-gray-200 rounded-2xl"></div>
+        </div>
+      </section>
+
+    </>
   )
 }
