@@ -3,13 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link'
 import Logo from "@/components/Logo"
-const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Day Program', href: '#' },
-  { name: 'Residential', href: '#' },
-  { name: 'Fitness & Health', href: '#' },
-  { name: 'Contact', href: '#' },
-]
+import {appbar_navigation} from "@/lib/data"
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -34,7 +28,7 @@ export default function Example() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
+          {appbar_navigation.map((item) => (
             <a key={item.name} href={item.href} className="body-medium">
               {item.name}
             </a>
@@ -65,7 +59,7 @@ export default function Example() {
           <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
-                {navigation.map((item) => (
+                {appbar_navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
