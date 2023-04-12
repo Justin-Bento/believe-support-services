@@ -1,9 +1,9 @@
 export const appbar_navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Day Program', href: '#' },
-  { name: 'Residential', href: '#' },
-  { name: 'Fitness & Health', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'About', href: '/about' },
+  { name: 'Day Program', href: '/programs/day-program' },
+  { name: 'Residential', href: '/programs/residential-program' },
+  { name: 'Fitness & Health', href: '/programs/fitness-and-health' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 
