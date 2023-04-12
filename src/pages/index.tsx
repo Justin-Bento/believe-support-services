@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 import Appbar from "@/components/Appbar";
+import Footer from "@/components/Footer";
+import {testimonials} from "@/lib/data"
 
 export default function index() {
   return (
@@ -12,11 +14,14 @@ export default function index() {
         <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
       <Appbar />
-      <main className="container p-4 mx-auto space-y-32">
+      <main className="container p-4 mx-auto mb-32 space-y-32">
         <Hero />
         <Newsletter />
         <Features />
+        <Testimonials />
+        <CallToAction />
       </main>
+      <Footer />
     </>
   );
 }
@@ -50,7 +55,7 @@ function Hero() {
           <div className="flex flex-col justify-start gap-4 md:flex-row md:justify-center">
             <Link
               href="/signup"
-              className="px-3 py-2 text-sm font-semibold rounded-md text-primary-50 bg-primary-600 hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              className="px-3 py-2 text-sm font-semibold rounded-md text-primary-50 bg-theme focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >
               Get In Touch With A Representative
             </Link>
@@ -77,7 +82,7 @@ function Hero() {
         {/* END: Hero :: Media */}
         <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
           {/* END: Hero :: 01 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">Day Programs</h2>
               <p className="px-2 body-medium">
@@ -94,7 +99,7 @@ function Hero() {
             </div>
           </div>
           {/* END: Hero :: 02 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">
                 Fitness & Health Programs
@@ -113,7 +118,7 @@ function Hero() {
             </div>
           </div>
           {/* END: Hero :: 03 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">
                 Residential Programs
@@ -142,11 +147,11 @@ function Hero() {
 function Newsletter() {
   return (
     <div className="py-16s">
-      <div className="relative px-6 py-24 overflow-hidden bg-primary-300 isolate sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 className="max-w-2xl mx-auto text-3xl font-bold tracking-tight text-center text-primary-950 sm:text-4xl">
+      <div className="relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
+        <h2 className="max-w-2xl mx-auto text-3xl font-extrabold text-center headline-large">
           Get notified when we’re launching.
         </h2>
-        <p className="max-w-xl mx-auto mt-2 text-lg leading-8 text-center text-primary-950">
+        <p className="max-w-xl mx-auto mt-2 text-center body-large ">
           Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
         </p>
         <form className="flex max-w-md mx-auto mt-10 gap-x-4">
@@ -202,7 +207,7 @@ function Features() {
           <div>
             <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Become The Superstar You Want To Be, While With Our Interactive Prograsms!</h3>
             <p className="mb-5 body-large">
-            We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
+              We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
             </p>
             <button
               type="button"
@@ -214,9 +219,9 @@ function Features() {
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div className="order-none md:order-2">
-            <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Learning How To Embrace Your Uniqueness With By Getting To Know Yourself!</h3>
+            <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Grow by learning and experiencing new things and moving. With our Interactive programs!!</h3>
             <p className="mb-5 body-large">
-            We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work.
+              We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
             </p>
             <button
               type="button"
@@ -229,5 +234,73 @@ function Features() {
       </section>
 
     </>
+  )
+}
+
+function CallToAction() {
+  return (
+    <div className="bg-theme rounded-2xl">
+      <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="font-bold display-small">
+            Boost your productivity.
+            <br />
+            Start using our app today.
+          </h2>
+          <p className="max-w-xl mx-auto mt-6 body-large">
+            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
+            commodo do ea.
+          </p>
+          <div className="flex items-center justify-center mt-10 gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Get started
+            </a>
+            <a href="#" className="text-sm font-semibold leading-6 text-primary-950">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Testimonials() {
+  return (
+    <div className="py-24 sm:py-32">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="title-medium text-primary-700">Testimonials</h2>
+          <p className="mt-2 font-extrabold capitalize headline-large">
+            We have worked with thousands of amazing people supporting Us!
+          </p>
+        </div>
+        <div className="flow-root max-w-2xl mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none">
+          <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+                <figure className="p-8 body-medium rounded-2xl bg-theme">
+                  <blockquote className="text-primary-900 dark:text-primary-100">
+                    <p>{`“${testimonial.body}”`}</p>
+                  </blockquote>
+                  <figcaption className="flex items-center mt-6 gap-x-4">
+                    <div className="relative w-9 h-9">
+                    <Image fill quality={50} className="rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-primary-900 dark:text-primary-100">{testimonial.author.name}</div>
+                      <div className="text-primary-600 dark:text-primary-300">{`@${testimonial.author.handle}`}</div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
