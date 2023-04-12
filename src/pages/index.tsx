@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
+import Appbar from "@/components/Appbar";
 
 export default function index() {
   return (
@@ -10,6 +11,7 @@ export default function index() {
         <title>Believe Support Services</title>
         <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
+      <Appbar />
       <main className="container p-4 mx-auto space-y-32">
         <Hero />
       </main>
