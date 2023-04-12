@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
-import {testimonials} from "@/lib/data"
+import { testimonials } from "@/lib/data"
 
 export default function index() {
   return (
@@ -215,7 +215,9 @@ function Features() {
             >
               Button text
             </button>          </div>
-          <div className="w-full h-full py-48 bg-gray-200 rounded-2xl"></div>
+          <div className="relative w-full h-full py-48 ">
+            <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-center rounded-2xl" />
+          </div>
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div className="order-none md:order-2">
@@ -228,8 +230,11 @@ function Features() {
               className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
             >
               Button text
-            </button>          </div>
-          <div className="w-full h-full py-48 bg-gray-200 rounded-2xl"></div>
+            </button>
+          </div>
+          <div className="relative w-full h-full py-48 ">
+            <Image fill quality={50} src="/media/believe-support-services--life-skills.webp" alt="community comming togther" className="object-center rounded-2xl" />
+          </div>
         </div>
       </section>
 
@@ -273,7 +278,7 @@ function Testimonials() {
     <div className="py-24 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="title-medium text-primary-700">Testimonials</h2>
+          <h2 className="title-medium text-primary-700 dark:text-primary-300">Testimonials</h2>
           <p className="mt-2 font-extrabold capitalize headline-large">
             We have worked with thousands of amazing people supporting Us!
           </p>
@@ -288,7 +293,7 @@ function Testimonials() {
                   </blockquote>
                   <figcaption className="flex items-center mt-6 gap-x-4">
                     <div className="relative w-9 h-9">
-                    <Image fill quality={50} className="rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                      <Image fill quality={50} className="rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                     </div>
                     <div>
                       <div className="font-semibold text-primary-900 dark:text-primary-100">{testimonial.author.name}</div>
