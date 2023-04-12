@@ -10,7 +10,7 @@ export default function Example() {
 
   return (
     <header className="border-b shadow-sm bg-theme border-primary-100 dark:border-primary-800">
-      <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
+      <nav className="container flex items-center justify-between p-6 mx-auto lg:px-8" aria-label="Global">
         <div className="flex items-center lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Believe Support Services</span>
