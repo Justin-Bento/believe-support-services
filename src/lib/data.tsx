@@ -116,4 +116,53 @@ export const app_programs = [
       "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
     content: [],
   },
+  {
+    id: 1,
+    title: "Fitness & Health Program",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "Residential Program",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "After School & Weekend",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "Social Groups",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "Life Skills",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "Vocational Program",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+  {
+    id: 1,
+    title: "Basketball Program",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
 ];
