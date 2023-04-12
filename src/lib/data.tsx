@@ -9,29 +9,29 @@ export const appbar_navigation = [
 
 export const footer_navigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: 'Day Program', href: '/programs/day-program' },
+    { name: 'Residential', href: '/programs/residential-program' },
+    { name: 'Fitness & Health', href: '/programs/fitness-and-health' },
+    { name: 'Life Skills', href: '/programs/life-skills' },
   ],
   support: [
     { name: 'Pricing', href: '#' },
     { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: 'FAQ"s', href: '#' },
+    { name: 'Other', href: '#' },
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Jobs', href: '/jobs' },
+    { name: 'Press', href: '/press' },
+    { name: 'Partners', href: '/partners' },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
+    { name: 'Claim', href: '/legal/claim' },
+    { name: 'Privacy', href: '/legal/privacy-notice' },
+    { name: 'Terms', href: '/legal/terms-of-service' },
+    ],
   social: [
     {
       name: 'Facebook',
