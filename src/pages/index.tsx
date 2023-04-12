@@ -46,7 +46,7 @@ function Hero() {
           <h1 className="font-bold display-medium md:text-center">
             A Strong Community Starts With Beliving!
           </h1>
-          <p className="prose-lg max-w-prose text-start md:text-center md:mx-auto">
+          <p className="prose-lg max-w-prose text-start md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
             We Help individuals with complex needs, by offering programs focused
             on life skills, personal development, recreational activities, and
             social support groups, to help them be the best version on
@@ -206,7 +206,7 @@ function Features() {
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div>
             <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Become The Superstar You Want To Be, While With Our Interactive Prograsms!</h3>
-            <p className="mb-5 prose">
+            <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
             </p>
             <button
@@ -222,7 +222,7 @@ function Features() {
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div className="order-none md:order-2">
             <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Grow by learning and experiencing new things and moving. With our Interactive programs!!</h3>
-            <p className="mb-5 prose">
+            <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
             </p>
             <button

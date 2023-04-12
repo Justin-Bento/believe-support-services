@@ -27,12 +27,12 @@ function Mission() {
           <h2 className="font-extrabold capitalize display-small">Our mission</h2>
           <div className="flex flex-col mt-6 gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-              <p className="text-lg body-large">
+              <p className="prose-lg dark:text-slate-100">
                 Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
                 eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
                 Eleifend egestas fringilla sapien.
               </p>
-              <div className="max-w-xl mt-10 text-gray-400 body-large">
+              <div className="max-w-xl mt-10 prose dark:text-slate-300">
                 <p>
                   Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed
                   amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius
@@ -69,7 +69,7 @@ function Testimonials() {
         <div className="grid max-w-2xl grid-cols-1 mx-auto lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
             <figure className="flex flex-col justify-between flex-auto mt-10">
-              <blockquote className="body-large">
+              <blockquote className="prose dark:text-slate-300">
                 <p>
                   “Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare
                   arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam
@@ -91,7 +91,7 @@ function Testimonials() {
           </div>
           <div className="flex flex-col pt-10 border-t border-gray-900/10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
             <figure className="flex flex-col justify-between flex-auto mt-10">
-              <blockquote className="body-large">
+              <blockquote className="prose dark:text-slate-300">
                 <p>
                   “Excepteur veniam labore ullamco eiusmod. Pariatur consequat proident duis dolore nulla veniam
                   reprehenderit nisi officia voluptate incididunt exercitation exercitation elit. Nostrud veniam sint
@@ -124,7 +124,7 @@ function Values() {
       <div className="">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="font-extrabold capitalize headline-large">Our values</h2>
-          <p className="mt-6 body-large">
+          <p className="mt-6 prose dark:text-slate-300">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
             accusamus quisquam.
           </p>
@@ -132,8 +132,8 @@ function Values() {
         <dl className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {values.map((value) => (
             <div key={value.name}>
-              <dt className="font-extrabold capitalize title-medium">{value.name}</dt>
-              <dd className="mt-1 text-gray-300 body-medium">{value.description}</dd>
+              <dt className="font-semibold capitalize title-medium dark:text-slate-300">{value.name}</dt>
+              <dd className="mt-1 prose-sm text-slate-600 dark:text-slate-300">{value.description}</dd>
             </div>
           ))}
         </dl>
