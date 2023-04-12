@@ -27,25 +27,28 @@ export default function contact() {
   );
 }
 function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 function ContactCenter() {
   return (
-      <div className="">
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <p className="text-base font-semibold leading-7 text-indigo-600">Get the help you need</p>
-          <h2 className="mt-2 font-bold display-medium">Support center</h2>
-          <p className="mt-3 body-large">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
-          </p>
-        </div>
+    <div className="">
+      <div className="max-w-2xl mx-auto lg:mx-0">
+        <p className="text-base font-semibold leading-7 text-yellow-600">
+          Get the help you need
+        </p>
+        <h2 className="mt-2 font-bold display-medium">Support center</h2>
+        <p className="mt-3 body-large">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+          aliqua.
+        </p>
       </div>
-  )
+    </div>
+  );
 }
 function ContactForm() {
-  const [agreed, setAgreed] = useState(false)
+  const [agreed, setAgreed] = useState(false);
   return (
     <form action="#" method="POST" className="">
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -59,7 +62,7 @@ function ContactForm() {
               name="first-name"
               id="first-name"
               autoComplete="given-name"
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md  bg-transparent dark:bg-primary-950   border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -73,7 +76,7 @@ function ContactForm() {
               name="last-name"
               id="last-name"
               autoComplete="family-name"
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="bg-transparent  dark:bg-primary-950  block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -87,7 +90,7 @@ function ContactForm() {
               name="company"
               id="company"
               autoComplete="organization"
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="bg-transparent dark:bg-primary-950 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -101,7 +104,7 @@ function ContactForm() {
               name="email"
               id="email"
               autoComplete="email"
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="bg-transparent  dark:bg-primary-950  block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -117,20 +120,19 @@ function ContactForm() {
               <select
                 id="country"
                 name="country"
-                className="h-full py-0 pl-4 text-gray-400 bg-transparent border-0 rounded-md bg-none pr-9 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                className="h-full py-0 pl-4 text-gray-400 bg-transparent border-0 rounded-md dark:bg-primary-950 bg-none pr-9 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
               >
                 <option>US</option>
                 <option>CA</option>
                 <option>EU</option>
               </select>
-
             </div>
             <input
               type="tel"
               name="phone-number"
               id="phone-number"
               autoComplete="tel"
-              className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full bg-transparent  dark:bg-primary-950  rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -143,8 +145,8 @@ function ContactForm() {
               name="message"
               id="message"
               rows={4}
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              defaultValue={''}
+              className="bg-transparent  dark:bg-primary-950  block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              defaultValue={""}
             />
           </div>
         </div>
@@ -154,23 +156,23 @@ function ContactForm() {
               checked={agreed}
               onChange={setAgreed}
               className={classNames(
-                agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                agreed ? "bg-indigo-600" : "bg-gray-200",
+                "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               )}
             >
               <span className="sr-only">Agree to policies</span>
               <span
                 aria-hidden="true"
                 className={classNames(
-                  agreed ? 'translate-x-3.5' : 'translate-x-0',
-                  'h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out'
+                  agreed ? "translate-x-3.5" : "translate-x-0",
+                  "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
                 )}
               />
             </Switch>
           </div>
-          <Switch.Label className="text-sm leading-6 text-gray-600">
-            By selecting this, you agree to our{' '}
-            <a href="#" className="font-semibold text-indigo-600">
+          <Switch.Label className="body-small">
+            By selecting this, you agree to our{" "}
+            <a href="#" className="font-semibold text-gray-950 dark:text-yellow-600">
               privacy&nbsp;policy
             </a>
             .
@@ -186,7 +188,7 @@ function ContactForm() {
         </button>
       </div>
     </form>
-  )
+  );
 }
 function CompanyOffices() {
   return (
@@ -195,8 +197,9 @@ function CompanyOffices() {
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="font-bold headline-medium">Our offices</h2>
           <p className="mt-3 body-large">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-            laoreet diam sed lacus, fames.
+            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
+            id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
+            fames.
           </p>
         </div>
         <div className="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-16 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
@@ -231,5 +234,5 @@ function CompanyOffices() {
         </div>
       </div>
     </div>
-  )
+  );
 }
