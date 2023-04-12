@@ -1,12 +1,19 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 
 export default function index() {
   return (
-    <main className="container p-4 mx-auto space-y-32">
-      <Hero />
-    </main>
+    <>
+      <Head>
+        <title>Believe Support Services</title>
+        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
+      </Head>
+      <main className="container p-4 mx-auto space-y-32">
+        <Hero />
+      </main>
+    </>
   );
 }
 
