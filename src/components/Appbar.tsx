@@ -15,12 +15,12 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="border-b shadow-sm bg-primary-50 border-primary-100">
+    <header className="border-b shadow-sm bg-theme border-primary-100 dark:border-primary-800">
       <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
         <div className="flex items-center lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Believe Support Services</span>
-            <Logo fill="#0a569a" />
+            <Logo fill={`fill-primary-900 dark:fill-primary-50`} />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -35,7 +35,7 @@ export default function Example() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            <a key={item.name} href={item.href} className="body-medium">
               {item.name}
             </a>
           ))}
@@ -69,7 +69,7 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                    className="block px-3 py-2 -mx-3 body-large"
                   >
                     {item.name}
                   </a>
