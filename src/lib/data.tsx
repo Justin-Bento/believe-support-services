@@ -1,41 +1,40 @@
 export const appbar_navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Day Program', href: '/programs/day-program' },
-  { name: 'Residential', href: '/programs/residential-program' },
-  { name: 'Fitness & Health', href: '/programs/fitness-and-health' },
-  { name: 'Contact', href: '/contact' },
-]
-
+  { name: "About", href: "/about" },
+  { name: "Day Program", href: "/programs/day-program" },
+  { name: "Residential", href: "/programs/residential-program" },
+  { name: "Fitness & Health", href: "/programs/fitness-and-health" },
+  { name: "Contact", href: "/contact" },
+];
 
 export const footer_navigation = {
   solutions: [
-    { name: 'Day Program', href: '/programs/day-program' },
-    { name: 'Residential', href: '/programs/residential-program' },
-    { name: 'Fitness & Health', href: '/programs/fitness-and-health' },
-    { name: 'Life Skills', href: '/programs/life-skills' },
+    { name: "Day Program", href: "/programs/day-program" },
+    { name: "Residential", href: "/programs/residential-program" },
+    { name: "Fitness & Health", href: "/programs/fitness-and-health" },
+    { name: "Life Skills", href: "/programs/life-skills" },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'FAQ"s', href: '#' },
-    { name: 'Other', href: '#' },
+    { name: "Pricing", href: "#" },
+    { name: "Documentation", href: "#" },
+    { name: 'FAQ"s', href: "#" },
+    { name: "Other", href: "#" },
   ],
   company: [
-    { name: 'About', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Jobs', href: '/jobs' },
-    { name: 'Press', href: '/press' },
-    { name: 'Partners', href: '/partners' },
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Jobs", href: "/jobs" },
+    { name: "Press", href: "/press" },
+    { name: "Partners", href: "/partners" },
   ],
   legal: [
-    { name: 'Claim', href: '/legal/claim' },
-    { name: 'Privacy', href: '/legal/privacy-notice' },
-    { name: 'Terms', href: '/legal/terms-of-service' },
-    ],
+    { name: "Claim", href: "/legal/claim" },
+    { name: "Privacy", href: "/legal/privacy-notice" },
+    { name: "Terms", href: "/legal/terms-of-service" },
+  ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -47,8 +46,8 @@ export const footer_navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -60,8 +59,8 @@ export const footer_navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
+      name: "Twitter",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -69,8 +68,8 @@ export const footer_navigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -82,8 +81,8 @@ export const footer_navigation = {
       ),
     },
     {
-      name: 'YouTube',
-      href: '#',
+      name: "YouTube",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -95,17 +94,26 @@ export const footer_navigation = {
       ),
     },
   ],
-}
+};
 
 export const testimonials = [
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   // More testimonials...
-]
+];
+export const app_programs = [
+  {
+    id: 1,
+    title: "Day Program",
+    subtitle:
+      "M.O.V.E for individuals with complex needs, provides programming developed to empower and encourage self growth. If you are looking for a fun way to learn and create new memories   with old and new friends, this program is for you.",
+    content: [],
+  },
+];
