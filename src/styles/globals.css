@@ -17,7 +17,7 @@
 }
 @layer components {
   .bg-theme {
-    @apply bg-primary-300 dark:bg-primary-900;
+    @apply bg-primary-200 dark:bg-primary-900;
   }
   .wrapper {
     @apply mx-auto max-w-7xl sm:px-6 lg:px-8
