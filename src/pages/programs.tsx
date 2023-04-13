@@ -9,11 +9,8 @@ export default function programs() {
   return (
     <>
       <Head>
-        <title>Believe Support Services</title>
-        <meta
-          name="description"
-          content="Helping individuals with complex needs to help them be the best version on themselves and their community."
-        />
+        <title>Programs - Believe Support Services</title>
+        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
       <Appbar />
       <div className="container p-4 mx-auto my-32 mt-16">

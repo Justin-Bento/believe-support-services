@@ -10,11 +10,8 @@ export default function contact() {
   return (
     <>
       <Head>
-        <title>Believe Support Services</title>
-        <meta
-          name="description"
-          content="Helping individuals with complex needs to help them be the best version on themselves and their community."
-        />
+        <title>Contact - Believe Support Services</title>
+        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
       <Appbar />
       <main className="container p-4 mx-auto my-16 space-y-16">

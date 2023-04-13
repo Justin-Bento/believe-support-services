@@ -1,10 +1,15 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function about() {
   return (
     <>
+      <Head>
+        <title>About - Believe Support Services</title>
+        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
+      </Head>
       <Appbar />
       <main className='container p-4 mx-auto my-32 space-y-32'>
         <Mission />
