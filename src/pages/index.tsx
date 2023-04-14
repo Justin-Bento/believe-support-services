@@ -14,7 +14,7 @@ export default function index() {
         <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
       <Appbar />
-      <main className="container p-4 mx-auto mb-32 space-y-32">
+      <main className="container p-4 mx-auto mt-16 mb-32 space-y-32">
         <Hero />
         <Newsletter />
         <Features />
@@ -46,7 +46,7 @@ function Hero() {
           <h1 className="font-bold display-medium md:text-center">
             A Strong Community Starts With Beliving!
           </h1>
-          <p className="text-lg body-large text-start sm:text-center lg:max-w-[70ch] lg:mx-auto">
+          <p className="prose-lg max-w-prose text-start md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
             We Help individuals with complex needs, by offering programs focused
             on life skills, personal development, recreational activities, and
             social support groups, to help them be the best version on
@@ -55,13 +55,21 @@ function Hero() {
           <div className="flex flex-col justify-start gap-4 md:flex-row md:justify-center">
             <Link
               href="/signup"
+<<<<<<< HEAD
               className="px-3 py-2 text-sm font-semibold transition-all rounded-md text-primary-50 bg-primary-600 hover:bg-primary-600/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+=======
+              className="px-3 py-2 font-semibold rounded-md body-medium text-primary-50 bg-primary-600 dark:bg-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+>>>>>>> 3e1eb3fc5bd0702b5e1b88a2397f5f78df589c3e
             >
               Get In Touch With A Representative
             </Link>
             <Link
               href="/programs"
+<<<<<<< HEAD
               className="rounded-md bg-primary-200 hover:bg-primary-200/80 transition-all px-2.5 py-1.5 body-medium inline-flex items-center font-semibold text-primary-600"
+=======
+              className="rounded-md bg-primary-100 px-2.5 py-1.5 body-medium inline-flex items-center font-semibold text-primary-600 hover:bg-primary-100"
+>>>>>>> 3e1eb3fc5bd0702b5e1b88a2397f5f78df589c3e
             >
               View Available Programs
             </Link>
@@ -82,7 +90,7 @@ function Hero() {
         {/* END: Hero :: Media */}
         <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
           {/* END: Hero :: 01 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">Day Programs</h2>
               <p className="px-2 body-medium">
@@ -99,7 +107,7 @@ function Hero() {
             </div>
           </div>
           {/* END: Hero :: 02 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">
                 Fitness & Health Programs
@@ -118,7 +126,7 @@ function Hero() {
             </div>
           </div>
           {/* END: Hero :: 03 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-theme hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
             <div className="px-4 py-5 space-y-1.5 sm:p-6">
               <h2 className="px-2 font-bold title-medium">
                 Residential Programs
@@ -206,7 +214,7 @@ function Features() {
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div>
             <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Become The Superstar You Want To Be, While With Our Interactive Prograsms!</h3>
-            <p className="mb-5 body-large">
+            <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
             </p>
             <button
@@ -216,13 +224,13 @@ function Features() {
               Button text
             </button>          </div>
           <div className="relative w-full h-full py-48 ">
-            <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-center rounded-2xl" />
+            <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-cover object-center rounded-2xl" />
           </div>
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div className="order-none md:order-2">
             <h3 className="mb-4 font-extrabold tracking-tight capitalize headline-large">Grow by learning and experiencing new things and moving. With our Interactive programs!!</h3>
-            <p className="mb-5 body-large">
+            <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
             </p>
             <button
@@ -287,15 +295,15 @@ function Testimonials() {
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
             {testimonials.map((testimonial) => (
               <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
-                <figure className="p-8 body-medium rounded-2xl bg-theme">
+                <figure className="p-8 prose-sm rounded-2xl bg-theme">
                   <blockquote className="text-primary-900 dark:text-primary-100">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
-                  <figcaption className="flex items-center mt-6 gap-x-4">
+                  <figcaption className="flex items-center gap-x-4">
                     <div className="relative w-9 h-9">
                       <Image fill quality={50} className="rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                     </div>
-                    <div>
+                    <div className="prose-sm">
                       <div className="font-semibold text-primary-900 dark:text-primary-100">{testimonial.author.name}</div>
                       <div className="text-primary-600 dark:text-primary-300">{`@${testimonial.author.handle}`}</div>
                     </div>
