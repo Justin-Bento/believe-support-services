@@ -55,21 +55,13 @@ function Hero() {
           <div className="flex flex-col justify-start gap-4 md:flex-row md:justify-center">
             <Link
               href="/signup"
-<<<<<<< HEAD
               className="px-3 py-2 text-sm font-semibold transition-all rounded-md text-primary-50 bg-primary-600 hover:bg-primary-600/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-=======
-              className="px-3 py-2 font-semibold rounded-md body-medium text-primary-50 bg-primary-600 dark:bg-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
->>>>>>> 3e1eb3fc5bd0702b5e1b88a2397f5f78df589c3e
             >
               Get In Touch With A Representative
             </Link>
             <Link
               href="/programs"
-<<<<<<< HEAD
               className="rounded-md bg-primary-200 hover:bg-primary-200/80 transition-all px-2.5 py-1.5 body-medium inline-flex items-center font-semibold text-primary-600"
-=======
-              className="rounded-md bg-primary-100 px-2.5 py-1.5 body-medium inline-flex items-center font-semibold text-primary-600 hover:bg-primary-100"
->>>>>>> 3e1eb3fc5bd0702b5e1b88a2397f5f78df589c3e
             >
               View Available Programs
             </Link>
