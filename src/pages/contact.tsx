@@ -181,7 +181,7 @@ function ContactForm() {
           type="submit"
           className="block w-full rounded-md bg-yellow-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
         >
-          Let's talk
+          Let&#39;s talk
         </button>
       </div>
     </form>

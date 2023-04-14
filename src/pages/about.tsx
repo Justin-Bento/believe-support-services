@@ -82,11 +82,14 @@ function Testimonials() {
                 </p>
               </blockquote>
               <figcaption className="flex items-center mt-10 gap-x-6">
-                <img
-                  className="rounded-full h-14 w-14 bg-gray-50"
+                <div className="relative h-14 w-14">
+                <Image
+                  fill
+                  className="rounded-full "
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
+                </div>
                 <div className="body-medium">
                   <div className="font-semibold">Judith Black</div>
                   <div className="mt-1">CEO of Tuple</div>
@@ -104,11 +107,14 @@ function Testimonials() {
                 </p>
               </blockquote>
               <figcaption className="flex items-center mt-10 gap-x-6">
-                <img
-                  className="rounded-full h-14 w-14 bg-gray-50"
+                <div className="relative h-14 w-14">
+                <Image
+                  fill
+                  className="rounded-full bg-gray-50"
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
+                </div>
                 <div className="body-medium">
                   <div className="font-semibold ">Joseph Rodriguez</div>
                   <div className="mt-1">CEO of Reform</div>
