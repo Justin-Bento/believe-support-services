@@ -14,7 +14,7 @@ export default function index() {
         <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
       </Head>
       <Appbar />
-      <main className="container p-4 mx-auto mt-16 mb-32 space-y-32">
+      <main className="container p-4 mx-auto my-12 space-y-32">
         <Hero />
         <Newsletter />
         <Features />
