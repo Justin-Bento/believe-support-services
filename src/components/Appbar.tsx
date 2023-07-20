@@ -4,10 +4,10 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link'
 import Logo from "@/components/Logo"
 import { appbar_navigation } from "@/lib/data"
+import { Button } from './Button'
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <header className="border-b shadow-sm bg-primary-50/50 dark:bg-primary-900 border-primary-50/50 dark:border-primary-800">
       <nav className="container flex items-center justify-between p-6 mx-auto lg:px-8" aria-label="Global">
@@ -29,9 +29,11 @@ export default function Example() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {appbar_navigation.map((item) => (
-            <a key={item.name} href={item.href} className="body-medium">
-              {item.name}
-            </a>
+            <Link key={item.name} href={item.href}>
+              <Button variant="link">
+                {item.name}
+              </Button>
+            </Link>
           ))}
         </div>
       </nav>
@@ -56,13 +58,11 @@ export default function Example() {
             <div className="-my-6 divide-y divide-primary-500/10 dark:divide-gray-100">
               <div className="py-6 space-y-2">
                 {appbar_navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block px-3 py-2 -mx-3 body-large"
-                  >
-                    {item.name}
-                  </a>
+                  <Link key={item.name} href={item.href} className="block px-3 py-2 -mx-3 body-large">
+                    <Button variant="link">
+                      {item.name}
+                    </Button>
+                  </Link>
                 ))}
               </div>
             </div>

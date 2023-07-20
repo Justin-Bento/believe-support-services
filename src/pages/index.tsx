@@ -5,6 +5,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import { testimonials } from "@/lib/data"
+import { Button } from "@/components/Button";
 
 export default function index() {
   return (
@@ -52,17 +53,11 @@ function Hero() {
             themselves.{" "}
           </p>
           <div className="flex flex-col justify-start gap-4 md:flex-row md:justify-center">
-            <Link
-              href="/signup"
-              className="px-3 py-2 text-sm font-semibold transition-all rounded-md text-primary-50 bg-primary-600 hover:bg-primary-600/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-            >
-              Get In Touch With A Representative
+            <Link href="/signup" className="w-full">
+              <Button>Get In Touch With A Representative</Button>
             </Link>
-            <Link
-              href="/programs"
-              className="rounded-md bg-primary-200 hover:bg-primary-200/80 transition-all px-2.5 py-1.5 body-medium inline-flex items-center font-semibold text-primary-600"
-            >
-              View Available Programs
+            <Link href="/signup" className="w-full">
+              <Button variant="default_light">View Available Programs</Button>
             </Link>
           </div>
         </div>
@@ -166,12 +161,7 @@ function Newsletter() {
             className="min-w-0 flex-auto rounded-md border-0 bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
             placeholder="Enter your email"
           />
-          <button
-            type="submit"
-            className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            Notify me
-          </button>
+          <Button variant="ghost">Subscribe</Button>
         </form>
         <svg
           viewBox="0 0 1024 1024"
@@ -208,12 +198,10 @@ function Features() {
             <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
             </p>
-            <Link
-              href="/programs"
-              className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
-            >
-              View Our Programs
-            </Link>          </div>
+            <Button variant="outline">
+              <Link href="/programs">View Our Programs</Link>
+            </Button>
+          </div>
           <div className="relative w-full h-full py-48 ">
             <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-cover object-center rounded-2xl" />
           </div>
@@ -224,12 +212,9 @@ function Features() {
             <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
             </p>
-            <Link
-              href="/signup"
-              className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
-            >
-              Signup To Events
-            </Link>
+            <Button variant="outline">
+              <Link href="/signup">Signup To Events</Link>
+            </Button>
           </div>
           <div className="relative w-full h-full py-48 ">
             <Image fill quality={50} src="/media/believe-support-services--life-skills.webp" alt="community comming togther" className="object-center rounded-2xl" />
@@ -256,15 +241,12 @@ function CallToAction() {
             commodo do ea.
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Get started
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-primary-950">
-              Learn more <span aria-hidden="true">→</span>
-            </a>
+            <Button variant="ghost">
+              <Link href="/signup">Get started</Link>
+            </Button>
+            <Button variant="outline">
+              <Link href="/signup">Learn more <span aria-hidden="true">→</span></Link>
+            </Button>
           </div>
         </div>
       </div>
