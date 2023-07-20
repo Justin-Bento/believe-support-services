@@ -166,3 +166,42 @@ export const app_programs = [
     content: [],
   },
 ];
+
+export const frequently_asked_questions = [
+  {
+    question: "Can parents/caregivers observe individuals in the program or see the program space?",
+    awnser: "Parents are not permitted to enter the program space during program times to ensure confidentiality and maintain compliance with COVID-19 policies and protocols."
+  },
+  {
+    question: "How often can a family or program reserve a spot for you program?",
+    awnser: " The program provides support for as much time as an individual requires it."
+  },
+  {
+    question: "How do you select who is eligible for a spot at the program?",
+    awnser: " The program is done on a first come first served basis."
+  },
+  {
+    question: " Will the program be going on excursions?",
+    awnser: "Our program provides excursions for members, however it is not included in your fee. It is an extra fee to participate in excursions."
+  },
+  {
+    question: "Are excursions available every weekend?",
+    awnser: "Excursions are not provided every weekend."
+  },
+  {
+    question: "What do registered members bring to the program upon arrival?",
+    awnser: " Please send along all meals, drinks, and snacks that your child will need for the duration of the program. Please also send any communication devices or tools. If required, please send any necessary toileting items (diapers, wipes, spare clothes, etc.)."
+  },
+  {
+    question: "What are some of the activities that individuals participate in?",
+    awnser: " Karaoke, arts and crafts, puzzles and board games, recreation Lego tower building, sensory activities, and life skills."
+  },
+  {
+    question: "Does the respite program provide transportation services?",
+    awnser: "Yes, we provide transportation services for individuals that require pick up and drop off. There is additional cost for this service being provided."
+  },
+  {
+    question: " Do you provide respite services during the week?",
+    awnser: " Our program provides Respite Support 24/7."
+  },
+]
