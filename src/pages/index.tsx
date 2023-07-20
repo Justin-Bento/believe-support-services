@@ -208,12 +208,12 @@ function Features() {
             <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
             </p>
-            <button
-              type="button"
+            <Link
+              href="/programs"
               className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
             >
-              Button text
-            </button>          </div>
+              View Our Programs
+            </Link>          </div>
           <div className="relative w-full h-full py-48 ">
             <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-cover object-center rounded-2xl" />
           </div>
@@ -224,12 +224,12 @@ function Features() {
             <p className="mb-5 prose text-slate-600 dark:text-slate-300">
               We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
             </p>
-            <button
-              type="button"
+            <Link
+              href="/signup"
               className="rounded-md bg-primary-50 px-2.5 py-1.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-100"
             >
-              Button text
-            </button>
+              Signup To Events
+            </Link>
           </div>
           <div className="relative w-full h-full py-48 ">
             <Image fill quality={50} src="/media/believe-support-services--life-skills.webp" alt="community comming togther" className="object-center rounded-2xl" />
