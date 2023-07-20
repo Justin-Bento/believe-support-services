@@ -7,7 +7,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -15,17 +15,18 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: "#f1f7fe",
-          100: "#e1effd",
-          200: "#bddefa",
-          300: "#82c3f7",
-          400: "#43a6f0",
-          500: "#1789e0",
-          600: "#0a6bbf",
-          700: "#0a569a",
-          800: "#0c4980",
-          900: "#103e6a",
-          950: "#0b2746",
+          5: "hsla(212, 87%, 97%, 0.1)",
+          50: "hsl(212, 87%, 97%)",
+          100: "hsl(210, 88%, 94%)",
+          200: "hsl(208, 86%, 86%)",
+          300: "hsl(207, 88%, 74%)",
+          400: "hsl(206, 85%, 60%)",
+          500: "hsl(206, 81%, 48%)",
+          600: "hsl(208, 90%, 39%)",
+          700: "hsl(209, 89%, 32%)",
+          800: "hsl(208, 83%, 27%)",
+          900: "hsl(209, 74%, 24%)",
+          950: "hsl(212, 73%, 16%)",
         },
       },
       backgroundImage: {
@@ -40,7 +41,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
     // ...
   ],
 };
