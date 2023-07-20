@@ -32,16 +32,15 @@ function Hero() {
       <section className="">
         <div className="my-8 space-y-6">
           <div className="justify-start hidden sm:flex sm:justify-center">
-            <div className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30">
+            <Link href="/events" className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30">
               Upcomming Events At Believe. &nbsp;
-              <a
-                href="#"
+              <span
                 className="font-semibold text-primary-600 dark:text-primary-300 primary-950 space-nowrap"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+              </span>
+            </Link>
           </div>
           <h1 className="font-bold display-medium md:text-center">
             A Strong Community Starts With Beliving!
