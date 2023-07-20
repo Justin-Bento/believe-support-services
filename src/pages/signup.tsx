@@ -13,8 +13,19 @@ export default function signup() {
           <h1 className="headline-large">{headline}</h1>
           <p className="mt-2 body-large">{supporting}</p>
         </section>
+        <ContactForm />
       </main>
       <Footer />
     </>
   );
+}
+
+function ContactForm() {
+  return (
+    <>
+      <form action="" className="grid grid-cols-1 gap-8 p-4 my-8 md:grid-cols-2">
+      </form>
+    </>
+  )
+
 }
