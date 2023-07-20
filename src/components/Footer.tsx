@@ -4,7 +4,7 @@ import {footer_navigation} from "@/lib/data"
 
 export default function Footer() {
   return (
-    <footer className="bg-theme" aria-labelledby="footer-heading">
+    <footer className="bg-primary-50" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
