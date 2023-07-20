@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Appbar from "@/components/Appbar";
 import Footer from '@/components/Footer';
 import { frequently_asked_questions } from '@/lib/data';
@@ -6,6 +7,9 @@ import { frequently_asked_questions } from '@/lib/data';
 export default function questions() {
   return (
     <>
+    <Head>
+      <title>Frequently Asked Questions </title>
+    </Head>
     <Appbar />
       <main className="p-4 my-32 lg:container lg:mx-auto lg:p-0">
         <h1 className="headline-large">Questions With Believe Support Services</h1>
