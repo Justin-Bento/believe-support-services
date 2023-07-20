@@ -18,14 +18,10 @@ export default function Example() {
           </Link>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-primary-700 dark:text-primary-50"
-            onClick={() => setMobileMenuOpen(true)}
-          >
+          <Button variant="outline" onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open main menu</span>
-            <AiOutlineMenu className="w-6 h-6" aria-hidden="true" />
-          </button>
+            <AiOutlineMenu className="w-4 h-4" aria-hidden="true" />
+          </Button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {appbar_navigation.map((item) => (
@@ -45,14 +41,10 @@ export default function Example() {
               <span className="sr-only">Believe Support Services</span>
               <Logo fill={`fill-primary-900 dark:fill-primary-50`} />
             </Link>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-primary-700 dark:text-primary-50"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <AiOutlineClose className="w-6 h-6" aria-hidden="true" />
-            </button>
+            <Button variant="outline" onClick={() => setMobileMenuOpen(false)}>
+              <span className="sr-only">Open main menu</span>
+              <AiOutlineClose className="w-4 h-4" aria-hidden="true" />
+            </Button>
           </div>
           <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-primary-500/10 dark:divide-gray-100">
