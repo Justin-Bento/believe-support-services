@@ -52,13 +52,17 @@ function Hero() {
             social support groups, to help them be the best version on
             themselves.{" "}
           </p>
-          <div className="flex flex-col justify-start gap-4 md:flex-row md:justify-center">
-            <Link href="/signup" className="w-full">
-              <Button>Get In Touch With A Representative</Button>
-            </Link>
-            <Link href="/signup" className="w-full">
-              <Button variant="default_light">View Available Programs</Button>
-            </Link>
+          <div className="flex flex-col items-start justify-start w-full gap-4 md:justify-center md:flex-row">
+            <div>
+              <Link href="/signup">
+                <Button className="w-full">Get In Touch With A Representative</Button>
+              </Link>
+            </div>
+            <div>
+              <Link href="/signup">
+                <Button className="w-full" variant="default_light">View Available Programs</Button>
+              </Link>
+            </div>
           </div>
         </div>
         {/* END: Hero :: Actions */}
