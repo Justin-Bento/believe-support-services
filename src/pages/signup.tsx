@@ -212,7 +212,7 @@ function ContactForm() {
         <div className="pb-12 border-b border-gray-900/10">
           <h2 className="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            We'll always let you know about important changes, but you pick what else you want to hear about.
+            We&#39;ll always let you know about important changes, but you pick what else you want to hear about.
           </p>
 
           <div className="mt-10 space-y-10">
