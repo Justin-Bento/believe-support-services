@@ -262,9 +262,9 @@ function Testimonials() {
   return (
     <div className="py-24 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
-        <div className="max-w-xl mx-auto text-center">
+        <div className="max-w-[80ch] mx-auto text-center">
           <h2 className="text-yellow-700 title-medium dark:text-yellow-300">Testimonials</h2>
-          <p className="mt-2 font-extrabold capitalize headline-large">
+          <p className="mt-2 scroll-m-20 pb-2 text-4xl leading-normal font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
             We have worked with thousands of amazing people supporting Us!
           </p>
         </div>
