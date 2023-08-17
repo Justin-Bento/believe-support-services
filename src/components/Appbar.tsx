@@ -23,10 +23,10 @@ export default function Example() {
             <AiOutlineMenu className="w-4 h-4" aria-hidden="true" />
           </Button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-4">
           {appbar_navigation.map((item) => (
             <Link key={item.name} href={item.href}>
-              <Button variant="link">
+              <Button variant="link" size="sm">
                 {item.name}
               </Button>
             </Link>
