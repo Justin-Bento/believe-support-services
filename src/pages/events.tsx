@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Calendar } from '@/components/Calendar';
 
 export default function events() {
-  const [date, setDate] = useState<Date | undefined>(new Date())
+  const [date, setDate] = useState<Date>(new Date())
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ export default function events() {
           <Calendar
             mode="single"
             selected={date}
-            onSelect={setDate}
+            onSelect={() => setDate}
             className="rounded-lg border w-full lg:w-fit p-4"
           />
         </section>
