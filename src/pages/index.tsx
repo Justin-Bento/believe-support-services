@@ -43,11 +43,11 @@ function Hero() {
               </span>
             </Link>
           </div>
-          <h1 className="font-bold display-medium md:text-center">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-normal text-primary-600 dark:text-primary-100 lg:text-5xl md:text-center">
             A Strong Community Starts With Beliving!
           </h1>
-          <p className="prose-lg max-w-prose text-start md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
-            We Help individuals with complex needs, by offering programs focused
+          <p className="text-xl tracking-wide max-w-[80ch] md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
+            We help individuals with complex needs, by offering programs focused
             on life skills, personal development, recreational activities, and
             social support groups, to help them be the best version on
             themselves.{" "}
