@@ -18,7 +18,7 @@ export default function questions() {
           {frequently_asked_questions.map((data: any) => {
             return (
               <>
-                <div className="p-4 bg-theme dark:border-opacity-0 rounded-xl">
+                <div className="p-4 bg-primary-50 dark:bg-primary-900 dark:border-opacity-0 rounded-xl">
                   <h2 className="font-semibold tracking-wider text-md capitalize dark:text-primary-100">{data.question}</h2>
                   <p className="leading-7 text-sm tracking-wider dark:text-primary-100/75">{data.awnser}</p>
                 </div>
