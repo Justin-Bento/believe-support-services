@@ -12,7 +12,7 @@ export default function programs() {
       <main className="min-h-screen lg:container lg:mx-auto lg:py-32 p-4 py-16">
         <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">Explore Our Programs</h1>
         <p className="leading-7 tracking-wider dark:text-primary-100 mt-6">We are dedicated to improving the lives of individuals with complex needs through a variety of thoughtfully designed programs. Each program is crafted to empower, educate, and foster a strong sense of community. Discover how our programs can make a difference in the lives of those we support.</p>
-        <div className="grid lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
           {programs_iinfo.map((data: any) => {
             return <ProgramCard key={data.title.toString()} URL={`/programs/${data.title.toString().replace(/\s+/g, '-').toLowerCase()}`} Headline={data.title} Supporting={data.description} />
           })}
