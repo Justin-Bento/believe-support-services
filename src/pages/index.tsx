@@ -60,7 +60,7 @@ function Hero() {
             </div>
             <div>
               <Link href="/signup">
-                <Button className="w-full" variant="default_light">View Available Programs</Button>
+                <Button className="w-full" variant="ghost">View Available Programs</Button>
               </Link>
             </div>
           </div>
@@ -146,10 +146,10 @@ function Newsletter() {
   return (
     <div className="py-16s">
       <div className="relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 className="max-w-2xl mx-auto text-3xl font-extrabold text-center headline-large">
+        <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal dark:text-primary-100">
           Get notified when we’re launching.
         </h2>
-        <p className="max-w-xl mx-auto mt-2 text-center body-large ">
+        <p className="max-w-xl mx-auto mt-2 leading-7 text-center tracking-wide dark:text-primary-200 ">
           Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
         </p>
         <form className="flex max-w-md mx-auto mt-10 gap-x-4">
@@ -162,7 +162,7 @@ function Newsletter() {
             type="email"
             autoComplete="email"
             required
-            className="min-w-0 flex-auto rounded-md border-0 bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
+            className="min-w-0 flex-auto rounded-md border-0 caret-primary-200 dark:placeholder:text-primary-100/50 capitalize bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
             placeholder="Enter your email"
           />
           <Button variant="ghost">Subscribe</Button>
