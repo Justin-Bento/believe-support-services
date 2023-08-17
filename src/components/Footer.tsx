@@ -4,7 +4,7 @@ import {footer_navigation} from "@/lib/data"
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-50" aria-labelledby="footer-heading">
+    <footer className="bg-theme" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
           <Logo fill={`fill-primary-900 dark:fill-primary-50`} />
-            <p className="body-medium">
+            <p className="leading-7 text-sm hover:text-opacity-50 text-opacity-70 dark:text-primary-50/75 transition-all">
               Making the world a better place through constructing elegant hierarchies.
             </p>
             <div className="flex space-x-6">
@@ -31,7 +31,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {footer_navigation.solutions.map((item:any) => (
                     <li key={item.name}>
-                      <a href={item.href} className="body-medium">
+                      <a href={item.href} className="leading-7 text-sm hover:text-opacity-50 text-opacity-70 dark:text-primary-50/75 transition-all">
                         {item.name}
                       </a>
                     </li>
@@ -43,7 +43,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {footer_navigation.support.map((item:any) => (
                     <li key={item.name}>
-                      <a href={item.href} className="body-medium">
+                      <a href={item.href} className="leading-7 text-sm hover:text-opacity-50 text-opacity-70 dark:text-primary-50/75 transition-all">
                         {item.name}
                       </a>
                     </li>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {footer_navigation.company.map((item:any) => (
                     <li key={item.name}>
-                      <a href={item.href} className="body-medium">
+                      <a href={item.href} className="leading-7 text-sm hover:text-opacity-50 text-opacity-70 dark:text-primary-50/75 transition-all">
                         {item.name}
                       </a>
                     </li>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {footer_navigation.legal.map((item:any) => (
                     <li key={item.name}>
-                      <a href={item.href} className="body-medium">
+                      <a href={item.href} className="leading-7 text-sm hover:text-opacity-50 text-opacity-70 dark:text-primary-50/75 transition-all">
                         {item.name}
                       </a>
                     </li>
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 mt-16 border-t border-white/10 sm:mt-20 lg:mt-24">
-          <p className="body-small">&copy; {new Date().getFullYear()} Believe Support Services, Inc. All rights reserved.</p>
+          <p className="text-xs tracking-wide text-opacity-70">&copy; {new Date().getFullYear()} Believe Support Services, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>
