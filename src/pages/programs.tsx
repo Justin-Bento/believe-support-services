@@ -3,6 +3,7 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import { Button } from '@/components/Button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function programs() {
   return (
@@ -25,9 +26,11 @@ export default function programs() {
 function ProgramCard(props: any) {
   return (
     <>
-      <Link href={props.URL} className="hover:opacity-80 transition-all">
+      <Link href={props.URL} className="hover:opacity-80 active:ring-1 transition-all">
         <div className="bg-primary-50 dark:bg-primary-900 min-h-[430px] rounded-xl">
-          <div className="bg-primary-300 dark:bg-primary-800 w-full h-64 rounded-xl"></div>
+          <div className="w-full h-64 relative">
+            <Image fill src="/media/hero-image.webp" alt={props.Headline} className="object-cover rounded-xl hover:grayscale-[10%]" /> 
+          </div>
           <div className="p-8">
             <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{props.Headline}</h2>
             <p className="leading-7 line-clamp-3 tracking-wider text-opacity-75 text-slate-700/75 dark:text-slate-100/75">{props.Supporting}</p>
