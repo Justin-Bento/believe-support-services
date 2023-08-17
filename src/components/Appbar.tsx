@@ -20,7 +20,7 @@ export default function Example() {
         <div className="flex lg:hidden">
           <Button variant="outline" onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open main menu</span>
-            <AiOutlineMenu className="w-4 h-4" aria-hidden="true" />
+            <AiOutlineMenu className="w-4 h-4 dark:fill-primary-100" aria-hidden="true" />
           </Button>
         </div>
         <div className="hidden lg:flex lg:gap-x-4">
@@ -43,7 +43,7 @@ export default function Example() {
             </Link>
             <Button variant="outline" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Open main menu</span>
-              <AiOutlineClose className="w-4 h-4" aria-hidden="true" />
+              <AiOutlineClose className="w-4 h-4 dark:fill-primary-100" aria-hidden="true" />
             </Button>
           </div>
           <div className="flow-root mt-6">
