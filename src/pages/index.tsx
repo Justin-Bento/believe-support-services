@@ -245,27 +245,47 @@ export default function index() {
         {/*
          * End of Features Section.
          */}
-        <section className="bg-theme rounded-2xl">
-          <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="scroll-m-20 pb-2 text-4xl font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
-                Boost your Knowledege.
-                <br />
-                Start Believing In Yourself Today.
+        <section className="py-24 sm:py-32">
+          <div className="px-6 mx-auto max-w-7xl lg:px-8">
+            <div className="max-w-[80ch] mx-auto text-center">
+              <h2 className="text-yellow-700 title-medium dark:text-yellow-300">
+                Testimonials
               </h2>
-              <p className="max-w-xl mx-auto mt-4 leading-7 tracking-wide text-opacity-75">
-                Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-                anim id veniam aliqua proident excepteur commodo do ea.
+              <p className="mt-2 scroll-m-20 pb-2 text-4xl leading-normal font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
+                We have worked with thousands of amazing people supporting Us!
               </p>
-              <div className="flex items-center justify-center mt-10 gap-x-6">
-                <Button>
-                  <Link href="/signup">Get started</Link>
-                </Button>
-                <Button variant="ghost">
-                  <Link href="/signup">
-                    Learn more <span aria-hidden="true">→</span>
-                  </Link>
-                </Button>
+            </div>
+            <div className="flow-root max-w-2xl mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none">
+              <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+                {testimonials.map((testimonial) => (
+                  <div
+                    key={testimonial.author.handle}
+                    className="pt-8 sm:inline-block sm:w-full sm:px-4"
+                  >
+                    <figure className="p-8 prose-sm rounded-2xl bg-theme">
+                      <blockquote className="text-primary-900 dark:text-primary-100">
+                        <p>{`“${testimonial.body}”`}</p>
+                      </blockquote>
+                      <figcaption className="flex items-center gap-x-4">
+                        <div className="relative w-9 h-9">
+                          <Image
+                            fill
+                            quality={50}
+                            className="rounded-full bg-gray-50"
+                            src={testimonial.author.imageUrl}
+                            alt=""
+                          />
+                        </div>
+                        <div className="prose-sm">
+                          <div className="font-semibold text-primary-900 dark:text-primary-100">
+                            {testimonial.author.name}
+                          </div>
+                          <div className="text-primary-600 dark:text-primary-300">{`@${testimonial.author.handle}`}</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
