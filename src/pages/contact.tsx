@@ -4,14 +4,16 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import { Switch } from "@headlessui/react";
 import { useState } from "react";
-import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function contact() {
   return (
     <>
       <Head>
         <title>Contact - Believe Support Services</title>
-        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
+        <meta
+          name="description"
+          content="Helping individuals with complex needs to help them be the best version on themselves and their community."
+        />
       </Head>
       <Appbar />
       <main className="container p-4 mx-auto my-16 space-y-16">
@@ -169,7 +171,10 @@ function ContactForm() {
           </div>
           <Switch.Label className="body-small">
             By selecting this, you agree to our{" "}
-            <a href="#" className="font-semibold text-gray-950 dark:text-yellow-600">
+            <a
+              href="#"
+              className="font-semibold text-gray-950 dark:text-yellow-600"
+            >
               privacy&nbsp;policy
             </a>
             .
