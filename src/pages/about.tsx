@@ -52,7 +52,18 @@ export default function about() {
         {/*
          * End of Mission Section
          */}
-        <AboutCompanyMedia />
+        <div className="aspect-[5/2] w-full relative">
+          <Image
+            fill
+            quality={50}
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+            alt=""
+            className="object-cover object-center "
+          />
+        </div>
+        {/*
+         * End of Company Media Section
+         */}
         <Values />
         <Testimonials />
       </main>
@@ -61,22 +72,6 @@ export default function about() {
   );
 }
 
-function AboutCompanyMedia() {
-  return (
-    <>
-      {/* Image section */}
-      <div className="aspect-[5/2] w-full relative">
-        <Image
-          fill
-          quality={50}
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-          alt=""
-          className="object-cover object-center "
-        />
-      </div>
-    </>
-  );
-}
 function Testimonials() {
   return (
     <section className="py-24 bg-theme sm:py-32 rounded-2xl">
