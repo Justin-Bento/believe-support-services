@@ -186,71 +186,69 @@ export default function index() {
             </svg>
           </div>
         </section>
-        {/* End of Newsletter Section. */}
-        <Features />
+        {/*
+         * End of Newsletter Section.
+         */}
+        <section className="">
+          <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+            <div>
+              <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+                Become The Superstar You Want To Be, While With Our Interactive
+                Prograsms!
+              </h3>
+              <p className="mb-5 prose text-slate-600 dark:text-white/75">
+                We work to build a community where everyone is included and
+                respected. We understand that everyone has different views and
+                try to create a place where people can talk openly and work..
+              </p>
+              <Button variant="outline">
+                <Link href="/programs">View Our Programs</Link>
+              </Button>
+            </div>
+            <div className="relative w-full h-full py-48 ">
+              <Image
+                fill
+                quality={50}
+                src="/media/believe-support-services--images.webp"
+                alt="community comming togther"
+                className="object-cover object-center rounded-2xl"
+              />
+            </div>
+          </div>
+          <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+            <div className="order-none md:order-2">
+              <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+                Grow by learning and experiencing new things and moving. With
+                our Interactive programs!!
+              </h3>
+              <p className="mb-5 prose text-slate-600 dark:text-white/75">
+                We work to build a community where everyone is included and
+                respected. We understand that everyone has different views and
+                try to create a place where people can talk openly and work
+                together.
+              </p>
+              <Button variant="outline">
+                <Link href="/signup">Signup To Events</Link>
+              </Button>
+            </div>
+            <div className="relative w-full h-full py-48 ">
+              <Image
+                fill
+                quality={50}
+                src="/media/believe-support-services--life-skills.webp"
+                alt="community comming togther"
+                className="object-center rounded-2xl"
+              />
+            </div>
+          </div>
+        </section>
+        {/*
+         * End of Features Section.
+         */}
         <Testimonials />
         <CallToAction />
       </main>
       <Footer />
-    </>
-  );
-}
-
-function Features() {
-  return (
-    <>
-      <section className="">
-        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-          <div>
-            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
-              Become The Superstar You Want To Be, While With Our Interactive
-              Prograsms!
-            </h3>
-            <p className="mb-5 prose text-slate-600 dark:text-white/75">
-              We work to build a community where everyone is included and
-              respected. We understand that everyone has different views and try
-              to create a place where people can talk openly and work..
-            </p>
-            <Button variant="outline">
-              <Link href="/programs">View Our Programs</Link>
-            </Button>
-          </div>
-          <div className="relative w-full h-full py-48 ">
-            <Image
-              fill
-              quality={50}
-              src="/media/believe-support-services--images.webp"
-              alt="community comming togther"
-              className="object-cover object-center rounded-2xl"
-            />
-          </div>
-        </div>
-        <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-          <div className="order-none md:order-2">
-            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
-              Grow by learning and experiencing new things and moving. With our
-              Interactive programs!!
-            </h3>
-            <p className="mb-5 prose text-slate-600 dark:text-white/75">
-              We work to build a community where everyone is included and
-              respected. We understand that everyone has different views and try
-              to create a place where people can talk openly and work together.
-            </p>
-            <Button variant="outline">
-              <Link href="/signup">Signup To Events</Link>
-            </Button>
-          </div>
-          <div className="relative w-full h-full py-48 ">
-            <Image
-              fill
-              quality={50}
-              src="/media/believe-support-services--life-skills.webp"
-              alt="community comming togther"
-              className="object-center rounded-2xl"
-            />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
