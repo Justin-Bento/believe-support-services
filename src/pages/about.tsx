@@ -64,7 +64,32 @@ export default function about() {
         {/*
          * End of Company Media Section
          */}
-        <Values />
+        <section className="">
+          <div className="max-w-2xl mx-auto lg:mx-0">
+            <h2 className="font-extrabold capitalize headline-large dark:text-white">
+              Our values
+            </h2>
+            <p className="mt-6 prose dark:text-slate-300">
+              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+            </p>
+          </div>
+          <dl className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {values.map((value) => (
+              <div key={value.name}>
+                <dt className="font-semibold capitalize title-medium dark:text-slate-300">
+                  {value.name}
+                </dt>
+                <dd className="mt-1 prose-sm text-slate-600 dark:text-slate-300">
+                  {value.description}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+        {/*
+         * End of Values Section
+         */}
         <section className="py-24 bg-theme sm:py-32 rounded-2xl">
           <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="grid max-w-2xl grid-cols-1 mx-auto lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -135,34 +160,7 @@ export default function about() {
 }
 
 function Values() {
-  return (
-    <>
-      {/* Values section */}
-      <div className="">
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="font-extrabold capitalize headline-large dark:text-white">
-            Our values
-          </h2>
-          <p className="mt-6 prose dark:text-slate-300">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
-          </p>
-        </div>
-        <dl className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {values.map((value) => (
-            <div key={value.name}>
-              <dt className="font-semibold capitalize title-medium dark:text-slate-300">
-                {value.name}
-              </dt>
-              <dd className="mt-1 prose-sm text-slate-600 dark:text-slate-300">
-                {value.description}
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </>
-  );
+  return <>{/* Values section */}</>;
 }
 
 const values = [
