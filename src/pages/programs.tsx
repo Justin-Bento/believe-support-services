@@ -3,6 +3,7 @@ import { Button } from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { programs_info } from "@/lib/data";
+import { CreateSlug } from "@/lib/utils";
 
 export default function programs() {
   return (
@@ -23,10 +24,7 @@ export default function programs() {
             return (
               <ProgramCard
                 key={data.title.toString()}
-                URL={`/programs/${data.title
-                  .toString()
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`}
+                URL={`/programs/${CreateSlug(data.title)}`}
                 Headline={data.title}
                 Supporting={data.description}
               />
