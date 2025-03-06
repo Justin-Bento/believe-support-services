@@ -52,7 +52,7 @@ export default function about() {
         {/*
          * End of Mission Section
          */}
-        <div className="aspect-[5/2] w-full relative">
+        <section className="aspect-[5/2] w-full relative">
           <Image
             fill
             quality={50}
@@ -60,7 +60,7 @@ export default function about() {
             alt=""
             className="object-cover object-center "
           />
-        </div>
+        </section>
         {/*
          * End of Company Media Section
          */}
