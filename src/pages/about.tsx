@@ -1,5 +1,3 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 import { CompanyValues } from "@/lib/data";
@@ -14,7 +12,6 @@ export default function about() {
           content="Helping individuals with complex needs to help them be the best version on themselves and their community."
         />
       </Head>
-      <Appbar />
       <main className="container p-4 mx-auto my-32 space-y-32">
         <section className="">
           <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-none">
@@ -155,7 +152,6 @@ export default function about() {
          * End of Testimonal Section
          */}
       </main>
-      <Footer />
     </>
   );
 }

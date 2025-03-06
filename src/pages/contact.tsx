@@ -1,7 +1,5 @@
 import Head from "next/head";
 // End of Next.js Specifc Calls
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import { Switch } from "@headlessui/react";
 import { useState } from "react";
 
@@ -15,13 +13,11 @@ export default function contact() {
           content="Helping individuals with complex needs to help them be the best version on themselves and their community."
         />
       </Head>
-      <Appbar />
       <main className="container p-4 mx-auto my-16 space-y-16">
         <ContactCenter />
         <ContactForm />
         <CompanyOffices />
       </main>
-      <Footer />
     </>
   );
 }

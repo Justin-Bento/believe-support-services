@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import { testimonials } from "@/lib/data";
 import { Button } from "@/components/Button";
 
@@ -17,7 +15,6 @@ export default function index() {
           content="Helping individuals with complex needs to help them be the best version on themselves and their community."
         />
       </Head>
-      <Appbar />
       <main className="container p-4 mx-auto my-12 space-y-32">
         <section className="">
           <div className="my-8 space-y-6">
@@ -322,7 +319,6 @@ export default function index() {
          * End of Call To Action Section.
          */}
       </main>
-      <Footer />
     </>
   );
 }
