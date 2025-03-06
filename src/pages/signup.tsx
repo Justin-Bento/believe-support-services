@@ -38,7 +38,7 @@ export default function signup() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -53,7 +53,7 @@ export default function signup() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export default function signup() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export default function signup() {
                       name="phoneNumber"
                       type="phoneNumber"
                       autoComplete="phoneNumber"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function signup() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
                     >
                       <option>United States</option>
                       <option>Canada</option>
@@ -115,7 +115,7 @@ export default function signup() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
                     >
                       <option>Voulenteer</option>
                       <option>Parttime</option>
@@ -134,7 +134,7 @@ export default function signup() {
                       name="street-address"
                       id="street-address"
                       autoComplete="street-address"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function signup() {
                       name="city"
                       id="city"
                       autoComplete="address-level2"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function signup() {
                       name="region"
                       id="region"
                       autoComplete="address-level1"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function signup() {
                       name="postal-code"
                       id="postal-code"
                       autoComplete="postal-code"
-                      className="input"
+                      className="input-text"
                     />
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function signup() {
                   <label htmlFor="cover-photo" className="form-label">
                     Resume
                   </label>
-                  <div className="flex justify-center px-6 py-10 mt-2 border border-dashed rounded-lg border-gray-900/25">
+                  <div className="flex justify-center px-6 py-10 mt-2 border border-dashed rounded-lg border-gray-900/25 dark:border-gray-50">
                     <div className="text-center">
                       <RiFile2Fill
                         className="w-12 h-12 mx-auto text-gray-300"
@@ -218,17 +218,17 @@ export default function signup() {
             </div>
 
             <div className="pb-12 border-b border-gray-900/10">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">
+              <h2 className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-50">
                 Notifications
               </h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">
+              <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-50/50">
                 We&#39;ll always let you know about important changes, but you
                 pick what else you want to hear about.
               </p>
 
               <div className="mt-10 space-y-10">
                 <fieldset>
-                  <legend className="text-sm font-semibold leading-6 text-gray-900">
+                  <legend className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
                     By Email
                   </legend>
                   <div className="mt-6 space-y-6">
@@ -244,11 +244,11 @@ export default function signup() {
                       <div className="text-sm leading-6">
                         <label
                           htmlFor="comments"
-                          className="font-medium text-gray-900"
+                          className="font-medium text-gray-900 dark:text-gray-50"
                         >
                           Comments
                         </label>
-                        <p className="text-gray-500">
+                        <p className="text-gray-500 dark:text-gray-50/50">
                           Get notified when someones posts a comment on a
                           posting.
                         </p>
@@ -266,11 +266,11 @@ export default function signup() {
                       <div className="text-sm leading-6">
                         <label
                           htmlFor="candidates"
-                          className="font-medium text-gray-900"
+                          className="font-medium text-gray-900 dark:text-gray-50"
                         >
                           Candidates
                         </label>
-                        <p className="text-gray-500">
+                        <p className="text-gray-500 dark:text-gray-50/50">
                           Get notified when a candidate applies for a job.
                         </p>
                       </div>
@@ -287,11 +287,11 @@ export default function signup() {
                       <div className="text-sm leading-6">
                         <label
                           htmlFor="offers"
-                          className="font-medium text-gray-900"
+                          className="font-medium text-gray-900 dark:text-gray-50"
                         >
                           Offers
                         </label>
-                        <p className="text-gray-500">
+                        <p className="text-gray-500 dark:text-gray-50/50">
                           Get notified when a candidate accepts or rejects an
                           offer.
                         </p>
@@ -300,10 +300,10 @@ export default function signup() {
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend className="text-sm font-semibold leading-6 text-gray-900">
+                  <legend className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
                     Push Notifications
                   </legend>
-                  <p className="mt-1 text-sm leading-6 text-gray-600">
+                  <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-50/50">
                     These are delivered via SMS to your mobile phone.
                   </p>
                   <div className="mt-6 space-y-6">
