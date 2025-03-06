@@ -6,7 +6,11 @@ export default function questions() {
   return (
     <>
       <Head>
-        <title>Frequently Asked Questions </title>
+        <title>FAQ - Believe Support Services</title>
+        <meta
+          name="programs"
+          content=" individuals with complex needs to help them be the best version on themselves and their community."
+        />
       </Head>
       <main className="p-4 my-32 lg:container lg:mx-auto lg:p-0">
         <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
