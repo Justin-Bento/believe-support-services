@@ -159,10 +159,6 @@ export default function about() {
   );
 }
 
-function Values() {
-  return <>{/* Values section */}</>;
-}
-
 const values = [
   {
     name: "Be world-class",
