@@ -134,74 +134,65 @@ export default function index() {
         {/*
          *  End of Hereo Section.
          */}
-        <Newsletter />
+        <section className="py-16s">
+          <div className="relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
+            <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal dark:text-primary-100">
+              Get notified when we’re launching.
+            </h2>
+            <p className="max-w-xl mx-auto mt-2 leading-7 text-center tracking-wide dark:text-primary-200 ">
+              Reprehenderit ad esse et non officia in nulla. Id proident tempor
+              incididunt nostrud nulla et culpa.
+            </p>
+            <form className="flex max-w-md mx-auto mt-10 gap-x-4">
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="min-w-0 flex-auto rounded-md border-0 caret-primary-200 dark:placeholder:text-primary-100/50 capitalize bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+              />
+              <Button variant="ghost">Subscribe</Button>
+            </form>
+            <svg
+              viewBox="0 0 1024 1024"
+              className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
+              aria-hidden="true"
+            >
+              <circle
+                cx={512}
+                cy={512}
+                r={512}
+                fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+                fillOpacity="0.7"
+              />
+              <defs>
+                <radialGradient
+                  id="759c1415-0410-454c-8f7c-9a820de03641"
+                  cx={0}
+                  cy={0}
+                  r={1}
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(512 512) rotate(90) scale(512)"
+                >
+                  <stop stopColor="#EEBC03" />
+                  <stop offset={1} stopColor="#EEBC03" stopOpacity={0} />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </section>
+        {/* End of Newsletter Section. */}
         <Features />
         <Testimonials />
         <CallToAction />
       </main>
       <Footer />
     </>
-  );
-}
-
-function Hero() {
-  return <></>;
-}
-
-function Newsletter() {
-  return (
-    <div className="py-16s">
-      <div className="relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal dark:text-primary-100">
-          Get notified when we’re launching.
-        </h2>
-        <p className="max-w-xl mx-auto mt-2 leading-7 text-center tracking-wide dark:text-primary-200 ">
-          Reprehenderit ad esse et non officia in nulla. Id proident tempor
-          incididunt nostrud nulla et culpa.
-        </p>
-        <form className="flex max-w-md mx-auto mt-10 gap-x-4">
-          <label htmlFor="email-address" className="sr-only">
-            Email address
-          </label>
-          <input
-            id="email-address"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            className="min-w-0 flex-auto rounded-md border-0 caret-primary-200 dark:placeholder:text-primary-100/50 capitalize bg-primary-900/10 px-3.5 py-2  placeholder-slate-900 ring-1 ring-inset ring-primary-400/50 focus:ring-2 focus:ring-inset focus:ring-primary-300 sm:text-sm sm:leading-6"
-            placeholder="Enter your email"
-          />
-          <Button variant="ghost">Subscribe</Button>
-        </form>
-        <svg
-          viewBox="0 0 1024 1024"
-          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
-          aria-hidden="true"
-        >
-          <circle
-            cx={512}
-            cy={512}
-            r={512}
-            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-            fillOpacity="0.7"
-          />
-          <defs>
-            <radialGradient
-              id="759c1415-0410-454c-8f7c-9a820de03641"
-              cx={0}
-              cy={0}
-              r={1}
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(512 512) rotate(90) scale(512)"
-            >
-              <stop stopColor="#EEBC03" />
-              <stop offset={1} stopColor="#EEBC03" stopOpacity={0} />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
-    </div>
   );
 }
 
