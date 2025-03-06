@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  src: url('/fonts/OpenSans-Variable.ttf') format('truetype');
+  src: url("/fonts/OpenSans-Variable.ttf") format("truetype");
 }
 
 @layer base {
@@ -15,53 +15,56 @@
     @apply system-colour;
   }
   p {
-    @apply body-medium md:body-large
+    @apply body-medium md:body-large;
   }
 }
 @layer components {
   .input {
-    @apply flex w-full h-10 px-3 py-2 text-sm border rounded-md bg-white ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50
+    @apply flex w-full h-10 px-3 py-2 text-sm border rounded-md bg-white ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .form-label {
+    @apply block text-sm font-medium leading-6 text-gray-900 dark:text-blue-50 capitalize;
   }
   .bg-theme {
-    @apply bg-primary-100 dark:bg-primary-900
+    @apply bg-primary-100 dark:bg-primary-900;
   }
   .wrapper {
-    @apply mx-auto max-w-7xl sm:px-6 lg:px-8
+    @apply mx-auto max-w-7xl sm:px-6 lg:px-8;
   }
   .system-colour {
-    @apply dark:bg-primary-950 bg-primary-5
+    @apply dark:bg-primary-950 bg-primary-5;
   }
   .wrapper-sapce {
     @apply p-4 space-y-4 sm:space-y-8 sm:my-8 md:my-16 md:space-y-16 lg:my-20 lg:space-y-20;
   }
   .display-large {
-    @apply text-[3.563rem] leading-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-[3.563rem] leading-tight font-normal dark:text-primary-50 text-primary-950;
   }
   .display-medium {
-    @apply text-[2.813rem] leading-tight tracking-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-[2.813rem] leading-tight tracking-tight font-normal dark:text-primary-50 text-primary-950;
   }
   .display-small {
-    @apply text-[2.25rem] leading-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-[2.25rem] leading-tight font-normal dark:text-primary-50 text-primary-950;
   }
   /* End Of Display Typography */
   .headline-large {
-    @apply text-4xl font-extrabold tracking-tight text-primary-950
+    @apply text-4xl font-extrabold tracking-tight text-primary-950;
   }
   .headline-medium {
-    @apply text-[1.75rem] leading-tight font-bold capitalize dark:text-primary-50 text-primary-950
+    @apply text-[1.75rem] leading-tight font-bold capitalize dark:text-primary-50 text-primary-950;
   }
   .headline-small {
-    @apply text-[1.5rem] leading-tight font-bold capitalize dark:text-primary-50 text-primary-950
+    @apply text-[1.5rem] leading-tight font-bold capitalize dark:text-primary-50 text-primary-950;
   }
   /* End Of Headline Typography */
   .title-large {
-    @apply text-[1.375rem] leading-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-[1.375rem] leading-tight font-normal dark:text-primary-50 text-primary-950;
   }
   .title-medium {
-    @apply text-base leading-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-base leading-tight font-normal dark:text-primary-50 text-primary-950;
   }
   .title-small {
-    @apply text-sm leading-tight font-normal dark:text-primary-50 text-primary-950
+    @apply text-sm leading-tight font-normal dark:text-primary-50 text-primary-950;
   }
   /* End Of title Typography */
   .label-large {

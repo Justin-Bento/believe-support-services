@@ -29,10 +29,7 @@ export default function signup() {
             <div className="pb-12 border-b border-gray-900/10">
               <div className="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="first-name" className="form-label">
                     First name
                   </label>
                   <div className="mt-2">
@@ -47,10 +44,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="last-name" className="form-label">
                     Last name
                   </label>
                   <div className="mt-2">
@@ -65,10 +59,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="email" className="form-label">
                     Email address
                   </label>
                   <div className="mt-2">
@@ -83,10 +74,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="email" className="form-label">
                     Phone Number
                   </label>
                   <div className="mt-2">
@@ -101,10 +89,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="country"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="country" className="form-label">
                     Country
                   </label>
                   <div className="mt-2">
@@ -122,10 +107,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-3">
-                  <label
-                    htmlFor="country"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="country" className="form-label">
                     What job are you looking for?
                   </label>
                   <div className="mt-2">
@@ -143,10 +125,7 @@ export default function signup() {
                 </div>
 
                 <div className="col-span-full">
-                  <label
-                    htmlFor="street-address"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="street-address" className="form-label">
                     Street address
                   </label>
                   <div className="mt-2">
@@ -161,10 +140,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-2 sm:col-start-1">
-                  <label
-                    htmlFor="city"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="city" className="form-label">
                     City
                   </label>
                   <div className="mt-2">
@@ -179,10 +155,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label
-                    htmlFor="region"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="region" className="form-label">
                     State / Province
                   </label>
                   <div className="mt-2">
@@ -197,10 +170,7 @@ export default function signup() {
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label
-                    htmlFor="postal-code"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="postal-code" className="form-label">
                     ZIP / Postal code
                   </label>
                   <div className="mt-2">
@@ -214,10 +184,7 @@ export default function signup() {
                   </div>
                 </div>
                 <div className="col-span-full">
-                  <label
-                    htmlFor="cover-photo"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
+                  <label htmlFor="cover-photo" className="form-label">
                     Resume
                   </label>
                   <div className="flex justify-center px-6 py-10 mt-2 border border-dashed rounded-lg border-gray-900/25">
@@ -347,10 +314,7 @@ export default function signup() {
                         type="radio"
                         className="w-4 h-4 border-gray-300 text-primary-600 focus:ring-primary-600"
                       />
-                      <label
-                        htmlFor="push-everything"
-                        className="block text-sm font-medium leading-6 text-gray-900"
-                      >
+                      <label htmlFor="push-everything" className="form-label">
                         Everything
                       </label>
                     </div>
@@ -361,10 +325,7 @@ export default function signup() {
                         type="radio"
                         className="w-4 h-4 border-gray-300 text-primary-600 focus:ring-primary-600"
                       />
-                      <label
-                        htmlFor="push-email"
-                        className="block text-sm font-medium leading-6 text-gray-900"
-                      >
+                      <label htmlFor="push-email" className="form-label">
                         Same as email
                       </label>
                     </div>
@@ -375,10 +336,7 @@ export default function signup() {
                         type="radio"
                         className="w-4 h-4 border-gray-300 text-primary-600 focus:ring-primary-600"
                       />
-                      <label
-                        htmlFor="push-nothing"
-                        className="block text-sm font-medium leading-6 text-gray-900"
-                      >
+                      <label htmlFor="push-nothing" className="form-label">
                         No push notifications
                       </label>
                     </div>
