@@ -246,40 +246,37 @@ export default function index() {
          * End of Features Section.
          */}
         <Testimonials />
-        <CallToAction />
+        <section className="bg-theme rounded-2xl">
+          <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="scroll-m-20 pb-2 text-4xl font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
+                Boost your Knowledege.
+                <br />
+                Start Believing In Yourself Today.
+              </h2>
+              <p className="max-w-xl mx-auto mt-4 leading-7 tracking-wide text-opacity-75">
+                Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
+                anim id veniam aliqua proident excepteur commodo do ea.
+              </p>
+              <div className="flex items-center justify-center mt-10 gap-x-6">
+                <Button>
+                  <Link href="/signup">Get started</Link>
+                </Button>
+                <Button variant="ghost">
+                  <Link href="/signup">
+                    Learn more <span aria-hidden="true">→</span>
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*
+         * End of Call To Action Section.
+         */}
       </main>
       <Footer />
     </>
-  );
-}
-
-function CallToAction() {
-  return (
-    <div className="bg-theme rounded-2xl">
-      <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="scroll-m-20 pb-2 text-4xl font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
-            Boost your Knowledege.
-            <br />
-            Start Believing In Yourself Today.
-          </h2>
-          <p className="max-w-xl mx-auto mt-4 leading-7 tracking-wide text-opacity-75">
-            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-            anim id veniam aliqua proident excepteur commodo do ea.
-          </p>
-          <div className="flex items-center justify-center mt-10 gap-x-6">
-            <Button>
-              <Link href="/signup">Get started</Link>
-            </Button>
-            <Button variant="ghost">
-              <Link href="/signup">
-                Learn more <span aria-hidden="true">→</span>
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
 
