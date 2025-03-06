@@ -134,7 +134,7 @@ function Values() {
       {/* Values section */}
       <div className="">
         <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="font-extrabold capitalize headline-large">Our values</h2>
+          <h2 className="font-extrabold capitalize headline-large dark:text-white">Our values</h2>
           <p className="mt-6 prose dark:text-slate-300">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
             accusamus quisquam.
