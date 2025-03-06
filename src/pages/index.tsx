@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
-import { testimonials } from "@/lib/data"
+import { testimonials } from "@/lib/data";
 import { Button } from "@/components/Button";
 
 export default function index() {
@@ -12,7 +12,10 @@ export default function index() {
     <>
       <Head>
         <title>Believe Support Services</title>
-        <meta name="description" content="Helping individuals with complex needs to help them be the best version on themselves and their community." />
+        <meta
+          name="description"
+          content="Helping individuals with complex needs to help them be the best version on themselves and their community."
+        />
       </Head>
       <Appbar />
       <main className="container p-4 mx-auto my-12 space-y-32">
@@ -33,11 +36,12 @@ function Hero() {
       <section className="">
         <div className="my-8 space-y-6">
           <div className="justify-start hidden sm:flex sm:justify-center">
-            <Link href="/events" className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30">
+            <Link
+              href="/events"
+              className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30"
+            >
               Upcomming Events At Believe. &nbsp;
-              <span
-                className="font-semibold text-primary-600 dark:text-primary-300 primary-950 space-nowrap"
-              >
+              <span className="font-semibold text-primary-600 dark:text-primary-300 primary-950 space-nowrap">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </span>
@@ -55,12 +59,16 @@ function Hero() {
           <div className="flex flex-col items-start justify-start w-full gap-4 md:justify-center md:flex-row">
             <div>
               <Link href="/signup">
-                <Button className="w-full">Get In Touch With A Representative</Button>
+                <Button className="w-full">
+                  Get In Touch With A Representative
+                </Button>
               </Link>
             </div>
             <div>
               <Link href="/signup">
-                <Button className="w-full" variant="ghost">View Available Programs</Button>
+                <Button className="w-full" variant="ghost">
+                  View Available Programs
+                </Button>
               </Link>
             </div>
           </div>
@@ -141,7 +149,6 @@ function Hero() {
   );
 }
 
-
 function Newsletter() {
   return (
     <div className="py-16s">
@@ -150,7 +157,8 @@ function Newsletter() {
           Get notified when we’re launching.
         </h2>
         <p className="max-w-xl mx-auto mt-2 leading-7 text-center tracking-wide dark:text-primary-200 ">
-          Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
+          Reprehenderit ad esse et non officia in nulla. Id proident tempor
+          incididunt nostrud nulla et culpa.
         </p>
         <form className="flex max-w-md mx-auto mt-10 gap-x-4">
           <label htmlFor="email-address" className="sr-only">
@@ -172,7 +180,13 @@ function Newsletter() {
           className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
           aria-hidden="true"
         >
-          <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+          <circle
+            cx={512}
+            cy={512}
+            r={512}
+            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+            fillOpacity="0.7"
+          />
           <defs>
             <radialGradient
               id="759c1415-0410-454c-8f7c-9a820de03641"
@@ -189,7 +203,7 @@ function Newsletter() {
         </svg>
       </div>
     </div>
-  )
+  );
 }
 
 function Features() {
@@ -198,36 +212,57 @@ function Features() {
       <section className="">
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div>
-            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">Become The Superstar You Want To Be, While With Our Interactive Prograsms!</h3>
+            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+              Become The Superstar You Want To Be, While With Our Interactive
+              Prograsms!
+            </h3>
             <p className="mb-5 prose text-slate-600 dark:text-white/75">
-              We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work..
+              We work to build a community where everyone is included and
+              respected. We understand that everyone has different views and try
+              to create a place where people can talk openly and work..
             </p>
             <Button variant="outline">
               <Link href="/programs">View Our Programs</Link>
             </Button>
           </div>
           <div className="relative w-full h-full py-48 ">
-            <Image fill quality={50} src="/media/believe-support-services--images.webp" alt="community comming togther" className="object-cover object-center rounded-2xl" />
+            <Image
+              fill
+              quality={50}
+              src="/media/believe-support-services--images.webp"
+              alt="community comming togther"
+              className="object-cover object-center rounded-2xl"
+            />
           </div>
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
           <div className="order-none md:order-2">
-            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">Grow by learning and experiencing new things and moving. With our Interactive programs!!</h3>
+            <h3 className="scroll-m-20 dark:text-primary-100 pb-2 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+              Grow by learning and experiencing new things and moving. With our
+              Interactive programs!!
+            </h3>
             <p className="mb-5 prose text-slate-600 dark:text-white/75">
-              We work to build a community where everyone is included and respected. We understand that everyone has different views and try to create a place where people can talk openly and work together.
+              We work to build a community where everyone is included and
+              respected. We understand that everyone has different views and try
+              to create a place where people can talk openly and work together.
             </p>
             <Button variant="outline">
               <Link href="/signup">Signup To Events</Link>
             </Button>
           </div>
           <div className="relative w-full h-full py-48 ">
-            <Image fill quality={50} src="/media/believe-support-services--life-skills.webp" alt="community comming togther" className="object-center rounded-2xl" />
+            <Image
+              fill
+              quality={50}
+              src="/media/believe-support-services--life-skills.webp"
+              alt="community comming togther"
+              className="object-center rounded-2xl"
+            />
           </div>
         </div>
       </section>
-
     </>
-  )
+  );
 }
 
 function CallToAction() {
@@ -241,21 +276,23 @@ function CallToAction() {
             Start Believing In Yourself Today.
           </h2>
           <p className="max-w-xl mx-auto mt-4 leading-7 tracking-wide text-opacity-75">
-            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
-            commodo do ea.
+            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
+            anim id veniam aliqua proident excepteur commodo do ea.
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Button>
               <Link href="/signup">Get started</Link>
             </Button>
             <Button variant="ghost">
-              <Link href="/signup">Learn more <span aria-hidden="true">→</span></Link>
+              <Link href="/signup">
+                Learn more <span aria-hidden="true">→</span>
+              </Link>
             </Button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Testimonials() {
@@ -263,7 +300,9 @@ function Testimonials() {
     <div className="py-24 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-[80ch] mx-auto text-center">
-          <h2 className="text-yellow-700 title-medium dark:text-yellow-300">Testimonials</h2>
+          <h2 className="text-yellow-700 title-medium dark:text-yellow-300">
+            Testimonials
+          </h2>
           <p className="mt-2 scroll-m-20 pb-2 text-4xl leading-normal font-bold dark:text-primary-50 capitalize tracking-wide transition-colors first:mt-0">
             We have worked with thousands of amazing people supporting Us!
           </p>
@@ -271,17 +310,28 @@ function Testimonials() {
         <div className="flow-root max-w-2xl mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+              <div
+                key={testimonial.author.handle}
+                className="pt-8 sm:inline-block sm:w-full sm:px-4"
+              >
                 <figure className="p-8 prose-sm rounded-2xl bg-theme">
                   <blockquote className="text-primary-900 dark:text-primary-100">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="flex items-center gap-x-4">
                     <div className="relative w-9 h-9">
-                      <Image fill quality={50} className="rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                      <Image
+                        fill
+                        quality={50}
+                        className="rounded-full bg-gray-50"
+                        src={testimonial.author.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="prose-sm">
-                      <div className="font-semibold text-primary-900 dark:text-primary-100">{testimonial.author.name}</div>
+                      <div className="font-semibold text-primary-900 dark:text-primary-100">
+                        {testimonial.author.name}
+                      </div>
                       <div className="text-primary-600 dark:text-primary-300">{`@${testimonial.author.handle}`}</div>
                     </div>
                   </figcaption>
@@ -292,5 +342,5 @@ function Testimonials() {
         </div>
       </div>
     </div>
-  )
+  );
 }
