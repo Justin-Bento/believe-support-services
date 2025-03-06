@@ -19,7 +19,121 @@ export default function index() {
       </Head>
       <Appbar />
       <main className="container p-4 mx-auto my-12 space-y-32">
-        <Hero />
+        <section className="">
+          <div className="my-8 space-y-6">
+            <div className="justify-start hidden sm:flex sm:justify-center">
+              <Link
+                href="/events"
+                className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30"
+              >
+                Upcomming Events At Believe. &nbsp;
+                <span className="font-semibold text-primary-600 dark:text-primary-300 primary-950 space-nowrap">
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  Read more <span aria-hidden="true">&rarr;</span>
+                </span>
+              </Link>
+            </div>
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-normal text-slate-900 dark:text-primary-100 lg:text-5xl md:text-center">
+              A Strong Community Starts With Beliving!
+            </h1>
+            <p className="text-xl tracking-wide max-w-[80ch] md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
+              We help individuals with complex needs, by offering programs
+              focused on life skills, personal development, recreational
+              activities, and social support groups, to help them be the best
+              version on themselves.{" "}
+            </p>
+            <div className="flex flex-col items-start justify-start w-full gap-4 md:justify-center md:flex-row">
+              <div>
+                <Link href="/signup">
+                  <Button className="w-full">
+                    Get In Touch With A Representative
+                  </Button>
+                </Link>
+              </div>
+              <div>
+                <Link href="/signup">
+                  <Button className="w-full" variant="ghost">
+                    View Available Programs
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* END: Hero :: Actions */}
+          <div className="overflow-hidden bg-transparent ">
+            <div className="px-4 py-5 sm:p-6 w-full h-[420px] md:h-[640px] relative z-10">
+              <Image
+                fill
+                quality={40}
+                src="/media/hero-image.webp"
+                alt="Hodges Bay Club garnished with our Island Microgreens"
+                className="object-cover object-center rounded-xl"
+              />
+            </div>
+          </div>
+          {/* END: Hero :: Media */}
+          <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
+            {/* END: Hero :: 01 Core Programs */}
+            <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+              <div className="px-4 py-5 space-y-1.5 sm:p-6">
+                <h2 className="px-2 font-bold title-medium">Day Programs</h2>
+                <p className="px-2 body-medium">
+                  Semi-Independent program designed to cater to adults with
+                  complex needs duirng their stay.
+                </p>
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
+                >
+                  <AiOutlineLink />
+                  Button text
+                </button>
+              </div>
+            </div>
+            {/* END: Hero :: 02 Core Programs */}
+            <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+              <div className="px-4 py-5 space-y-1.5 sm:p-6">
+                <h2 className="px-2 font-bold title-medium">
+                  Fitness & Health Programs
+                </h2>
+                <p className="px-2 body-medium">
+                  Semi-Independent program designed to cater to adults with
+                  complex needs duirng their stay.
+                </p>
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
+                >
+                  <AiOutlineLink />
+                  Button text
+                </button>
+              </div>
+            </div>
+            {/* END: Hero :: 03 Core Programs */}
+            <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
+              <div className="px-4 py-5 space-y-1.5 sm:p-6">
+                <h2 className="px-2 font-bold title-medium">
+                  Residential Programs
+                </h2>
+                <p className="px-2 body-medium">
+                  Semi-Independent program designed to cater to adults with
+                  complex needs duirng their stay.
+                </p>
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
+                >
+                  <AiOutlineLink />
+                  Button text
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* END: Hero :: Core Programs */}
+        </section>
+        {/*
+         *  End of Hereo Section.
+         */}
         <Newsletter />
         <Features />
         <Testimonials />
@@ -31,122 +145,7 @@ export default function index() {
 }
 
 function Hero() {
-  return (
-    <>
-      <section className="">
-        <div className="my-8 space-y-6">
-          <div className="justify-start hidden sm:flex sm:justify-center">
-            <Link
-              href="/events"
-              className="relative px-3 py-1 rounded-full body-medium text-primary-950 dark:text-primary-50 ring-1 ring-primary-900/10 dark:ring-primary-100/30 hover:ring-primary-900/20 dark:hover:ring-primary-100/30"
-            >
-              Upcomming Events At Believe. &nbsp;
-              <span className="font-semibold text-primary-600 dark:text-primary-300 primary-950 space-nowrap">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </span>
-            </Link>
-          </div>
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-normal text-slate-900 dark:text-primary-100 lg:text-5xl md:text-center">
-            A Strong Community Starts With Beliving!
-          </h1>
-          <p className="text-xl tracking-wide max-w-[80ch] md:text-center md:mx-auto text-slate-600 dark:text-slate-300">
-            We help individuals with complex needs, by offering programs focused
-            on life skills, personal development, recreational activities, and
-            social support groups, to help them be the best version on
-            themselves.{" "}
-          </p>
-          <div className="flex flex-col items-start justify-start w-full gap-4 md:justify-center md:flex-row">
-            <div>
-              <Link href="/signup">
-                <Button className="w-full">
-                  Get In Touch With A Representative
-                </Button>
-              </Link>
-            </div>
-            <div>
-              <Link href="/signup">
-                <Button className="w-full" variant="ghost">
-                  View Available Programs
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        {/* END: Hero :: Actions */}
-        <div className="overflow-hidden bg-transparent ">
-          <div className="px-4 py-5 sm:p-6 w-full h-[420px] md:h-[640px] relative z-10">
-            <Image
-              fill
-              quality={40}
-              src="/media/hero-image.webp"
-              alt="Hodges Bay Club garnished with our Island Microgreens"
-              className="object-cover object-center rounded-xl"
-            />
-          </div>
-        </div>
-        {/* END: Hero :: Media */}
-        <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
-          {/* END: Hero :: 01 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
-            <div className="px-4 py-5 space-y-1.5 sm:p-6">
-              <h2 className="px-2 font-bold title-medium">Day Programs</h2>
-              <p className="px-2 body-medium">
-                Semi-Independent program designed to cater to adults with
-                complex needs duirng their stay.
-              </p>
-              <button
-                type="button"
-                className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
-              >
-                <AiOutlineLink />
-                Button text
-              </button>
-            </div>
-          </div>
-          {/* END: Hero :: 02 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
-            <div className="px-4 py-5 space-y-1.5 sm:p-6">
-              <h2 className="px-2 font-bold title-medium">
-                Fitness & Health Programs
-              </h2>
-              <p className="px-2 body-medium">
-                Semi-Independent program designed to cater to adults with
-                complex needs duirng their stay.
-              </p>
-              <button
-                type="button"
-                className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
-              >
-                <AiOutlineLink />
-                Button text
-              </button>
-            </div>
-          </div>
-          {/* END: Hero :: 03 Core Programs */}
-          <div className="overflow-hidden transition-all border rounded-lg bg-primary-200 dark:bg-primary-900 hover:bg-primary-300/30 hover:cursor-pointer border-primary-300">
-            <div className="px-4 py-5 space-y-1.5 sm:p-6">
-              <h2 className="px-2 font-bold title-medium">
-                Residential Programs
-              </h2>
-              <p className="px-2 body-medium">
-                Semi-Independent program designed to cater to adults with
-                complex needs duirng their stay.
-              </p>
-              <button
-                type="button"
-                className="inline-flex items-center gap-1.5 px-2 py-1.5 text-sm font-semibold text-primary-600 "
-              >
-                <AiOutlineLink />
-                Button text
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* END: Hero :: Core Programs */}
-      </section>
-    </>
-  );
+  return <></>;
 }
 
 function Newsletter() {
