@@ -22,11 +22,11 @@ export default function questions() {
           into one place for your convenience. Have more questions? Please reach
           out!
         </p>
-        <section className="my-8 space-y-4">
+        <section className="my-8 grid grid-cols-12 gap-6">
           {frequently_asked_questions.map((data: any) => {
             return (
               <>
-                <div className="p-4 bg-primary-50 dark:bg-primary-900 dark:border-opacity-0 rounded-xl">
+                <div className="col-span-12 lg:col-span-6 p-6 bg-primary-50 dark:bg-primary-900 dark:border-opacity-0 rounded-xl">
                   <h2 className="font-semibold tracking-wider text-md capitalize dark:text-primary-100">
                     {data.question}
                   </h2>
