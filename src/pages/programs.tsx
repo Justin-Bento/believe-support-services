@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { programs_info } from "@/lib/data";
 
 export default function programs() {
   return (
@@ -18,7 +19,7 @@ export default function programs() {
           lives of those we support.
         </p>
         <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
-          {programs_iinfo.map((data: any) => {
+          {programs_info.map((data: any) => {
             return (
               <ProgramCard
                 key={data.title.toString()}
@@ -69,36 +70,3 @@ function ProgramCard(props: any) {
     </>
   );
 }
-
-const programs_iinfo = [
-  {
-    title: "Recreation and Leisure",
-    description:
-      "Our Recreation and Leisure programs offer a range of engaging activities that promote physical fitness, creative expression, and social interaction. Participants can explore new interests, make friends, and experience the joy of shared experiences.",
-  },
-  {
-    title: "Group Living",
-    description:
-      "From effective communication and problem-solving to time management and personal care, our comprehensive curriculum equips participants with the skills necessary to navigate life's challenges.",
-  },
-  {
-    title: "Residential Program",
-    description:
-      "In the digital age, having strong technology skills is crucial. Our Technology and Digital Literacy program helps individuals navigate the digital world with confidence. Participants learn essential computer skills, online safety practices, and how to utilize technology to enhance their communication, learning, and daily activities.",
-  },
-  {
-    title: "Respite Support",
-    description:
-      "Wellness and Mindfulness programs focus on promoting mental and emotional well-being, providing participants with tools to manage stress, anxiety, and emotional challenges. Through meditation, mindfulness practices, and psychoeducation, individuals can develop resilience and cultivate a positive sense of self.",
-  },
-  {
-    title: "Vocational Camp",
-    description:
-      "Our Vocational Training and Employment program is designed to equip individuals with the skills and confidence needed to enter the workforce with pride and purpose. Through a combination of skill-building workshops, career exploration, and hands-on training, participants can develop valuable vocational skills that lead to meaningful employment opportunities.",
-  },
-  {
-    title: "Social Group Engagement",
-    description:
-      "Building meaningful connections is at the core of our Social Group Engagement programs. We provide inclusive spaces where individuals can connect with peers who share similar interests and experiences. Through group discussions, collaborative activities, and shared experiences, participants can develop lasting friendships and strengthen their social skills..",
-  },
-];
