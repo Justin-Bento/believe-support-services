@@ -4,10 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { programs_info } from "@/lib/data";
 import { CreateSlug } from "@/lib/utils";
+import Head from "next/head";
 
 export default function programs() {
   return (
     <>
+      <Head>
+        <title>Programs - Believe Support Services</title>
+        <meta
+          name="programs"
+          content=" individuals with complex needs to help them be the best version on themselves and their community."
+        />
+      </Head>
       <main className="min-h-screen lg:container lg:mx-auto lg:py-32 p-4 py-16">
         <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
           Explore Our Programs
