@@ -6,35 +6,11 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProgramSlug() {
-  return (
-    <>
-      <Head>
-        <title>Program</title>
-      </Head>
-      <main className="py-32">
-        <div className="container grid gap-8 p-4 mx-auto lg:grid-cols-4">
-          <div className="grid-cols-1 ">
-            <TableOfContents programs={dummyPrograms} />
-          </div>
-          <div className="col-span-3">
-            <ContentCentered />
-          </div>
-        </div>
-      </main>
-      <SignUpToProgram />
-    </>
-  );
-}
-
 type Program = {
   id: number;
   title: string;
 };
 
-type TableOfContentsProps = {
-  programs: Program[];
-};
 const dummyPrograms = [
   { id: 1, title: "Believe Day Program" },
   { id: 2, title: "Believe Fitness & Health" },
@@ -47,7 +23,7 @@ const dummyPrograms = [
   { id: 9, title: "Basketball Program:" },
 ];
 
-function TableOfContents({ programs }: TableOfContentsProps) {
+export default function ProgramSlug() {
   const [showList, setShowList] = useState(false);
 
   const toggleList = () => {
@@ -55,32 +31,51 @@ function TableOfContents({ programs }: TableOfContentsProps) {
   };
 
   return (
-    <section className="w-full p-4 rounded bg-primary-100 ">
-      <div className="flex flex-col gap-2 lg:flex-col lg:items-start lg:ml-4">
-        <button className="text-primary-700 title-medium " onClick={toggleList}>
-          Table Of Contents
-          <span className="ml-2 lg:hidden">{showList ? "▲" : "▼"}</span>
-        </button>
-        <div className="flex flex-col items-start space-y-2 lg:items-stretch lg:flex-row lg:space-y-0 lg:w-auto">
-          <ul
-            role="list"
-            aria-label="Table of Contents"
-            className={`${
-              showList ? "block" : "hidden"
-            } lg:block flex flex-col items-start space-y-2`}
-          >
-            {programs.map((program) => (
-              <li
-                key={program.id}
-                className="w-full p-2 prose text-primary-900 hover:bg-primary-200/30 hover:cursor-pointer active:opacity-80"
+    <>
+      <Head>
+        <title>Program</title>
+      </Head>
+      <main className="py-32">
+        <div className="container grid gap-8 p-4 mx-auto lg:grid-cols-4">
+          <section className="grid-cols-1 ">
+            <div className="flex flex-col gap-2 lg:flex-col lg:items-start lg:ml-4">
+              <button
+                className="text-primary-700 title-medium "
+                onClick={toggleList}
               >
-                {program.title}
-              </li>
-            ))}
-          </ul>
+                Table Of Contents
+                <span className="ml-2 lg:hidden">{showList ? "▲" : "▼"}</span>
+              </button>
+              <div className="flex flex-col items-start space-y-2 lg:items-stretch lg:flex-row lg:space-y-0 lg:w-auto">
+                <ul
+                  role="list"
+                  aria-label="Table of Contents"
+                  className={`${
+                    showList ? "block" : "hidden"
+                  } lg:block flex flex-col items-start space-y-2`}
+                >
+                  {dummyPrograms.map((program: Program) => (
+                    <li
+                      key={program.id}
+                      className="w-full p-2 prose text-primary-900 hover:bg-primary-200/30 hover:cursor-pointer active:opacity-80"
+                    >
+                      {program.title}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+          {/*
+           * End of Table Of Content's
+           */}
+          <div className="col-span-3">
+            <ContentCentered />
+          </div>
         </div>
-      </div>
-    </section>
+      </main>
+      <SignUpToProgram />
+    </>
   );
 }
 
