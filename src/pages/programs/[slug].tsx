@@ -1,15 +1,6 @@
-import Head from "next/head";
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
-import { AiOutlineMenu } from "react-icons/ai";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-type Program = {
-  id: number;
-  title: string;
-};
+import React, { useState } from "react";
 
 const dummyPrograms = [
   { id: 1, title: "Believe Day Program" },
@@ -22,6 +13,10 @@ const dummyPrograms = [
   { id: 8, title: "Vocational Program:" },
   { id: 9, title: "Basketball Program:" },
 ];
+type Program = {
+  id: number;
+  title: string;
+};
 
 export default function ProgramSlug() {
   const [showList, setShowList] = useState(false);
@@ -29,53 +24,39 @@ export default function ProgramSlug() {
   const toggleList = () => {
     setShowList(!showList);
   };
-
   return (
     <>
-      <Head>
-        <title>Program</title>
-      </Head>
-      <main className="py-32">
-        <div className="container grid gap-8 p-4 mx-auto lg:grid-cols-4">
-          <section className="grid-cols-1 ">
-            <div className="flex flex-col gap-2 lg:flex-col lg:items-start lg:ml-4">
-              <button
-                className="text-primary-700 title-medium "
-                onClick={toggleList}
-              >
-                Table Of Contents
-                <span className="ml-2 lg:hidden">{showList ? "▲" : "▼"}</span>
-              </button>
-              <div className="flex flex-col items-start space-y-2 lg:items-stretch lg:flex-row lg:space-y-0 lg:w-auto">
-                <ul
-                  role="list"
-                  aria-label="Table of Contents"
-                  className={`${
-                    showList ? "block" : "hidden"
-                  } lg:block flex flex-col items-start space-y-2`}
+      <main className="pt-24 space-y-24">
+        <section className="grid grid-cols-12 gap-12 container mx-auto min-h-[100dvh]">
+          <div className="hidden lg:block lg:col-span-3 lg:place-content-start p-8 pt-12 dark:bg-primary-900 rounded-lg">
+            <h1 className="dark:text-blue-50 mb-4 font-semibold text-lg">
+              Table Of Contents
+            </h1>
+            <hr className="my-4" />
+            <ul
+              role="list"
+              aria-label="Table of Contents"
+              className={`${
+                showList ? "block" : "hidden"
+              } lg:block flex flex-col items-start space-y-2 list-disc list-inside`}
+            >
+              {dummyPrograms.map((program: Program) => (
+                <li
+                  key={program.id}
+                  className="w-full p-2 prose text-primary-900 hover:bg-primary-200/30 dark:text-white hover:cursor-pointer opacity-80"
                 >
-                  {dummyPrograms.map((program: Program) => (
-                    <li
-                      key={program.id}
-                      className="w-full p-2 prose text-primary-900 hover:bg-primary-200/30 hover:cursor-pointer active:opacity-80"
-                    >
-                      {program.title}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/*
-           * End of Table Of Content's
-           */}
-          <section className="col-span-3">
+                  {program.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <article className="col-span-12 lg:col-span-8 lg:place-content-center">
             <div className="my-8 lg:my-0">
               <div className="space-y-4 text-base leading-7 text-gray-700">
                 <p className="text-base font-semibold leading-7 text-yellow-600">
                   Core Program
                 </p>
-                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 className="text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl dark:text-primary-50">
                   Believe Day Progam
                 </h1>
                 <p className="text-xl leading-8">
@@ -122,45 +103,36 @@ export default function ProgramSlug() {
                 </div>
               </div>
             </div>
-          </section>
-          {/*
-           * End of Content Center
-           */}
-        </div>
-      </main>
-      <SignUpToProgram />
-    </>
-  );
-}
-
-function SignUpToProgram() {
-  return (
-    <div className="bg-yellow-500/30">
-      <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-2xl mx-auto space-y-4 text-center">
-          <h2 className="headline-medium">
-            Help your Indivual Become The Supertar They Want To Be!
-          </h2>
-          <p className="max-w-xl mx-auto body-large">
-            Sign up today to become part of our supportive community and start
-            your journey towards self-growth and personal empowerment.
-          </p>
-          <div className="flex items-center justify-center mt-10 gap-x-6">
-            <Link
-              href="/signup"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-yellow-600 shadow-sm hover:bg-yellow-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Get started
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-semibold leading-6 text-white"
-            >
-              Call Us <span aria-hidden="true">→</span>
-            </Link>
+          </article>
+        </section>
+        <section className="bg-yellow-500/30">
+          <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div className="max-w-2xl mx-auto space-y-4 text-center">
+              <h2 className="headline-medium">
+                Help your Indivual Become The Supertar They Want To Be!
+              </h2>
+              <p className="max-w-xl mx-auto body-large">
+                Sign up today to become part of our supportive community and
+                start your journey towards self-growth and personal empowerment.
+              </p>
+              <div className="flex items-center justify-center mt-10 gap-x-6">
+                <Link
+                  href="/signup"
+                  className="capitalize rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-yellow-600 shadow-sm hover:bg-yellow-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Get started
+                </Link>
+                <Link
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-white"
+                >
+                  Call Us <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </>
   );
 }
