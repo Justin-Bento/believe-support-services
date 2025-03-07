@@ -69,9 +69,63 @@ export default function ProgramSlug() {
           {/*
            * End of Table Of Content's
            */}
-          <div className="col-span-3">
-            <ContentCentered />
-          </div>
+          <section className="col-span-3">
+            <div className="my-8 lg:my-0">
+              <div className="space-y-4 text-base leading-7 text-gray-700">
+                <p className="text-base font-semibold leading-7 text-yellow-600">
+                  Core Program
+                </p>
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Believe Day Progam
+                </h1>
+                <p className="text-xl leading-8">
+                  Looking for a way to gain self-confidence, meet new friends,
+                  and have fun all at the same time? Look no further than the
+                  Believe Day Program (M.O.V.E)!
+                </p>
+                <figure className="space-y-6">
+                  <div className="relative w-full h-96 aspect-video">
+                    <Image
+                      fill
+                      quality={70}
+                      className="object-cover object-center rounded-xl bg-gray-50"
+                      src="/media/believe-day-program.webp"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption className="flex text-gray-500 body-medium gap-x-2">
+                    Faucibus commodo massa rhoncus, volutpat.
+                  </figcaption>
+                </figure>
+                <div className="space-y-6">
+                  <p>
+                    Our program is specifically designed to empower individuals
+                    with complex needs to achieve their goals and develop their
+                    full potential. Our team of expert instructors provides
+                    engaging programming to promote self-growth and teamwork,
+                    while also creating new memories with old and new friends.
+                  </p>
+                  <p>
+                    Throughout the week, participants will have the opportunity
+                    to engage in a variety of exciting activities, including
+                    arts and crafts, music, drama, and recreation. These
+                    activities are not only fun and engaging, but also help to
+                    improve social skills, self-esteem, and self-confidence.
+                  </p>
+                  <p>
+                    Join us at the Believe Centre in Whitby, Ontario from Monday
+                    to Friday, 8:00am to 4:00pm, for a transformative
+                    experience. Our program is perfect for anyone looking to
+                    connect with others and achieve their goals in a supportive
+                    and fun environment. Let&#39;s M.O.V.E forward together!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/*
+           * End of Content Center
+           */}
         </div>
       </main>
       <SignUpToProgram />
@@ -79,63 +133,6 @@ export default function ProgramSlug() {
   );
 }
 
-// A Link
-function ContentCentered() {
-  return (
-    <div className="my-8 lg:my-0">
-      <div className="space-y-4 text-base leading-7 text-gray-700">
-        <p className="text-base font-semibold leading-7 text-yellow-600">
-          Core Program
-        </p>
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Believe Day Progam
-        </h1>
-        <p className="text-xl leading-8">
-          Looking for a way to gain self-confidence, meet new friends, and have
-          fun all at the same time? Look no further than the Believe Day Program
-          (M.O.V.E)!
-        </p>
-        <figure className="space-y-6">
-          <div className="relative w-full h-96 aspect-video">
-            <Image
-              fill
-              quality={70}
-              className="object-cover object-center rounded-xl bg-gray-50"
-              src="/media/believe-day-program.webp"
-              alt=""
-            />
-          </div>
-          <figcaption className="flex text-gray-500 body-medium gap-x-2">
-            Faucibus commodo massa rhoncus, volutpat.
-          </figcaption>
-        </figure>
-        <div className="space-y-6">
-          <p>
-            Our program is specifically designed to empower individuals with
-            complex needs to achieve their goals and develop their full
-            potential. Our team of expert instructors provides engaging
-            programming to promote self-growth and teamwork, while also creating
-            new memories with old and new friends.
-          </p>
-          <p>
-            Throughout the week, participants will have the opportunity to
-            engage in a variety of exciting activities, including arts and
-            crafts, music, drama, and recreation. These activities are not only
-            fun and engaging, but also help to improve social skills,
-            self-esteem, and self-confidence.
-          </p>
-          <p>
-            Join us at the Believe Centre in Whitby, Ontario from Monday to
-            Friday, 8:00am to 4:00pm, for a transformative experience. Our
-            program is perfect for anyone looking to connect with others and
-            achieve their goals in a supportive and fun environment. Let&#39;s
-            M.O.V.E forward together!
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
 function SignUpToProgram() {
   return (
     <div className="bg-yellow-500/30">
