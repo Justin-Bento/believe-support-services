@@ -28,7 +28,7 @@ export default function ProgramSlug() {
     <>
       <main className="pt-24 space-y-24">
         <section className="grid grid-cols-12 gap-12 container mx-auto min-h-[100dvh]">
-          <div className="hidden lg:block lg:col-span-3 lg:place-content-start p-8 pt-12 dark:bg-primary-900 rounded-lg">
+          <div className="col-span-12 lg:block lg:col-span-3 lg:place-content-start p-8 pt-12 dark:bg-primary-900 rounded-lg">
             <h1 className="dark:text-blue-50 mb-4 font-semibold text-lg">
               Table Of Contents
             </h1>
