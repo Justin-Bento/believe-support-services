@@ -14,7 +14,22 @@ export default function contact() {
         />
       </Head>
       <main className="container p-4 mx-auto my-16 space-y-16">
-        <ContactCenter />
+        <section className="">
+          <div className="max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base font-semibold leading-7 text-yellow-600">
+              Get the help you need
+            </p>
+            <h2 className="mt-2 font-bold display-medium">Support center</h2>
+            <p className="mt-3 body-large">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+              fugiat aliqua.
+            </p>
+          </div>
+        </section>
+        {/*
+         * Contact Center
+         */}
         <ContactForm />
         <CompanyOffices />
       </main>
@@ -25,23 +40,6 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-function ContactCenter() {
-  return (
-    <div className="">
-      <div className="max-w-2xl mx-auto lg:mx-0">
-        <p className="text-base font-semibold leading-7 text-yellow-600">
-          Get the help you need
-        </p>
-        <h2 className="mt-2 font-bold display-medium">Support center</h2>
-        <p className="mt-3 body-large">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
-      </div>
-    </div>
-  );
-}
 function ContactForm() {
   const [agreed, setAgreed] = useState(false);
   return (
