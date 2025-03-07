@@ -12,7 +12,6 @@ export default function ProgramSlug() {
       <Head>
         <title>Program</title>
       </Head>
-      <Appbar />
       <main className="py-32">
         <div className="container grid gap-8 p-4 mx-auto lg:grid-cols-4">
           <div className="grid-cols-1 ">
@@ -24,7 +23,6 @@ export default function ProgramSlug() {
         </div>
       </main>
       <SignUpToProgram />
-      <Footer />
     </>
   );
 }
@@ -67,8 +65,9 @@ function TableOfContents({ programs }: TableOfContentsProps) {
           <ul
             role="list"
             aria-label="Table of Contents"
-            className={`${showList ? "block" : "hidden"
-              } lg:block flex flex-col items-start space-y-2`}
+            className={`${
+              showList ? "block" : "hidden"
+            } lg:block flex flex-col items-start space-y-2`}
           >
             {programs.map((program) => (
               <li
@@ -151,7 +150,8 @@ function SignUpToProgram() {
             Help your Indivual Become The Supertar They Want To Be!
           </h2>
           <p className="max-w-xl mx-auto body-large">
-            Sign up today to become part of our supportive community and start your journey towards self-growth and personal empowerment.
+            Sign up today to become part of our supportive community and start
+            your journey towards self-growth and personal empowerment.
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Link
@@ -160,12 +160,15 @@ function SignUpToProgram() {
             >
               Get started
             </Link>
-            <Link href="#" className="text-sm font-semibold leading-6 text-white">
+            <Link
+              href="#"
+              className="text-sm font-semibold leading-6 text-white"
+            >
               Call Us <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
