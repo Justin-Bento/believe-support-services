@@ -17,17 +17,22 @@ export default function programs() {
         />
       </Head>
       <main className="min-h-screen lg:container lg:mx-auto lg:py-32 p-4 py-16">
-        <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
-          Explore Our Programs
-        </h1>
-        <p className="leading-7 tracking-wider dark:text-primary-100 mt-6">
-          We are dedicated to improving the lives of individuals with complex
-          needs through a variety of thoughtfully designed programs. Each
-          program is crafted to empower, educate, and foster a strong sense of
-          community. Discover how our programs can make a difference in the
-          lives of those we support.
-        </p>
-        <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
+        <section className="">
+          <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
+            Explore Our Programs
+          </h1>
+          <p className="leading-7 tracking-wider dark:text-primary-100 mt-6">
+            We are dedicated to improving the lives of individuals with complex
+            needs through a variety of thoughtfully designed programs. Each
+            program is crafted to empower, educate, and foster a strong sense of
+            community. Discover how our programs can make a difference in the
+            lives of those we support.
+          </p>
+        </section>
+        {/*
+         * End of Page Header
+         */}
+        <section className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
           {programs_info.map((data: any) => {
             return (
               <Link
@@ -59,7 +64,10 @@ export default function programs() {
               </Link>
             );
           })}
-        </div>
+        </section>
+        {/*
+         * End of Company Programs
+         */}
       </main>
     </>
   );
