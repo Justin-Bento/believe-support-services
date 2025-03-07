@@ -176,58 +176,55 @@ export default function contact() {
         {/*
          * Contact Form
          */}
-        <CompanyOffices />
+        <section className="">
+          <div className="">
+            <div className="max-w-2xl mx-auto lg:mx-0">
+              <h2 className="font-bold headline-medium">Our offices</h2>
+              <p className="mt-3 body-large">
+                Varius facilisi mauris sed sit. Non sed et duis dui leo,
+                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
+                sed lacus, fames.
+              </p>
+            </div>
+            <div className="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-16 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+              <div>
+                <h3 className="pl-6 title-medium">Los Angeles</h3>
+                <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+                  <p>4556 Brendan Ferry</p>
+                  <p>Los Angeles, CA 90210</p>
+                </address>
+              </div>
+              <div>
+                <h3 className="pl-6 title-medium">New York</h3>
+                <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+                  <p>886 Walter Street</p>
+                  <p>New York, NY 12345</p>
+                </address>
+              </div>
+              <div>
+                <h3 className="pl-6 title-medium">Toronto</h3>
+                <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+                  <p>7363 Cynthia Pass</p>
+                  <p>Toronto, ON N3Y 4H8</p>
+                </address>
+              </div>
+              <div>
+                <h3 className="pl-6 title-medium">London</h3>
+                <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+                  <p>114 Cobble Lane</p>
+                  <p>London N1 2EF</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*
+         * Company Offices
+         */}
       </main>
     </>
   );
 }
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
-}
-
-function CompanyOffices() {
-  return (
-    <div className="">
-      <div className="">
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="font-bold headline-medium">Our offices</h2>
-          <p className="mt-3 body-large">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
-            id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
-            fames.
-          </p>
-        </div>
-        <div className="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-16 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-          <div>
-            <h3 className="pl-6 title-medium">Los Angeles</h3>
-            <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
-              <p>4556 Brendan Ferry</p>
-              <p>Los Angeles, CA 90210</p>
-            </address>
-          </div>
-          <div>
-            <h3 className="pl-6 title-medium">New York</h3>
-            <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
-              <p>886 Walter Street</p>
-              <p>New York, NY 12345</p>
-            </address>
-          </div>
-          <div>
-            <h3 className="pl-6 title-medium">Toronto</h3>
-            <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
-              <p>7363 Cynthia Pass</p>
-              <p>Toronto, ON N3Y 4H8</p>
-            </address>
-          </div>
-          <div>
-            <h3 className="pl-6 title-medium">London</h3>
-            <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
-              <p>114 Cobble Lane</p>
-              <p>London N1 2EF</p>
-            </address>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 }
