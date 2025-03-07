@@ -13,15 +13,20 @@ export default function questions() {
         />
       </Head>
       <main className="p-4 my-32 lg:container lg:mx-auto lg:p-0">
-        <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
-          Questions With Believe Support Services
-        </h1>
-        <p className="leading-7 text-xl tracking-wider dark:text-primary-100 mt-6">
-          After sending a survey we pulled some of the most frequently asked
-          questions asked by our customers. We received and compiled them all
-          into one place for your convenience. Have more questions? Please reach
-          out!
-        </p>
+        <section className="">
+          <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
+            Questions With Believe Support Services
+          </h1>
+          <p className="leading-7 text-xl tracking-wider dark:text-primary-100 mt-6">
+            After sending a survey we pulled some of the most frequently asked
+            questions asked by our customers. We received and compiled them all
+            into one place for your convenience. Have more questions? Please
+            reach out!
+          </p>
+        </section>
+        {/*
+         * End Of Page Header
+         */}
         <section className="my-8 grid grid-cols-12 gap-6">
           {frequently_asked_questions.map((data: any) => {
             return (
