@@ -18,12 +18,14 @@ export default function Contact() {
       <main className="container p-4 mx-auto my-16 space-y-16">
         {/* Support Center Section */}
         <section>
-          <div className="max-w-2xl mx-auto lg:mx-0">
-            <p className="text-base font-semibold leading-7 text-yellow-600">
+          <div className="max-w-2xl mx-auto lg:mx-0 space-y-2">
+            <p className="text-base font-semibold leading-7 text-yellow-600 capitalize">
               Get the help you need
             </p>
-            <h2 className="mt-2 font-bold display-medium">Support center</h2>
-            <p className="mt-3 body-large">
+            <h2 className="display-medium font-bold capitalize">
+              Support center
+            </h2>
+            <p className="text-lg max-w-[120ch] text-balance">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.

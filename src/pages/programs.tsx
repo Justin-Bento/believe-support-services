@@ -17,11 +17,9 @@ export default function programs() {
         />
       </Head>
       <main className="min-h-screen lg:container lg:mx-auto lg:py-32 p-4 py-16">
-        <section className="">
-          <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
-            Explore Our Programs
-          </h1>
-          <p className="leading-7 tracking-wider dark:text-primary-100 mt-6">
+        <section className="space-y-4">
+          <h1 className="display-medium font-bold">Explore Our Programs</h1>
+          <p className="text-lg max-w-[100ch] text-balance">
             We are dedicated to improving the lives of individuals with complex
             needs through a variety of thoughtfully designed programs. Each
             program is crafted to empower, educate, and foster a strong sense of

@@ -13,11 +13,11 @@ export default function questions() {
         />
       </Head>
       <main className="p-4 my-32 lg:container lg:mx-auto lg:p-0">
-        <section className="">
-          <h1 className="scroll-m-20 font-extrabold tracking-wide text-5xl dark:text-primary-100">
+        <section className="space-y-2">
+          <h1 className="display-medium font-bold">
             Questions With Believe Support Services
           </h1>
-          <p className="leading-7 text-xl tracking-wider dark:text-primary-100 mt-6">
+          <p className="text-lg max-w-[120ch] text-balance">
             After sending a survey we pulled some of the most frequently asked
             questions asked by our customers. We received and compiled them all
             into one place for your convenience. Have more questions? Please

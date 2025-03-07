@@ -15,9 +15,7 @@ export default function about() {
       <main className="container p-4 mx-auto my-32 space-y-32">
         <section className="">
           <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-none">
-            <h2 className="font-extrabold capitalize display-small">
-              Our mission
-            </h2>
+            <h2 className="display-medium font-bold capitalize">Our mission</h2>
             <div className="flex flex-col mt-6 gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="prose-lg dark:text-slate-100">
