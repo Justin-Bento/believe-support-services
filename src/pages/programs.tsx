@@ -36,28 +36,29 @@ export default function programs() {
               <Link
                 key={data.title.toString()}
                 href={`/programs/${CreateSlug(data.title)}`}
-                className="hover:opacity-80 active:ring-1 transition-all"
+                className="group transision-all rounded-xl border-2 border-primary-100 active:bg-primary-100 dark:border-primary-800 bg-primary-50 hover:border-primary-200 hover:bg-primary-50 dark:bg-primary-900 dark:hover:bg-primary-800 dark:active:bg-primary-700"
               >
-                <div className="bg-primary-50 dark:bg-primary-900 min-h-[430px] rounded-xl">
-                  <div className="w-full h-64 relative">
-                    <Image
-                      fill
-                      src="/media/hero-image.webp"
-                      alt={data.title}
-                      className="object-cover rounded-xl hover:grayscale-[10%]"
-                    />
-                  </div>
-                  <div className="p-8">
-                    <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                      {data.title}
-                    </h2>
-                    <p className="leading-7 line-clamp-3 tracking-wider text-opacity-75 text-slate-700/75 dark:text-slate-100/75">
-                      {data.description}
-                    </p>
-                    <Button size="sm" variant="secondary" className="mt-4">
-                      View Program
-                    </Button>
-                  </div>
+                <div className="w-full h-64 relative overflow-hidden">
+                  <Image
+                    fill
+                    src="/media/hero-image.webp"
+                    alt={data.title}
+                    className="object-cover rounded-t-xl group-hover:contrast-125"
+                  />
+                </div>
+                <div className="p-6 space-y-4">
+                  <p className="text-lg font-bold leading-none tracking-tight">
+                    {data.title}
+                  </p>
+                  <p className="text-sm leading-5 opacity-80 line-clamp-3">
+                    {data.description}
+                  </p>
+                  <button
+                    type="button"
+                    className="rounded-md bg-transparent pr-2.5 py-1 text-xs font-medium capitalize text-gray-900 group-hover:underline dark:text-white dark:opacity-70"
+                  >
+                    Read About The Program &rarr;
+                  </button>
                 </div>
               </Link>
             );
