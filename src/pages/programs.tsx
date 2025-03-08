@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import { CreateSlug } from "@/lib/utils";
 import Head from "next/head";
 
 export default function programs() {
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   return (
     <>
       <Head>
@@ -36,7 +37,11 @@ export default function programs() {
               <Link
                 key={data.title.toString()}
                 href={`/programs/${CreateSlug(data.title)}`}
-                className="group transision-all rounded-xl border-2 border-primary-100 active:bg-primary-100 dark:border-primary-800 bg-primary-50 hover:border-primary-200 hover:bg-primary-50 dark:bg-primary-900 dark:hover:bg-primary-800 dark:active:bg-primary-700"
+                className={`group transition-all rounded-xl border-2 border-primary-100 active:bg-primary-100 dark:border-primary-800 bg-primary-50 hover:border-primary-200 hover:bg-primary-50 dark:bg-primary-900 dark:hover:bg-primary-800 dark:active:bg-primary-700 ${
+                  hoveredCard && hoveredCard !== data.title ? "opacity-50" : ""
+                }`}
+                onMouseEnter={() => setHoveredCard(data.title)}
+                onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className="w-full h-64 relative overflow-hidden">
                   <Image
