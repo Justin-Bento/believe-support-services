@@ -71,7 +71,7 @@ export default function events() {
                     />
                   </div>
                 </li>
-                <li className="col-span-8 p-6 space-y-4">
+                <li className="col-span-8 p-6 space-y-2">
                   <button
                     type="button"
                     className="rounded bg-primary-400 dark:bg-primary-950/50 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
@@ -81,13 +81,13 @@ export default function events() {
                   <h2 className="text-xl font-bold dark:text-white">
                     Event Topic Goes Here
                   </h2>
-                  <p className="text-base leading-6 opacity-70 max-w-[100ch] text-balance">
+                  <p className="text-base leading-6 dark:text-white max-w-[100ch] text-balance">
                     Give a brief overview of the purpose of this campaign and
                     why this campaign is happening. Having a good summary and
                     reason is great to help engage your audience and build up
                     your community for the long term.
                   </p>
-                  <ul className="text-white opacity-70 list-disc list-inside">
+                  <ul className="text-base leading-6 opacity-70 dark:text-white list-disc list-inside">
                     <li className="">Event Date:</li>
                     <li className="">Location:</li>
                     <li className="">Registration:</li>
