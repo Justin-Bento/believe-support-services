@@ -60,7 +60,7 @@ export default function events() {
             return (
               <ul
                 key={index}
-                className="grid gap-8 grid-cols-12 bg-primary-900 xs:rounded-t-lg rounded-lg ring"
+                className="grid gap-8 grid-cols-12 bg-primary-50 dark:bg-primary-900 xs:rounded-t-lg rounded-lg ring"
               >
                 <li className="w-full aspect-square col-span-12 lg:col-span-4">
                   <div className="relative w-full h-96 lg:h-full rounded-t-lg lg:rounded-l-lg overflow-hidden">
