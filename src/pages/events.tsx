@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import index from ".";
+import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 
 export default function events() {
   return (
@@ -97,6 +97,77 @@ export default function events() {
               </ul>
             );
           })}
+        </section>
+        <section className="">
+          <nav className="flex items-center justify-between px-4 sm:px-0">
+            <div className="-mt-px flex w-0 flex-1">
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-200"
+              >
+                <RiArrowLeftLine
+                  aria-hidden="true"
+                  className="mr-3 size-5 text-gray-400 dark:text-gray-200"
+                />
+                Previous
+              </a>
+            </div>
+            <div className="hidden md:-mt-px md:flex">
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-500"
+              >
+                1
+              </a>
+              {/* Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 dark:hover:text-gray-500 hover:border-gray-300" */}
+              <a
+                href="#"
+                aria-current="page"
+                className="inline-flex items-center border-t-2 border-primary-500 dark:border-gray-300 px-4 pt-4 text-sm font-medium text-gray-600 dark:text-gray-200"
+              >
+                2
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-500"
+              >
+                3
+              </a>
+              <span className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">
+                ...
+              </span>
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-500"
+              >
+                8
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-500"
+              >
+                9
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-500"
+              >
+                10
+              </a>
+            </div>
+            <div className="-mt-px flex w-0 flex-1 justify-end">
+              <a
+                href="#"
+                className="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-200"
+              >
+                Next
+                <RiArrowRightLine
+                  aria-hidden="true"
+                  className="ml-3 size-5 text-gray-400 dark:text-gray-200"
+                />
+              </a>
+            </div>
+          </nav>
         </section>
       </main>
     </>
