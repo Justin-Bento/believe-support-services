@@ -32,7 +32,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
+                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 All Events
               </button>
@@ -40,7 +40,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
+                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 Upcomming Events
               </button>
@@ -48,7 +48,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
+                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 Previous Events
               </button>
