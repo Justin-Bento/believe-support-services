@@ -13,9 +13,9 @@ export default function questions() {
         />
       </Head>
       <main className="p-4 my-32 lg:container lg:mx-auto lg:p-0">
-        <section className="space-y-2">
-          <h1 className="display-medium font-bold">
-            Questions With Believe Support Services
+        <section className="space-y-4">
+          <h1 className="text-4xl font-semibold text-gray-900 sm:text-5xl capitalize dark:text-primary-50">
+            Frequently asked questions
           </h1>
           <p className="text-lg max-w-[120ch] text-balance">
             After sending a survey we pulled some of the most frequently asked
@@ -24,25 +24,23 @@ export default function questions() {
             reach out!
           </p>
         </section>
-        {/*
-         * End Of Page Header
-         */}
-        <section className="my-8 grid grid-cols-12 gap-6">
-          {frequently_asked_questions.map((data: any) => {
-            return (
-              <>
-                <div className="col-span-12 lg:col-span-6 p-6 bg-primary-50 dark:bg-primary-900 dark:border-opacity-0 rounded-xl">
-                  <h2 className="font-semibold tracking-wider text-md capitalize dark:text-primary-100">
-                    {data.question}
-                  </h2>
-                  <p className="leading-7 text-sm tracking-wider dark:text-primary-100/75">
-                    {data.awnser}
-                  </p>
-                </div>
-              </>
-            );
-          })}
-        </section>
+        <dl className="mt-20 divide-y divide-gray-900/10">
+          {frequently_asked_questions.map((faq, index) => (
+            <div
+              key={index}
+              className="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8"
+            >
+              <dt className="text-base/7 font-semibold text-gray-900 lg:col-span-5 dark:text-primary-50">
+                {faq.question}
+              </dt>
+              <dd className="mt-4 lg:col-span-7 lg:mt-0">
+                <p className="text-base/7 text-gray-600 dark:text-primary-50 dark:opacity-70">
+                  {faq.answer}
+                </p>
+              </dd>
+            </div>
+          ))}
+        </dl>
       </main>
     </>
   );
