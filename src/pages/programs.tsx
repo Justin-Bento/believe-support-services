@@ -9,7 +9,7 @@ interface programs_info_interface {
   title: string;
   description: string;
 }
-export default function programs() {
+export default function Programs() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   return (
     <>
