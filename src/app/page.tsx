@@ -1,6 +1,6 @@
 import React from "react";
-import NavigationTop from "./components/NavigationBottom";
-import NavigationBottom from "./components/NavigationTop";
+import NavigationTop from "./components/NavigationTop";
+import NavigationBottom from "./components/NavigationBottom";
 
 export default function page() {
   return (
