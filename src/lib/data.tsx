@@ -7,7 +7,7 @@ const NavigationTopLinks: NavigationTopLinks[] = [
   { name: "About", href: "/about" },
   { name: "Programs", href: "/programs" },
   { name: "Events", href: "/events" },
-  { name: "Questions", href: "/faq" }, // More semantic than "questions"
+  { name: "Questions", href: "/questions" }, // More semantic than "questions"
   { name: "Contact", href: "/contact" },
 ];
 
