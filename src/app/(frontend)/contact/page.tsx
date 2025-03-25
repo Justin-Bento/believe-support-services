@@ -1,30 +1,21 @@
-import Head from "next/head";
-import { Switch } from "@headlessui/react";
-import { useState } from "react";
-import { classNames } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
-
   return (
     <>
-      <Head>
-        <title>Contact - Believe Support Services</title>
-        <meta
-          name="description"
-          content="Helping individuals with complex needs to help them be the best version of themselves and their community."
-        />
-      </Head>
       <main className="container p-4 mx-auto my-16 space-y-16">
         {/* Support Center Section */}
         <section>
           <div className="max-w-2xl mx-auto lg:mx-0 space-y-2">
-            <p className="text-base font-semibold leading-7 text-yellow-600 capitalize">
+            <p className="text-base font-semibold leading-7 text-primary capitalize">
               Get the help you need
             </p>
-            <h2 className="display-medium font-bold capitalize">
+            <h1 className="scroll-m-20 text-5xl font-bold tracking-tight capitalize">
               Support center
-            </h2>
+            </h1>
             <p className="text-lg max-w-[120ch] text-balance">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
@@ -39,71 +30,86 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               {/* First Name */}
               <div>
-                <label htmlFor="first-name" className="body-medium">
+                <Label
+                  htmlFor="first-name"
+                  className="text-sm font-semibold capitalize"
+                >
                   First name
-                </label>
+                </Label>
                 <div className="mt-2.5">
-                  <input
+                  <Input
                     type="text"
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="shadow-none border-foreground/65"
                   />
                 </div>
               </div>
 
               {/* Last Name */}
               <div>
-                <label htmlFor="last-name" className="body-medium">
+                <Label
+                  htmlFor="last-name"
+                  className="text-sm font-semibold capitalize"
+                >
                   Last name
-                </label>
+                </Label>
                 <div className="mt-2.5">
-                  <input
+                  <Input
                     type="text"
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="shadow-none border-foreground/65"
                   />
                 </div>
               </div>
 
               {/* Company */}
               <div className="sm:col-span-2">
-                <label htmlFor="company" className="body-medium">
+                <Label
+                  htmlFor="company"
+                  className="text-sm font-semibold capitalize"
+                >
                   Company
-                </label>
+                </Label>
                 <div className="mt-2.5">
-                  <input
+                  <Input
                     type="text"
                     name="company"
                     id="company"
                     autoComplete="organization"
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="shadow-none border-foreground/65"
                   />
                 </div>
               </div>
 
               {/* Email */}
               <div className="sm:col-span-2">
-                <label htmlFor="email" className="body-medium">
+                <Label
+                  htmlFor="email"
+                  className="text-sm font-semibold capitalize"
+                >
                   Email
-                </label>
+                </Label>
                 <div className="mt-2.5">
-                  <input
+                  <Input
                     type="email"
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="shadow-none border-foreground/65"
                   />
                 </div>
               </div>
 
               {/* Phone Number */}
               <div className="sm:col-span-2">
-                <label htmlFor="phone-number" className="body-medium">
+                <label
+                  htmlFor="phone-number"
+                  className="text-sm font-semibold capitalize"
+                >
                   Phone number
                 </label>
                 <div className="relative mt-2.5">
@@ -121,34 +127,38 @@ export default function Contact() {
                       <option>EU</option>
                     </select>
                   </div>
-                  <input
+                  <Input
                     type="tel"
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="shadow-none border-foreground/65"
                   />
                 </div>
               </div>
 
               {/* Message */}
               <div className="sm:col-span-2">
-                <label htmlFor="message" className="body-medium">
+                <label
+                  htmlFor="message"
+                  className="text-sm font-semibold capitalize"
+                >
                   Message
                 </label>
                 <div className="mt-2.5">
-                  <textarea
+                  <Textarea
                     name="message"
                     id="message"
+                    placeholder="Type your message here"
+                    className="shadow-none border-foreground/65"
                     rows={4}
-                    className="block w-full rounded-md bg-transparent dark:bg-primary-950 border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     defaultValue={""}
                   />
                 </div>
               </div>
 
               {/* Privacy Policy Switch */}
-              <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+              {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
                 <div className="flex items-center h-6">
                   <Switch
                     checked={agreed}
@@ -178,17 +188,14 @@ export default function Contact() {
                   </a>
                   .
                 </Switch.Label>
-              </Switch.Group>
+              </Switch.Group> */}
             </div>
 
             {/* Submit Button */}
             <div className="mt-10">
-              <button
-                type="submit"
-                className="block w-full rounded-md bg-yellow-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-              >
+              <Button type="submit" className="w-32">
                 Let&#39;s talk
-              </button>
+              </Button>
             </div>
           </form>
         </section>
@@ -196,7 +203,9 @@ export default function Contact() {
         {/* Offices Section */}
         <section>
           <div className="max-w-2xl mx-auto lg:mx-0">
-            <h2 className="font-bold headline-medium">Our offices</h2>
+            <h2 className="scroll-m-20 pb-2 text-3xl font-bold tracking-tight first:mt-0 capitalize">
+              Our offices
+            </h2>
             <p className="mt-3 body-large">
               Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
               id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
@@ -206,8 +215,8 @@ export default function Contact() {
           <div className="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-16 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
             {/* Los Angeles */}
             <div>
-              <h3 className="pl-6 title-medium">Los Angeles</h3>
-              <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+              <h3 className="pl-6 font-semibold">Los Angeles</h3>
+              <address className="pt-2 pl-6 not-italic border-l border-primary/50">
                 <p>4556 Brendan Ferry</p>
                 <p>Los Angeles, CA 90210</p>
               </address>
@@ -215,8 +224,8 @@ export default function Contact() {
 
             {/* New York */}
             <div>
-              <h3 className="pl-6 title-medium">New York</h3>
-              <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+              <h3 className="pl-6 font-semibold">New York</h3>
+              <address className="pt-2 pl-6 not-italic border-l border-primary/50">
                 <p>886 Walter Street</p>
                 <p>New York, NY 12345</p>
               </address>
@@ -224,8 +233,8 @@ export default function Contact() {
 
             {/* Toronto */}
             <div>
-              <h3 className="pl-6 title-medium">Toronto</h3>
-              <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+              <h3 className="pl-6 font-semibold">Toronto</h3>
+              <address className="pt-2 pl-6 not-italic border-l border-primary/50">
                 <p>7363 Cynthia Pass</p>
                 <p>Toronto, ON N3Y 4H8</p>
               </address>
@@ -233,8 +242,8 @@ export default function Contact() {
 
             {/* London */}
             <div>
-              <h3 className="pl-6 title-medium">London</h3>
-              <address className="pt-2 pl-6 not-italic border-l border-gray-200 body-medium dark:border-gray-500">
+              <h3 className="pl-6 font-semibold">London</h3>
+              <address className="pt-2 pl-6 not-italic border-l border-primary/50">
                 <p>114 Cobble Lane</p>
                 <p>London N1 2EF</p>
               </address>

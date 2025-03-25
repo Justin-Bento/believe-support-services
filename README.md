@@ -1,20 +1,36 @@
-# Believe Support Service
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Believe Support Services is a company that offers a wide variety of programs to support individuals with complex needs. Their programs include life skills training, recreation, and social groups, which help create a sense of community and give parents and caregivers a break. These programs are designed to encourage individuals to achieve their life goals and build independence. 
+## Getting Started
 
-While working as a computer technician, I was assigned the task of updating their website. However, a lack of clear communication and alignment between the organization's vision and my understanding resulted in design and functionality issues. This emphasized the need for thorough discussions and documentation at the project's start, as well as multiple revisions to the website. Which I was able to give them enabling them to update the website to their needs.
-
-![2024-06-09 12 20 46 believesupportservices vercel app c0f747802234](https://github.com/Justin-Bento/believe-support-services/assets/44421842/316d4a72-1236-4721-83d8-aaecebca8ad1)
-
-## Usage
+First, run the development server:
 
 ```bash
-cd /believe-support-services
-
-# When you're inside the folder install dependencies using:
-npm install
-
-# Run the development server, after the dependncies are installed 
-npm run dev 
-
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
