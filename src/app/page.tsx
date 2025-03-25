@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <NavigationTop />
-      <main className="container mx-auto p-4 min-h-dvh">
+      <main className="container mx-auto min-h-dvh">
         <h1 className="text-4xl font-bold">Hello World</h1>
       </main>
       <NavigationBottom />
