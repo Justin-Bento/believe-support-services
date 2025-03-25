@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../../tailwind.config.js';
 
@@ -96,7 +96,7 @@
   /* End Of body Typography */
 }
 @utility label-small {
-  @apply text-xxs/* 11 px */ dark:text-primary-50 text-primary-950;
+  @apply text-xs dark:text-primary-50 text-primary-950;
   /* End Of body Typography */
 }
 @utility body-large {
@@ -115,11 +115,11 @@
 
 @layer utilities {
   @font-face {
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     font-weight: 100 900;
     font-display: block;
     font-style: normal;
-    src: url('/fonts/OpenSans-Variable.ttf') format('truetype');
+    src: url("/fonts/OpenSans-Variable.ttf") format("truetype");
   }
 }
 
