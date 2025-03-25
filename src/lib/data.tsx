@@ -49,7 +49,7 @@ const CompanyValues = [
     This is a comment to seperate program pages.
   <...>
 */
-export const programs_info = [
+const programs_info = [
   {
     id: 1,
     title: "Recreation and Leisure",
@@ -87,6 +87,24 @@ export const programs_info = [
       "Building meaningful connections is at the core of our Social Group Engagement programs. We provide inclusive spaces where individuals can connect with peers who share similar interests and experiences. Through group discussions, collaborative activities, and shared experiences, participants can develop lasting friendships and strengthen their social skills..",
   },
 ];
+/* 
+  <...>
+    This is a comment to seperate events pages.
+  <...>
+*/
+const events = new Array(6).fill({
+  title: "Event Name Goes Here",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos placeat quam ipsa nesciunt? Iste, quia non. Ducimus aliquid aliquam culpa recusandae velit cupiditate, quibusdam, impedit, dolorem laboriosam exercitationem libero.",
+  image: "/event-placeholder.jpg", // Use a local placeholder or proper URL
+  date: "Wednesday, March 26",
+  time: "6:00 PM",
+  format: "In-Person",
+  location:
+    "DCC 208 Classroom at TMU's Daphne Cockwell Health Sciences Complex - 288 Church Street",
+  registration: "Not required",
+  livestream: "https://discord.gg/aXfY76xgVJ",
+});
 
 const NavigationBottomLinks = {
   solutions: [
@@ -177,4 +195,10 @@ const NavigationBottomLinks = {
   ],
 };
 
-export { NavigationBottomLinks, CompanyValues, NavigationTopLinks };
+export {
+  NavigationBottomLinks,
+  CompanyValues,
+  events,
+  programs_info,
+  NavigationTopLinks,
+};
