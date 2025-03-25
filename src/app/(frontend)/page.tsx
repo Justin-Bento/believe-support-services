@@ -99,7 +99,7 @@ export default function page() {
         </section>
         {/* <...> End Of Hereo Section <...> */}
         <section className="">
-          <Card className="text-center border-none shadow-none">
+          <Card className="bg-primary/20 dark:bg-card text-center border-none shadow-none">
             <CardContent className="space-y-4 relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
               <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal ">
                 Stay notified when we launch programs.
@@ -168,7 +168,7 @@ export default function page() {
         </section>
         {/* <...> End Of Call TO Action Section <...> */}
         <section className="">
-          <Card className="text-center border-none shadow-none">
+          <Card className="bg-primary/20 dark:bg-card text-center border-none shadow-none">
             <CardContent className="space-y-4 relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
               <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal ">
                 Start Believing In Yourself Today.

@@ -78,7 +78,7 @@ export default function page() {
       {/*
        * End of Values Section
        */}
-      <section className="py-24 bg-primary/20 sm:py-32 rounded-2xl">
+      <section className="py-24 bg-primary/20 dark:bg-card sm:py-32 rounded-2xl">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <div className="grid max-w-2xl grid-cols-1 mx-auto lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
