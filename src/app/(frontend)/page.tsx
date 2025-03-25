@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { Input } from "@/components/ui/input";
 
 export default function page() {
   return (
@@ -102,12 +103,20 @@ export default function page() {
           <Card className="bg-primary/10 text-center border-none shadow-none">
             <CardContent className="space-y-4 relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
               <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal ">
-                Say notified on launch and company news.
+                Say notified when we launch programs.
               </h2>
               <p className="">
                 Reprehenderit ad esse et non officia in nulla. Id proident
                 tempor incididunt nostrud nulla et culpa.
               </p>
+              <div className="flex w-full max-w-sm lg:mx-auto items-center lg:justify-center space-x-2">
+                <Input
+                  type="email"
+                  placeholder="Email"
+                  className="border-foreground/20 shadow-none"
+                />
+                <Button type="submit">Subscribe</Button>
+              </div>
             </CardContent>
           </Card>
         </section>
