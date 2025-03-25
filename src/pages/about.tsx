@@ -48,7 +48,7 @@ export default function about() {
         {/*
          * End of Mission Section
          */}
-        <section className="aspect-[5/2] w-full relative">
+        <section className="aspect-5/2 w-full relative">
           <Image
             fill
             quality={50}

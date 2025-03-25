@@ -22,7 +22,7 @@ export default function events() {
           </p>
           <button
             type="button"
-            className="rounded bg-primary-800 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
+            className="rounded-sm bg-primary-800 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
           >
             Events
           </button>
@@ -32,7 +32,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
+                className="rounded-sm bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 All Events
               </button>
@@ -40,7 +40,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
+                className="rounded-sm bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 Upcomming Events
               </button>
@@ -48,7 +48,7 @@ export default function events() {
             <li className="">
               <button
                 type="button"
-                className="rounded bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
+                className="rounded-sm bg-transparent ring-2 px-3 py-1.5 text-xs font-mono uppercase text-primary-900 font-bold dark:text-primary-50 dark:hover:bg-primary-700"
               >
                 Previous Events
               </button>
@@ -60,7 +60,7 @@ export default function events() {
             return (
               <ul
                 key={index}
-                className="grid gap-8 grid-cols-12 bg-primary-50 dark:bg-primary-900 xs:rounded-t-lg rounded-lg ring"
+                className="grid gap-8 grid-cols-12 bg-primary-50 dark:bg-primary-900 xs:rounded-t-lg rounded-lg ring-3"
               >
                 <li className="w-full aspect-square col-span-12 lg:col-span-4">
                   <div className="relative w-full h-96 lg:h-full rounded-t-lg lg:rounded-l-lg overflow-hidden">
@@ -74,7 +74,7 @@ export default function events() {
                 <li className="col-span-8 p-6 space-y-2">
                   <button
                     type="button"
-                    className="rounded bg-primary-400 dark:bg-primary-950/50 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
+                    className="rounded-sm bg-primary-400 dark:bg-primary-950/50 px-3 py-1.5 text-xs font-mono uppercase text-primary-50 dark:hover:bg-primary-700"
                   >
                     Event Type
                   </button>
