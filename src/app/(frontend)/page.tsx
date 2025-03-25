@@ -21,11 +21,11 @@ export default function page() {
           <div className="space-y-4">
             <Button
               variant="outline"
-              className="shadow-none rounded-full border-netural-400"
+              className="shadow-none rounded-full border-foreground/20"
             >
               <Link href="/#" className="relative">
                 Upcomming Events at Believe &nbsp;
-                <span className="font-semibold text-neutral-600 dark:text-neutral-300 space-nowrap">
+                <span className="font-semibold text-primary space-nowrap">
                   <span className="absolute inset-0" aria-hidden="true"></span>
                   Read more <span aria-hidden="true">→</span>
                 </span>
@@ -118,12 +118,12 @@ export default function page() {
               Become The Superstar You Want To Be, While With Our Interactive
               Prograsms!
             </h3>
-            <p className="text-md text-netural-600 dark:text-white/75">
+            <p className="text-lg/7 text-foreground">
               We work to build a community where everyone is included and
               respected. We understand that everyone has different views and try
               to create a place where people can talk openly and work..
             </p>
-            <Button variant="link" className="pl-0 text-xs">
+            <Button variant="link" className="pl-0">
               View Our Program &rarr;
             </Button>
           </div>
@@ -140,12 +140,12 @@ export default function page() {
               Become The Superstar You Want To Be, While With Our Interactive
               Prograsms!
             </h3>
-            <p className="text-md text-netural-600 dark:text-white/75">
+            <p className="text-lg/7 text-foreground">
               We work to build a community where everyone is included and
               respected. We understand that everyone has different views and try
               to create a place where people can talk openly and work..
             </p>
-            <Button variant="link" className="pl-0 text-xs">
+            <Button variant="link" className="pl-0">
               View Our Program &rarr;
             </Button>
           </div>
