@@ -3,12 +3,12 @@ interface NavigationTopLinks {
   href: string;
 }
 const NavigationTopLinks: NavigationTopLinks[] = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Programs", href: "#programs" },
-  { name: "Events", href: "#events" },
-  { name: "Questions", href: "#faq" }, // More semantic than "questions"
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Programs", href: "/programs" },
+  { name: "Events", href: "/events" },
+  { name: "Questions", href: "/faq" }, // More semantic than "questions"
+  { name: "Contact", href: "/contact" },
 ];
 const NavigationBottomLinks = {
   solutions: [
