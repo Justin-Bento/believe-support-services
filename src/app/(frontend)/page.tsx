@@ -16,7 +16,6 @@ import { Input } from "@/components/ui/input";
 export default function page() {
   return (
     <>
-      <NavigationTop />
       <main className="container mx-auto min-h-dvh my-24 space-y-32">
         <section className="lg:text-balance lg:text-center space-y-12">
           <div className="space-y-4">
@@ -189,7 +188,6 @@ export default function page() {
         </section>
         {/* <...> End Of Call TO Action Section <...> */}
       </main>
-      <NavigationBottom />
     </>
   );
 }
