@@ -94,7 +94,7 @@ const navigation = {
 export default function NavigationBottom() {
   return (
     <footer>
-      <Card className="bg-foreground/5">
+      <Card className="bg-primary/20 shadow-none border-none">
         <CardContent className="container mx-auto lg:px-0 py-12 lg:py-24">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
