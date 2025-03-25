@@ -120,7 +120,7 @@ export default function ProgramSlug() {
               <div className="flex items-center justify-center mt-10 gap-x-6">
                 <Link
                   href="/signup"
-                  className="capitalize rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-yellow-600 shadow-sm hover:bg-yellow-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="capitalize rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-yellow-600 shadow-xs hover:bg-yellow-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Get started
                 </Link>

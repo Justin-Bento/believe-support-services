@@ -97,7 +97,7 @@ export default function signup() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
                     >
                       <option>United States</option>
                       <option>Canada</option>
@@ -115,7 +115,7 @@ export default function signup() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:bg-transparent dark:text-white p-2"
                     >
                       <option>Voulenteer</option>
                       <option>Parttime</option>
@@ -196,7 +196,7 @@ export default function signup() {
                       <div className="flex mt-4 text-sm leading-6 text-gray-600">
                         <label
                           htmlFor="file-upload"
-                          className="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                          className="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-hidden focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
                         >
                           <span>Upload a file</span>
                           <input
@@ -238,7 +238,7 @@ export default function signup() {
                           id="comments"
                           name="comments"
                           type="checkbox"
-                          className="w-4 h-4 border-gray-300 rounded text-primary-600 focus:ring-primary-600"
+                          className="w-4 h-4 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-600"
                         />
                       </div>
                       <div className="text-sm leading-6">
@@ -260,7 +260,7 @@ export default function signup() {
                           id="candidates"
                           name="candidates"
                           type="checkbox"
-                          className="w-4 h-4 border-gray-300 rounded text-primary-600 focus:ring-primary-600"
+                          className="w-4 h-4 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-600"
                         />
                       </div>
                       <div className="text-sm leading-6">
@@ -281,7 +281,7 @@ export default function signup() {
                           id="offers"
                           name="offers"
                           type="checkbox"
-                          className="w-4 h-4 border-gray-300 rounded text-primary-600 focus:ring-primary-600"
+                          className="w-4 h-4 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-600"
                         />
                       </div>
                       <div className="text-sm leading-6">
@@ -349,7 +349,7 @@ export default function signup() {
           <div className="flex items-center justify-start mt-6 gap-x-6">
             <button
               type="submit"
-              className="px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-primary-600 hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              className="px-3 py-2 text-sm font-semibold text-white rounded-md shadow-xs bg-primary-600 hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >
               Save
             </button>
