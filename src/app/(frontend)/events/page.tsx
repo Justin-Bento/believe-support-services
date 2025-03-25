@@ -7,6 +7,9 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
+import { events } from "@/lib/data";
+import { CalendarDays, MapPin, ClipboardList, Monitor } from "lucide-react";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -54,10 +57,10 @@ export default function page() {
       <section className="">
         <ul className="">
           {events.map((event, index) => (
-            <li key={index} className="mb-8 last:mb-0">
-              <Card className="overflow-hidden hover:shadow-md transition-shadow">
+            <li key={index} className="my-8 last:mb-0">
+              <Card className="overflow-hidden transition-shadow p-0 shadow-none hover:border-primary hover:cursor-pointer">
                 <CardContent className="p-0">
-                  <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="grid lg:grid-cols-2 gap-6 items-center">
                     {/* Event Image */}
                     <div className="relative aspect-video bg-muted">
                       <Image
