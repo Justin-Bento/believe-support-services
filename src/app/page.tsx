@@ -10,6 +10,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -46,8 +47,13 @@ export default function page() {
               </Button>
             </div>
           </div>
-          <div className="w-full aspect-square lg:aspect-video bg-neutral-300 rounded-lg overflow-hidden">
-            <p className="opacity-0">hello world</p>
+          <div className="relative w-full aspect-square lg:aspect-video bg-neutral-300 rounded-lg overflow-hidden">
+            <Image
+              fill
+              src="/media/hero-image.webp"
+              alt="Hodges Bay Club garnished with our Island Microgreens"
+              className="object-cover object-center rounded-xl"
+            />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="rounded-lg overflow-hidden shadow-none">
@@ -106,8 +112,8 @@ export default function page() {
           </Card>
         </section>
         {/* <...> End Of Call TO Action Section <...> */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="w-full order-first space-y-3">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-y-24 lg:gap-x-12">
+          <div className="w-full order-first space-y-3 flex flex-col justify-center items-start">
             <h3 className="scroll-m-20 dark:text-primary-100 text-3xl font-bold tracking-wide transition-colors first:mt-0">
               Become The Superstar You Want To Be, While With Our Interactive
               Prograsms!
@@ -121,8 +127,15 @@ export default function page() {
               View Our Program &rarr;
             </Button>
           </div>
-          <div className="w-full aspect-video rounded bg-foreground/30 rounded-lg"></div>
-          <div className="lg:order-last">
+          <div className="relative w-full aspect-[16/10] rounded bg-foreground/30 rounded-lg">
+            <Image
+              fill
+              src="/media/believe-support-services--images.webp"
+              alt="Hodges Bay Club garnished with our Island Microgreens"
+              className="object-cover object-center rounded-xl"
+            />
+          </div>
+          <div className="lg:order-last flex flex-col justify-center items-start gap-4">
             <h3 className="scroll-m-20 dark:text-primary-100 text-3xl font-bold tracking-wide transition-colors first:mt-0">
               Become The Superstar You Want To Be, While With Our Interactive
               Prograsms!
@@ -136,7 +149,14 @@ export default function page() {
               View Our Program &rarr;
             </Button>
           </div>
-          <div className="w-full aspect-video rounded bg-foreground/30 rounded-lg"></div>
+          <div className="relative w-full aspect-[16/10] rounded bg-foreground/30 rounded-lg">
+            <Image
+              fill
+              src="/media/believe-support-services--life-skills.webp"
+              alt="Hodges Bay Club garnished with our Island Microgreens"
+              className="object-cover object-center rounded-xl"
+            />
+          </div>
         </section>
         {/* <...> End Of Call TO Action Section <...> */}
       </main>
