@@ -106,6 +106,39 @@ export default function page() {
           </Card>
         </section>
         {/* <...> End Of Call TO Action Section <...> */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="w-full order-first space-y-3">
+            <h3 className="scroll-m-20 dark:text-primary-100 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+              Become The Superstar You Want To Be, While With Our Interactive
+              Prograsms!
+            </h3>
+            <p className="text-md text-netural-600 dark:text-white/75">
+              We work to build a community where everyone is included and
+              respected. We understand that everyone has different views and try
+              to create a place where people can talk openly and work..
+            </p>
+            <Button variant="link" className="pl-0 text-xs">
+              View Our Program &rarr;
+            </Button>
+          </div>
+          <div className="w-full aspect-video rounded bg-foreground/30 rounded-lg"></div>
+          <div className="lg:order-last">
+            <h3 className="scroll-m-20 dark:text-primary-100 text-3xl font-bold tracking-wide transition-colors first:mt-0">
+              Become The Superstar You Want To Be, While With Our Interactive
+              Prograsms!
+            </h3>
+            <p className="text-md text-netural-600 dark:text-white/75">
+              We work to build a community where everyone is included and
+              respected. We understand that everyone has different views and try
+              to create a place where people can talk openly and work..
+            </p>
+            <Button variant="link" className="pl-0 text-xs">
+              View Our Program &rarr;
+            </Button>
+          </div>
+          <div className="w-full aspect-video rounded bg-foreground/30 rounded-lg"></div>
+        </section>
+        {/* <...> End Of Call TO Action Section <...> */}
       </main>
       <NavigationBottom />
     </>
