@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { NavigationTopLinks } from "@/lib/data";
+import CompanyLogo from "./CompanyLogo";
 
 export default function NavigationTop() {
   return (
@@ -11,19 +12,9 @@ export default function NavigationTop() {
         <CardContent className="container mx-auto px-4">
           <nav className="flex flex-col items-start gap-4 py-3 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
             {/* Logo */}
-            <Link
-              href="#home"
-              aria-label="Home"
-              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            >
-              <Image
-                src="/next.svg"
-                alt="Company Logo"
-                width={120}
-                height={24}
-                priority
-                className="h-6 w-auto" // Better responsive sizing
-              />
+            <Link href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Believe Support Services</span>
+              <CompanyLogo fill={`fill-foreground`} />
             </Link>
 
             {/* Navigation Links */}
