@@ -91,6 +91,21 @@ export default function page() {
             </Card>
           </div>
         </section>
+        {/* <...> End Of Hereo Section <...> */}
+        <section className="">
+          <Card className="text-center shadow-none">
+            <CardContent className="space-y-4 relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
+              <h2 className="max-w-2xl mx-auto scroll-m-20 text-3xl font-extrabold capitalize text-center tracking-normal ">
+                Say notified on launch and company news.
+              </h2>
+              <p className="">
+                Reprehenderit ad esse et non officia in nulla. Id proident
+                tempor incididunt nostrud nulla et culpa.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        {/* <...> End Of Call TO Action Section <...> */}
       </main>
       <NavigationBottom />
     </>
