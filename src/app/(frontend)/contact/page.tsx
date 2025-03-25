@@ -1,13 +1,9 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
 
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
-
   return (
     <>
       <main className="container p-4 mx-auto my-16 space-y-16">
