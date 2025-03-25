@@ -5,14 +5,16 @@ import Image from "next/image";
 import { programs_info } from "@/lib/data";
 import { CreateSlug } from "@/lib/utils";
 
-interface programs_info_interface {
+interface ProgramsInfoInterface {
   id: number;
   title: string;
   description: string;
 }
 
-export default function page() {
+export default function ProgramsPage() {
+  // Changed from 'page' to 'ProgramsPage'
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
+
   return (
     <main className="min-h-screen lg:container lg:mx-auto lg:py-24 p-4 py-16">
       <section className="space-y-4">
@@ -29,7 +31,7 @@ export default function page() {
        * End of Page Header
        */}
       <section className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
-        {programs_info.map((data: programs_info_interface) => {
+        {programs_info.map((data: ProgramsInfoInterface) => {
           return (
             <Link
               key={data.id}
