@@ -2,22 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-interface NavigationLink {
-  name: string;
-  href: string;
-}
+import { NavigationTopLinks } from "@/lib/data";
 
 export default function NavigationTop() {
-  const navigationLinks: NavigationLink[] = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Programs", href: "#programs" },
-    { name: "Events", href: "#events" },
-    { name: "Questions", href: "#faq" }, // More semantic than "questions"
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Card className="rounded-none border-none shadow-sm">
@@ -41,7 +28,7 @@ export default function NavigationTop() {
 
             {/* Navigation Links */}
             <ul className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-1">
-              {navigationLinks.map((link) => (
+              {NavigationTopLinks.map((link) => (
                 <li key={link.href}>
                   <Button
                     asChild
