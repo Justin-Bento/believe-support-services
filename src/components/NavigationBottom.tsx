@@ -1,7 +1,7 @@
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 import { NavigationBottomLinks } from "@/lib/data";
+import CompanyLogo from "./CompanyLogo";
 
 export default function NavigationBottom() {
   return (
@@ -10,14 +10,11 @@ export default function NavigationBottom() {
         <CardContent className="container mx-auto lg:px-0 py-12 lg:py-24">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
-              <Image
-                src="/next.svg"
-                alt="Company Logo"
-                width={120}
-                height={24}
-                priority
-                className="h-6 w-auto" // Better responsive sizing
-              />
+              {/* Logo */}
+              <Link href="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Believe Support Services</span>
+                <CompanyLogo fill={`fill-foreground`} />
+              </Link>
               <p className="text-sm/6 text-balance text-foreground">
                 Making the world a better place through constructing elegant
                 hierarchies.
