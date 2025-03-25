@@ -1,6 +1,6 @@
 import React from "react";
-import NavigationTop from "./components/NavigationTop";
-import NavigationBottom from "./components/NavigationBottom";
+import NavigationTop from "@/components/NavigationTop";
+import NavigationBottom from "@/components/NavigationBottom";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
