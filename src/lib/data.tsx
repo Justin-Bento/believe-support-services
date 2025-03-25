@@ -2,11 +2,6 @@ interface NavigationTopLinks {
   name: string;
   href: string;
 }
-interface SocialLink {
-  name: string;
-  href: string;
-  icon: React.FC<React.SVGProps<SVGSVGElement>>;
-}
 
 const NavigationTopLinks: NavigationTopLinks[] = [
   { name: "Home", href: "/" },
