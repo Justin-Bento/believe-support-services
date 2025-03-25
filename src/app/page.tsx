@@ -3,6 +3,13 @@ import NavigationTop from "./components/NavigationTop";
 import NavigationBottom from "./components/NavigationBottom";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function page() {
   return (
@@ -39,19 +46,49 @@ export default function page() {
               </Button>
             </div>
           </div>
-          <div className="w-full aspect-square lg:aspect-video bg-neutral-500 rounded-lg overflow-hidden">
+          <div className="w-full aspect-square lg:aspect-video bg-neutral-300 rounded-lg overflow-hidden">
             <p className="opacity-0">hello world</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="w-full aspect-video bg-neutral-500 rounded-lg overflow-hidden">
-              <p className="opacity-0">hello</p>
-            </div>
-            <div className="w-full aspect-video bg-neutral-500 rounded-lg overflow-hidden">
-              <p className="opacity-0">hello</p>
-            </div>
-            <div className="w-full aspect-video bg-neutral-500 rounded-lg overflow-hidden">
-              <p className="opacity-0">hello</p>
-            </div>
+            <Card className="rounded-lg overflow-hidden shadow-none">
+              <CardContent className="space-y-3 text-start">
+                <CardTitle>Program Name</CardTitle>
+                <CardDescription>
+                  Program Description Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Vitae inventore adipisci cumque rem dolorem
+                  temporibus earum aperiam provident assumenda tenetur.
+                </CardDescription>
+                <CardAction className="text-xs text-muted-foreground">
+                  Link To Program &rarr;
+                </CardAction>
+              </CardContent>
+            </Card>
+            <Card className="rounded-lg overflow-hidden shadow-none">
+              <CardContent className="space-y-3 text-start">
+                <CardTitle>Program Name</CardTitle>
+                <CardDescription>
+                  Program Description Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Vitae inventore adipisci cumque rem dolorem
+                  temporibus earum aperiam provident assumenda tenetur.
+                </CardDescription>
+                <CardAction className="text-xs text-muted-foreground">
+                  Link To Program &rarr;
+                </CardAction>
+              </CardContent>
+            </Card>
+            <Card className="rounded-lg overflow-hidden shadow-none">
+              <CardContent className="space-y-3 text-start">
+                <CardTitle>Program Name</CardTitle>
+                <CardDescription>
+                  Program Description Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Vitae inventore adipisci cumque rem dolorem
+                  temporibus earum aperiam provident assumenda tenetur.
+                </CardDescription>
+                <CardAction className="text-xs text-muted-foreground">
+                  Link To Program &rarr;
+                </CardAction>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>
