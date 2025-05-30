@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function ProgramsPage() {
@@ -27,6 +28,12 @@ export default function ProgramsPage() {
               you are looking for a fun way to learn and create new memories
               with old and new friends, this program is for you.
             </p>
+            <Link
+              href=""
+              className="rounded-sm  py-1 text-xs font-semibold text-sky-600 "
+            >
+              View Program Information &rarr;
+            </Link>
           </div>
         </div>
       </section>
