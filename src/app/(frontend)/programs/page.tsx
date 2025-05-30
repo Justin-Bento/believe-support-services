@@ -20,6 +20,13 @@ export default function ProgramsPage() {
         <div className="overflow-hidden rounded-lg bg-gray-200">
           <div className="px-4 py-5 sm:p-6">
             <div className="w-full h-48 bg-foreground rounded-2xl"></div>
+            <h2>The Believe Day Program</h2>
+            <p>
+              This is for individuals with complex needs, providing programming
+              that has been developed to empower and encourage self-growth. If
+              you are looking for a fun way to learn and create new memories
+              with old and new friends, this program is for you.
+            </p>
           </div>
         </div>
       </section>
