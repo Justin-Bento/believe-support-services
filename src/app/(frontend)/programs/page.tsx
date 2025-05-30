@@ -41,7 +41,7 @@ export default function ProgramsPage() {
               you are looking for a fun way to learn and create new memories
               with old and new friends, this program is for you.
             </p>
-            <button className="rounded-sm block py-1 text-xs font-semibold text-sky-600 ">
+            <button className="rounded-sm block py-1 text-xs font-semibold text-sky-800 ">
               View Program Information &rarr;
             </button>
           </div>
