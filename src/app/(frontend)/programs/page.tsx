@@ -29,7 +29,7 @@ export default function ProgramsPage() {
               with old and new friends, this program is for you.
             </p>
             <Link
-              href=""
+              href="#"
               className="rounded-sm  py-1 text-xs font-semibold text-sky-600 "
             >
               View Program Information &rarr;
