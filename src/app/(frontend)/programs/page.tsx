@@ -17,7 +17,7 @@ export default function ProgramsPage() {
       {/*
        * End of Page Header
        */}
-      <section className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 mt-12">
+      <section className="">
         <ProgramsList />
       </section>
       {/*
