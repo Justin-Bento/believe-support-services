@@ -22,7 +22,7 @@ export default function ProgramsPage() {
           <div className="px-4 py-5 sm:p-6 flex flex-col gap-3">
             <div className="w-full h-48 bg-primary rounded-2xl"></div>
             <h2>The Believe Day Program</h2>
-            <p className="line-clamp-4">
+            <p className="line-clamp-4 text-base/[1.25] tracking-wide">
               This is for individuals with complex needs, providing programming
               that has been developed to empower and encourage self-growth. If
               you are looking for a fun way to learn and create new memories
