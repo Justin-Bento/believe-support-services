@@ -16,7 +16,11 @@ export default function ProgramsPage() {
       {/*
        * End of Page Header
        */}
-      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></section>
+      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="overflow-hidden rounded-lg bg-gray-200">
+          <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+        </div>
+      </section>
       {/*
        * End of Company Programs
        */}
