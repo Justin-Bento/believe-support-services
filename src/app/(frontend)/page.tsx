@@ -95,7 +95,7 @@ export default function page() {
             </Card>
           </div>
         </section>
-        {/* <...> End Of Hereo Section <...> */}
+        {/* <...> End Of Hero Section <...> */}
         <section className="">
           <Card className="bg-primary/20 dark:bg-card text-center border-none shadow-none">
             <CardContent className="space-y-4 relative px-6 py-24 overflow-hidden bg-theme isolate sm:rounded-3xl sm:px-24 xl:py-32">
