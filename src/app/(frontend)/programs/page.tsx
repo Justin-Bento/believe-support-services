@@ -19,7 +19,7 @@ export default function ProgramsPage() {
        * End of Page Header
        */}
       <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="overflow-hidden rounded-lg bg-primary/20">
+        <div className="relative isolate overflow-hidden rounded-lg bg-primary/20 hover:bg-primary/40 transition-all">
           <div className="px-4 py-5 sm:p-6 flex flex-col gap-3">
             <div className="w-full h-48 relative">
               <Image
@@ -30,7 +30,10 @@ export default function ProgramsPage() {
               />
             </div>
             <h2 className="capitalize text-xl font-bold tracking-[0.01rem]">
-              The Believe Day Program
+              <Link href="#">
+                The Believe Day Program
+                <span className="absolute inset-0"></span>
+              </Link>
             </h2>
             <p className="line-clamp-4 text-base/[1.25] tracking-wide">
               This is for individuals with complex needs, providing programming
@@ -38,12 +41,9 @@ export default function ProgramsPage() {
               you are looking for a fun way to learn and create new memories
               with old and new friends, this program is for you.
             </p>
-            <Link
-              href="#"
-              className="rounded-sm  py-1 text-xs font-semibold text-sky-600 "
-            >
+            <button className="rounded-sm block py-1 text-xs font-semibold text-sky-600 ">
               View Program Information &rarr;
-            </Link>
+            </button>
           </div>
         </div>
       </section>
