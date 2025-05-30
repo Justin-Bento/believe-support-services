@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+interface ProgramsInfoInterface {
+  id: number;
+  title: string;
+  description: string;
+}
+
 export default function ProgramsPage() {
   return (
     <main className="min-h-screen lg:container lg:mx-auto lg:py-24 p-4 py-16">
@@ -20,10 +26,10 @@ export default function ProgramsPage() {
        * End of Page Header
        */}
       <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
-        {programs_info.map((info, index) => {
+        {programs_info.map((info: ProgramsInfoInterface) => {
           return (
             <div
-              key={index}
+              key={info.id}
               className="relative group isolate overflow-hidden rounded-lg bg-primary/15 hover:bg-primary/20 transition-all"
             >
               <div className="px-4 py-5 sm:p-6 flex items-start flex-col gap-3">
