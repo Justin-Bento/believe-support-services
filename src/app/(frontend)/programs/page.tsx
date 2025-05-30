@@ -19,7 +19,7 @@ export default function ProgramsPage() {
        */}
       <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div className="overflow-hidden rounded-lg bg-primary/20">
-          <div className="px-4 py-5 sm:p-6">
+          <div className="px-4 py-5 sm:p-6 flex flex-col gap-3">
             <div className="w-full h-48 bg-primary rounded-2xl"></div>
             <h2>The Believe Day Program</h2>
             <p className="line-clamp-4">
