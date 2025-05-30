@@ -1,5 +1,4 @@
 import React from "react";
-import ProgramsList from "@/components/ProgramsList";
 
 export default function ProgramsPage() {
   return (
@@ -17,9 +16,7 @@ export default function ProgramsPage() {
       {/*
        * End of Page Header
        */}
-      <section className="">
-        <ProgramsList />
-      </section>
+      <section className=""></section>
       {/*
        * End of Company Programs
        */}
