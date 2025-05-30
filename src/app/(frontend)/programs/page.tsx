@@ -19,7 +19,7 @@ export default function ProgramsPage() {
        * End of Page Header
        */}
       <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="relative isolate overflow-hidden rounded-lg bg-primary/20 hover:bg-primary/40 transition-all">
+        <div className="relative group isolate overflow-hidden rounded-lg bg-primary/20 hover:bg-primary/40 transition-all">
           <div className="px-4 py-5 sm:p-6 flex items-start flex-col gap-3">
             <div className="w-full h-48 relative">
               <Image
@@ -30,7 +30,7 @@ export default function ProgramsPage() {
               />
             </div>
             <h2 className="capitalize text-xl font-bold tracking-[0.01rem]">
-              <Link href="#">
+              <Link href="#" className=" group-hover:underline">
                 The Believe Day Program
                 <span className="absolute inset-0"></span>
               </Link>
